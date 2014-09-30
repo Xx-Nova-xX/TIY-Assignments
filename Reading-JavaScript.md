@@ -4,15 +4,19 @@
 <pre><code>
 '''javascript
 
-                          if(this.playSounds==true){
+                          if(this.playSounds=!true){
                               this.playSounds = false;
                               this.soundButton.frameName = 'soff';
                           }
                           else{
-                              this.playSounds = true;
+                              this.playSounds == true;
                               this.soundButton.frameName = 'so';
                           }
-                      },
+*== (equals)
+*if (command)
+*else (command)
+*; (block end)
+*!= (not equal)
 '''
 </pre></code>
 
@@ -38,6 +42,8 @@ ___
                            System.out.println("Keep it going!");
                                                                         }
 *>= (Greater than or equal to)
+*"Keep it going!" = string
+*&& = logical operator
                                                                        
 '''
 </pre></code>
@@ -55,5 +61,5 @@ ___
 
 '''
 </pre></code>
-~~~
+___
                      
