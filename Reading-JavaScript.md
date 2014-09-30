@@ -13,8 +13,8 @@
                               this.soundButton.frameName = 'so';
                           }
 *== (equals)
-*if (command)
-*else (command)
+*if (conditional command)
+*else (conditional command)
 *; (block end)
 *!= (not equal)
 '''
@@ -28,8 +28,10 @@ ___
 '''javascript
 
                      this.canMove=false;
+                     Boolean(y);
                      
-*=false = booleen answer
+*this.canMove (variable)
+*=false (booleen output)
 '''
 </pre><code>
 ___
@@ -41,9 +43,9 @@ ___
                               if ( (score >= 10) && (outcome >= 100) ) {
                            System.out.println("Keep it going!");
                                                                         }
-*>= (Greater than or equal to)
-*"Keep it going!" = string
-*&& = logical operator
+*>= (Greater than or equal to operator)
+*"Keep it going!" (string)
+*&& ("and" logical operator)
                                                                        
 '''
 </pre></code>
@@ -56,8 +58,8 @@ ___
 
                      var length = this.snake.length;
                      
-*var length = variable length
-*this.snake.length = value
+*var length (variable length command)
+*this.snake.length (value)
 
 '''
 </pre></code>
