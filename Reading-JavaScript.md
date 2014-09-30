@@ -1,5 +1,6 @@
 ##JavaScript Code Breakdown Xx-Nova-Xx
 
+*If/Else Statement (Conditional Statement)*
 <pre><code>
 '''javascript
 
@@ -19,7 +20,7 @@
 
 
 
-If/Else Statement (Conditional Statement)
+*booleen statement*
 
 <pre><code>
 '''javascript
@@ -31,7 +32,7 @@ If/Else Statement (Conditional Statement)
 ~~~
 
 
-*booleen statement*
+* >= (Greater than or equal to)*
 
 <pre><code>
 ''' javascript
@@ -40,18 +41,21 @@ If/Else Statement (Conditional Statement)
                            System.out.println("Keep it going!");
 '''
 </pre></code>
-                          >= (Greater than or equal to)
+
+
+                         
   
                                                                        } 
 
 
 ~~~
 
-'''
+*Variable Length*
 
-javascript
+<pre><code>
+'''javascript
 
-Variable Length 
+
 
                      var length = this.snake.length;
                      
@@ -59,6 +63,6 @@ var length = variable length
 this.snake.length = value
 
 '''
-
+</pre></code>
 ~~~
                      
