@@ -23,25 +23,23 @@
 ___
 
 *booleen statement*
-
 <pre><code>
 '''javascript
 
                      this.canMove=false;
                      Boolean(y);
-
 *this.canMove (variable)
 *=false (booleen output)
 '''
 </pre><code>
+
 ___
 
 *If/Then Statement*
-
 <pre><code>
-''' javascript
+'''javascript
                               
-                          if ( (score >= 10) && (outcome >= 100) ) {
+                          if ( (score >= 10) && (outcome <= 100) ) {
                           System.out.println("Keep it going!");
                                                                         }
                                                                         
@@ -62,8 +60,6 @@ ___
                      
 *var length (variable length command)
 *this.snake.length (value)
-
 '''
 </pre></code>
-___
-                     
+             
