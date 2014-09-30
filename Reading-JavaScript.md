@@ -19,21 +19,27 @@ If/Else Statement (Conditional Statement)
 '''
 
 
-2. Booleen
+
 '''
 javascript
 
                      this.canMove=false;
-                     '''
+           
+booleen statement
+'''
                      
 
-3. Variable Length 
+'''
+javascript
+
+Variable Length 
 
                      var length = this.snake.length;
                      
 var length = variable length
 this.snake.length = value
 
+'''
 
-5. 
+
                      
