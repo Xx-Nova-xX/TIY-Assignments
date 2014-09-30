@@ -1,8 +1,6 @@
 ##JavaScript Code Breakdown Xx-Nova-Xx
 
-'''
-
-javascript
+'''javascript
 
                           if(this.playSounds==true){
                               this.playSounds = false;
@@ -13,19 +11,18 @@ javascript
                               this.soundButton.frameName = 'so';
                           }
                       },
+'''
 
 ~~~
 
 If/Else Statement (Conditional Statement)
 
 
-'''
+
 
 ~~~
 
-'''
-
-javascript
+'''javascript
 
                      this.canMove=false;
            
