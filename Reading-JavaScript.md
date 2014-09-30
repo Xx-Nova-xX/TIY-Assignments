@@ -1,8 +1,8 @@
 ##JavaScript Code Breakdown Xx-Nova-Xx
 
-1. If/Else Statement (Conditional Statement)
+'''
+javascript
 
-                     toggleSounds : function(){
                           if(this.playSounds==true){
                               this.playSounds = false;
                               this.soundButton.frameName = 'soff';
@@ -13,9 +13,27 @@
                           }
                       },
 
+If/Else Statement (Conditional Statement)
+
+
+'''
+
 
 2. Booleen
+'''
+javascript
 
                      this.canMove=false;
+                     '''
                      
-3. 
+
+3. Variable Length 
+
+                     var length = this.snake.length;
+                     
+var length = variable length
+this.snake.length = value
+
+
+5. 
+                     
