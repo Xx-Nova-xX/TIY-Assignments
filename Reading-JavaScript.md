@@ -12,13 +12,15 @@
                               this.playSounds == true;
                               this.soundButton.frameName = 'so';
                           }
+'''
+</pre></code>
+
 *== (equals)
 *if (conditional command)
 *else (conditional command)
 *; (block end)
 *!= (not equal)
-'''
-</pre></code>
+
 
 ___
 
@@ -28,10 +30,12 @@ ___
 
                      this.canMove=false;
                      Boolean(y);
-*this.canMove (variable)
-*=false (booleen output)
 '''
 </pre><code>
+
+*this.canMove (variable)
+*=false (booleen output)
+
 
 ___
 
@@ -43,12 +47,13 @@ ___
                           System.out.println("Keep it going!");
                                                                         }
                                                                         
+ '''
+</pre></code>
                                                                         
 *>= (Greater than or equal to operator)
 *"Keep it going!" (string)
 *&& ("and" logical operator)
-'''
-</pre></code>
+
 
 ___
 
@@ -57,9 +62,11 @@ ___
 '''javascript
 
                      var length = this.snake.length;
-                     
-*var length (variable length command)
-*this.snake.length (value)
+ 
 '''
 </pre></code>
+
+*var length (variable length command)
+*this.snake.length (value)
+
              
