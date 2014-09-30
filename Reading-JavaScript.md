@@ -17,33 +17,32 @@
 
 ~~~
 
+
+
 If/Else Statement (Conditional Statement)
 
-
-
-
-~~~
-
+<pre><code>
 '''javascript
 
                      this.canMove=false;
-           
+'''
+</pre><code>
+          
+
+
 booleen statement
 
-
-'''
-
-javascript
+<pre><code>
+''' javascript
                              
                               if ( (score >= 10) && (outcome >= 100) ) {
                            System.out.println("Keep it going!");
-  
+'''
+</pre></code>
                           >= (Greater than or equal to)
   
                                                                        } 
 
-
-'''
 
 ~~~
 
