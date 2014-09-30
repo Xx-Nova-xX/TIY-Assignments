@@ -32,7 +32,12 @@ javascript
 booleen statement
 
 '''
-                     
+      if ( (score >= 10) && (outcome >= 100) ) {
+  System.out.println("Keep it going!");
+  
+  >= (Greater than or equal to)
+  
+}               
 ~~~
 
 '''
