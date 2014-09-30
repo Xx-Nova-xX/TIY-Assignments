@@ -32,7 +32,7 @@ ___
 ___
 
 
-* >= (Greater than or equal to)*
+*>= (Greater than or equal to)*
 
 <pre><code>
 ''' javascript
