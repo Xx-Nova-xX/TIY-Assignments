@@ -1,6 +1,6 @@
 ##JavaScript Code Breakdown Xx-Nova-Xx
 
-<precode>
+<pre><code>
 '''javascript
 
                           if(this.playSounds==true){
