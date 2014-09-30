@@ -46,8 +46,8 @@ ___
 
                      var length = this.snake.length;
                      
-var length = variable length
-this.snake.length = value
+*var length = variable length
+*this.snake.length = value
 
 '''
 </pre></code>
