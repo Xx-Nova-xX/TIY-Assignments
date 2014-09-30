@@ -27,10 +27,11 @@ If/Else Statement (Conditional Statement)
                      this.canMove=false;
 '''
 </pre><code>
-          
+    
+~~~
 
 
-booleen statement
+*booleen statement*
 
 <pre><code>
 ''' javascript
