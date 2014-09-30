@@ -12,3 +12,10 @@
                               this.soundButton.frameName = 'so';
                           }
                       },
+
+
+2. Booleen
+
+                     this.canMove=false;
+                     
+3. 
