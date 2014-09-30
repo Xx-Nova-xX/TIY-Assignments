@@ -29,7 +29,7 @@ ___
 '''
 </pre><code>
     
-~~~
+___
 
 
 * >= (Greater than or equal to)*
@@ -45,7 +45,7 @@ ___
 </pre></code>
 
 
-~~~
+___
 
 *Variable Length*
 
