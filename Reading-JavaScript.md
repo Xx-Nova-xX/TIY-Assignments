@@ -1,6 +1,7 @@
 ##JavaScript Code Breakdown Xx-Nova-Xx
 
 '''
+
 javascript
 
                           if(this.playSounds==true){
@@ -23,16 +24,19 @@ If/Else Statement (Conditional Statement)
 ~~~
 
 '''
+
 javascript
 
                      this.canMove=false;
            
 booleen statement
+
 '''
                      
 ~~~
 
 '''
+
 javascript
 
 Variable Length 
