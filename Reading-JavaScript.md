@@ -18,8 +18,6 @@
 
 ___
 
-
-
 *booleen statement*
 
 <pre><code>
@@ -28,31 +26,23 @@ ___
                      this.canMove=false;
 '''
 </pre><code>
-    
 ___
-
 
 *>= (Greater than or equal to)*
 
 <pre><code>
 ''' javascript
-                             
                               if ( (score >= 10) && (outcome >= 100) ) {
                            System.out.println("Keep it going!");
-                                                                        
                                                                         }
 '''
 </pre></code>
 
-
 ___
 
 *Variable Length*
-
 <pre><code>
 '''javascript
-
-
 
                      var length = this.snake.length;
                      
