@@ -13,12 +13,14 @@ javascript
                           }
                       },
 
+~~~
+
 If/Else Statement (Conditional Statement)
 
 
 '''
 
-
+~~~
 
 '''
 javascript
@@ -28,6 +30,7 @@ javascript
 booleen statement
 '''
                      
+~~~
 
 '''
 javascript
@@ -41,5 +44,5 @@ this.snake.length = value
 
 '''
 
-
+~~~
                      
