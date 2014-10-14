@@ -15,7 +15,7 @@ Part 1:
                               this.soundButton.frameName = 'so';
                           }
                           
-'''
+```
 </pre></code>
 
 *== (equals)
@@ -33,7 +33,7 @@ ___
 
                      this.canMove=false;
                      Boolean(y);
-'''
+```
 </pre><code>
 
 *this.canMove (variable)
@@ -51,7 +51,7 @@ ___
                           System.out.println("Keep it going!");
                                                                         }
                                                                         
- '''
+```
 </pre></code>
                                                                         
 *>= (Greater than or equal to operator)
@@ -67,7 +67,7 @@ ___
 
                      var length = this.snake.length;
  
-'''
+```
 </pre></code>
 
 *var length (variable length command)
@@ -82,11 +82,11 @@ PART 2:
 *Assigned To*
 
 <pre><code>
-'''Javascript
+```javascript
 
 var numPassengers = 0
 
-'''
+```
 </pre></code>
 " = " means "assigned to"
 
@@ -97,7 +97,7 @@ var numPassengers = 0
 
 console.log("\"Old Faithful\" at Yellowstone National Park \nAverage eruption height today: " + avgHeight + "\nNumber of eruptions: " + numEruptions);
 
-'''
+```
 </pre></code>
 
 
@@ -116,7 +116,7 @@ while(num > 0) {
 "while loop" - takes in a condition and while it is true it runs the parameters
 "num--" - decreases the variable's worth by 1 on each pass
 
-'''
+```
 </pre></code>
 
 
