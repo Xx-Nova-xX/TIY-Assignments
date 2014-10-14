@@ -240,3 +240,22 @@ function numStrings(list) {
 - return = tells the program to end the loop and/or return a value
 
 _____________________________________________________________________________
+
+_____________________________________________________________________________
+
+*array list*
+
+<pre><code>
+
+```javascript
+
+var list = [ 1, 2, 3, 4, 5, 6, 7, 8, 9]
+  
+```
+</pre></code>
+
+array list = a list of objects, numbers, strings that is kept in order and can be pulled from, added to, taken away from etc.
+
+
+_____________________________________________________________________________
+
