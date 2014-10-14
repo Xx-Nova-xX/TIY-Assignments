@@ -134,15 +134,13 @@ while(num > 0) {
   console.log(num);
   num--;
 }
-"while loop" - takes in a condition and while it is true it runs the parameters
-"num--" - decreases the variable's worth by 1 on each pass
-
 ```
 </pre></code>
-
+"while loop" - takes in a condition and while it is true it runs the parameters
+"num--" - decreases the variable's worth by 1 on each pass
 ______________________________________________________________________________
 
-*Variables, While, <=,*
+*Variables &  <=,*
 
 <pre><code>
 ```javascript
@@ -162,8 +160,6 @@ while(monthNumber <= monthsToPrint) {
 
 "variable numSheep = 4" = calling the variable numSheep and giving it the value of 4
 "<=" = less than or equal to
-"while loop" = while the conditions are true the loop will continue to run
-
 
 ______________________________________________________________________________
 
