@@ -29,7 +29,7 @@ ___
 
 *booleen statement*
 <pre><code>
-'''javascript
+```javascript
 
                      this.canMove=false;
                      Boolean(y);
@@ -44,7 +44,8 @@ ___
 
 *If/Then Statement*
 <pre><code>
-'''javascript
+
+```javascript
                        
                           if ( (score >= 10) && (outcome <= 100) ) {
                           System.out.println("Keep it going!");
@@ -62,7 +63,7 @@ ___
 
 *Variable Length*
 <pre><code>
-'''javascript
+```javascript
 
                      var length = this.snake.length;
  
@@ -79,8 +80,9 @@ ___
 PART 2: 
 
 *Assigned To*
+
 <pre><code>
-'''javascript
+'''Javascript
 
 var numPassengers = 0
 
@@ -91,7 +93,7 @@ var numPassengers = 0
 
 *Console.Log && "\n"*
 <pre><code>
-'''javascript
+```javascript
 
 console.log("\"Old Faithful\" at Yellowstone National Park \nAverage eruption height today: " + avgHeight + "\nNumber of eruptions: " + numEruptions);
 
@@ -105,7 +107,7 @@ console.log("\"Old Faithful\" at Yellowstone National Park \nAverage eruption he
 
 *While Loop && decrease function*
 <pre><code>
-'''javascript
+```javascript
 
 while(num > 0) {
   console.log(num);
