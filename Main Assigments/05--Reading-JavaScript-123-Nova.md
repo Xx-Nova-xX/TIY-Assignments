@@ -113,17 +113,13 @@ console.log("\"Old Faithful\" at Yellowstone National Park \nAverage eruption he
 </pre></code>
 
 ______________________________________________________________________________
-<pre><code>
-
-```javascript
 
 "console.log" = print contents to the console
 "\n" = new line
 
 ```
 </pre></code>
-
-_______________________________________________________________________________
+____________________________________________________________________________
 
 *While Loop && decrease function*
 
