@@ -96,6 +96,10 @@ var numPassengers = 0
 
 *Console.Log && "\n"*
 <pre><code>
+
+_____________________________________________________________________________
+
+
 ```javascript
 
 console.log("\"Old Faithful\" at Yellowstone National Park \nAverage eruption height today: " + avgHeight + "\nNumber of eruptions: " + numEruptions);
@@ -103,6 +107,7 @@ console.log("\"Old Faithful\" at Yellowstone National Park \nAverage eruption he
 ```
 </pre></code>
 
+______________________________________________________________________________
 
 "console.log" = print contents to the console
 "\n" = new line
@@ -121,5 +126,8 @@ while(num > 0) {
 
 ```
 </pre></code>
+
+______________________________________________________________________________
+
 
 
