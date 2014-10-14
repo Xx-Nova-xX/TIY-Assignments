@@ -1,5 +1,3 @@
-### 11-Latte
-
 Resources:
 
 * [x]Object Literals in MDN JavaScript
