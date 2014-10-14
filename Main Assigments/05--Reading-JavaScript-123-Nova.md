@@ -160,12 +160,28 @@ if(parkIsOpen){
 </pre></code>
 
 ______________________________________________________________________________
-"varParkIsOpen = false" = booleen value or true/false</br>
-"alert()" = pop up a box to alert the user</br>
+"varParkIsOpen = false" = booleen value or true/false<br>
+"alert()" = pop up a box to alert the user<br>
 "if/else" = dual conditions statement = if the first set of conditions are true in the if, it runs - if not, it runs the    conditions in "else"
 
 
+*prompt() &&  confirm()*
 
+<pre><code>
+
+```javascript
+
+
+var userAge = prompt("What's your age, user?");
+var ageIsCorrect = confirm("You entered " + userAge + ". Is this correct?");
+
+```
+</pre></code>
+
+______________________________________________________________________________
+
+- 'prompt' = pops a box up that asks the user for input
+- 'confirm' = pops a box up that asks for confirmation on a prompt function
 
 
 
