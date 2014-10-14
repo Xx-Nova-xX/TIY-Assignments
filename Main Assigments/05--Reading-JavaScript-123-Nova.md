@@ -160,8 +160,8 @@ if(parkIsOpen){
 </pre></code>
 
 ______________________________________________________________________________
-"varParkIsOpen = false" = booleen value or true/false
-"alert()" = pop up a box to alert the user
+"varParkIsOpen = false" = booleen value or true/false</br>
+"alert()" = pop up a box to alert the user</br>
 "if/else" = dual conditions statement = if the first set of conditions are true in the if, it runs - if not, it runs the    conditions in "else"
 
 
