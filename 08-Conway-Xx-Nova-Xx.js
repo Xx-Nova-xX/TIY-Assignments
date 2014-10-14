@@ -192,38 +192,38 @@ var assert = require('chai').assert;
  * @param ANY actual
  * @param ANY expected
  * @param String success
- */
+
 function test(actual, expected, success){
     if (success === undefined) success = 'Wait Really? It worked? Holy Shit it WORKED!!!';
     assert.strictEqual(actual, expected);
     console.log(success);
 }
-
+ */
 
   describe("neighborsOf(), which assigns the neighbors of a cell given a board and a cells specific coordinates", function(){
     it ('should return 3 neighbors for 0,0', function(){
-      assert.deepEqual(neighborsLive(board, 0, 0), [false,false,false]);
+      assert.deepEqual(neighbotsLive(board, 0, 0), [false,false,false]);
     })
     it ('"EXPECT" to be an Array for 0,0', function(){
-      expect(neighborsLive(board,0,0)).to.be.an('Array');
+      expect(neighbotsLive(board,0,0)).to.be.an('Array');
     })
     it ('should return 5 neighbors for 0,1', function(){
-      assert.deepEqual(neighborsLive(board, 0, 1), [false,false,false,false,false]);
+      assert.deepEqual(neighbotsLive(board, 0, 1), [false,false,false,false,false]);
     })
     it ('"EXPECT" to be an Array for 0,1', function(){
-      expect(neighborsLive(board,0,1)).to.be.an('Array');
+      expect(neighbotsLive(board,0,1)).to.be.an('Array');
     })
     it ('should return 8 neighbors for 1,1', function(){
-      assert.deepEqual(neighborsLive(board, 1, 1), [false,false,false,false,false,false,false,false]);
+      assert.deepEqual(neighbotsLive(board, 1, 1), [false,false,false,false,false,false,false,false]);
     })
     it ('"SHOULD" be an Array for 1,1', function(){
-      neighborsLive(board,1,1).should.be.an('Array');
+      neighbotsLive(board,1,1).should.be.an('Array');
     })
     it ('should return that neighborsOf is a Function', function(){
-      assert.isFunction(neighborsLive);//chai testing
+      assert.isFunction(neighbotsLive);//chai testing
     })
     it ('should "expect" neighbors to not equal true', function(){
-      expect(neighborsLive).to.not.equal(true);
+      expect(neighbotsLive).to.not.equal(true);
     })
 
   })
