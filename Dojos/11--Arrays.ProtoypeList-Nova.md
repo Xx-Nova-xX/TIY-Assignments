@@ -2,13 +2,9 @@
 
 <em>arr.length</em> - tells you how many elements are in an array
 
-&nbsp;
-
 var letters = [ ‘a’, ‘b’, ‘c’, ‘d’]; à letters.length = 4
 
 &nbsp;
-
-<strong> </strong>
 
 <strong>* .copyWithin </strong> = <em>arr.copyWithin(target, start[, end = this.length])</em>
 
