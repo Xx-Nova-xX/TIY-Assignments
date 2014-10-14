@@ -164,6 +164,7 @@ ______________________________________________________________________________
 "alert()" = pop up a box to alert the user<br>
 "if/else" = dual conditions statement = if the first set of conditions are true in the if, it runs - if not, it runs the    conditions in "else"
 
+______________________________________________________________________________
 
 *prompt() &&  confirm()*
 
@@ -178,11 +179,64 @@ var ageIsCorrect = confirm("You entered " + userAge + ". Is this correct?");
 ```
 </pre></code>
 
-______________________________________________________________________________
-
 - 'prompt' = pops a box up that asks the user for input
 - 'confirm' = pops a box up that asks for confirmation on a prompt function
 
+_____________________________________________________________________________
 
+*multiply or astrisk*
 
+<pre><code>
 
+```javascript
+
+function multiplyTrio(a, b, c){
+  return a*b*c;
+  
+```
+</pre></code>
+
+"*" = multiply operator
+
+_____________________________________________________________________________
+
+*array index*
+
+<pre><code>
+
+```javascript
+
+list[3] = 4;
+  
+```
+</pre></code>
+
+When using [] around a number you are calling the index of an array
+
+_____________________________________________________________________________
+
+*==, 'string', .length, & return*
+
+<pre><code>
+
+```javascript
+
+function numStrings(list) {
+  var count = 0;
+  for (var i = 0; i < list.length; i++){
+    if( typeof list[i] == "string" ){
+      count++;
+    }
+  }
+  return count;
+}
+  
+```
+</pre></code>
+
+- '==' means it is equal to
+- .length = add this to a element to find out the length of it
+- 'string' = is a represnataion of word or sentences
+- return = tells the program to end the loop and/or return a value
+
+_____________________________________________________________________________
