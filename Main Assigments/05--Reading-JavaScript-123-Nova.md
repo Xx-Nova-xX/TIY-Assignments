@@ -4,7 +4,7 @@ Part 1:
 
 *If/Else Statement (Conditional Statement)*
 <pre><code>
-'''javascript
+```javascript
 
                           if(this.playSounds=!true){
                               this.playSounds = false;
