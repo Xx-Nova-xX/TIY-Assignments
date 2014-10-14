@@ -1,5 +1,7 @@
 ##JavaScript Code Breakdown Assignment Xx-Nova-Xx
 
+Part 1: 
+
 *If/Else Statement (Conditional Statement)*
 <pre><code>
 '''javascript
@@ -71,3 +73,48 @@ ___
 *this.snake.length (value)
 
              
+             
+             
+             
+PART 2: 
+
+*Assigned To*
+<pre><code>
+'''javascript
+
+var numPassengers = 0
+
+'''
+</pre></code>
+" = " means "assigned to"
+
+
+*Console.Log && "\n"*
+<pre><code>
+'''javascript
+
+console.log("\"Old Faithful\" at Yellowstone National Park \nAverage eruption height today: " + avgHeight + "\nNumber of eruptions: " + numEruptions);
+
+'''
+</pre></code>
+
+
+"console.log" = print contents to the console
+"\n" = new line
+
+
+*While Loop && decrease function*
+<pre><code>
+'''javascript
+
+while(num > 0) {
+  console.log(num);
+  num--;
+}
+"while loop" - takes in a condition and while it is true it runs the parameters
+"num--" - decreases the variable's worth by 1 on each pass
+
+'''
+</pre></code>
+
+
