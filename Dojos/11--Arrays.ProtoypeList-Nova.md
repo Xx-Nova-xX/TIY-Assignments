@@ -2,9 +2,9 @@
 
 <em>arr.length</em> - tells you how many elements are in an array
 
-var letters = [ ‘a’, ‘b’, ‘c’, ‘d’]; à letters.length = 4
 
-&nbsp;
+var letters = [ ‘a’, ‘b’, ‘c’, ‘d’]; <strong>--&gt;</strong> letters.length = 4
+
 
 <strong>* .copyWithin </strong> = <em>arr.copyWithin(target, start[, end = this.length])</em>
 
@@ -20,7 +20,7 @@ arr.copyWithin – copies the sequence of array elements in the array.
 
 &nbsp;
 
-[1, 2, 3, 4, 5].copywithin(0, 3); à [4,5,3,4,5]
+[1, 2, 3, 4, 5].copywithin(0, 3); <strong>--&gt;</strong> [4,5,3,4,5]
 
 &nbsp;
 
@@ -40,7 +40,7 @@ arr.copyWithin – copies the sequence of array elements in the array.
 
 &nbsp;
 
-[1, 2, 3].fill(4) à [4, 4, 4]
+[1, 2, 3].fill(4) <strong>--&gt;</strong> [4, 4, 4]
 
 &nbsp;
 
@@ -56,9 +56,9 @@ var myCars = [‘Toyota’, ‘Lexus’, ‘Lambo’, ‘Bugatti’];
 
 var popped = myCars.pop();
 
-console.log(myCars); à [‘Toyota’, ‘Lexus’, ‘Lambo’,]
+console.log(myCars); <strong>--&gt;</strong> [‘Toyota’, ‘Lexus’, ‘Lambo’,]
 
-console.log(popped); à ‘Bugatti'
+console.log(popped); <strong>--&gt;</strong> ‘Bugatti'
 
 &nbsp;
 
@@ -76,9 +76,9 @@ var sports = [‘basketball’, ‘hokey’];
 
 var total = sports.push(‘football’, ‘swimming’);
 
-console.log(sports): à ‘basketball’, ‘hockey’, ‘football’, ‘swimming’]
+console.log(sports): <strong>--&gt;</strong> ‘basketball’, ‘hockey’, ‘football’, ‘swimming’]
 
-console.log(total); à 4
+console.log(total); <strong>--&gt;</strong> 4
 
 <strong>*.reverse = </strong><em>arr.reverse()</em>
 
@@ -90,7 +90,7 @@ Var myArray = [‘one’, ‘two’, ‘three];
 
 myArray.reverse();
 
-console.log(myArray) à ‘three’, ‘two’, ‘one’
+console.log(myArray) <strong>--&gt;</strong> ‘three’, ‘two’, ‘one’
 
 &nbsp;
 
@@ -108,9 +108,9 @@ console.log(‘myFish before: ‘ + myFish);
 
 var shifted = myFish.shift();
 
-console.log(‘myFish after: ‘ + myFish); à clown, mandarin, betta
+console.log(‘myFish after: ‘ + myFish); <strong>--&gt;</strong> clown, mandarin, betta
 
-console.log(‘Removed this element: ‘ + shifted); à angel
+console.log(‘Removed this element: ‘ + shifted); <strong>--&gt;</strong> angel
 
 &nbsp;
 
@@ -128,7 +128,7 @@ console.log(‘Removed this element: ‘ + shifted); à angel
 
 Ex.1: Var fruit[‘apples’, ‘bananas’, ‘Cherries’];
 
-fruit.sort(); à [‘Cherries’, ‘apples’, ‘bananas’];
+fruit.sort();<strong>--&gt;</strong> [‘Cherries’, ‘apples’, ‘bananas’];
 
 &nbsp;
 
@@ -178,11 +178,11 @@ element<em>N</em>: elements to add to the start of the array
 
 var arr = [ 1, 2];
 
-arr.unshift(0); à arr is [0, 1, 2]     //result of call is 3, the new array length
+arr.unshift(0); <strong>--&gt;</strong> arr is [0, 1, 2]     //result of call is 3, the new array length
 
 &nbsp;
 
-arr.unshift(-2, -1); à = 5 à arr is [-2, -1, 0, 1, 2]
+arr.unshift(-2, -1);<strong> --&gt; </strong>= 5 --&gt; arr is [-2, -1, 0, 1, 2]
 
 &nbsp;
 
@@ -206,7 +206,7 @@ numeric = [ 1, 2, 3 ];
 
 var alphaNumeric = alpha.concat(numeric);
 
-console.log(alphaNumeric); à [ 'a', 'b', 'c', 1, 2, 3 ]
+console.log(alphaNumeric); <strong>--&gt;</strong> [ 'a', 'b', 'c', 1, 2, 3 ]
 
 &nbsp;
 
@@ -222,9 +222,9 @@ console.log(alphaNumeric); à [ 'a', 'b', 'c', 1, 2, 3 ]
 
 &nbsp;
 
-[1, 2, 3].contains(2); à true                                   [1,2,3].contains(3, 3); à false
+[1, 2, 3].contains(2); <strong>--&gt;</strong> true }     [1,2,3].contains(3, 3); <strong>--&gt;</strong> false
 
-[1, 2, 3].contains(4); à false                                  [1,2,3].contains(3, -1); àtrue
+[1, 2, 3].contains(4); <strong>--&gt;</strong> false }    [1,2,3].contains(3, -1); <strong>--&gt;</strong>true
 
 &nbsp;
 
@@ -238,11 +238,11 @@ console.log(alphaNumeric); à [ 'a', 'b', 'c', 1, 2, 3 ]
 
 var a = new Array('Wind, 'Rain', 'Fire');
 
-var myVar1 = a.join(); à assigns 'Wind,Rain,Fire'
+var myVar1 = a.join();<strong>--&gt;</strong> assigns 'Wind,Rain,Fire'
 
-var myVar2 = a.join(',') à assigns 'Wind, Rain, Fire'
+var myVar2 = a.join(',') <strong>--&gt;</strong> assigns 'Wind, Rain, Fire'
 
-var myVar3 = a.join(' + ') à assigns 'Wind + Rain + Fire'
+var myVar3 = a.join(' + ') <strong>--&gt;</strong> assigns 'Wind + Rain + Fire'
 
 &nbsp;
 
@@ -256,7 +256,7 @@ var myVar3 = a.join(' + ') à assigns 'Wind + Rain + Fire'
 
 var fruits = [ 'Banana', 'Orange', 'Lemon', 'Apple', 'Mango' ];
 
-var citrus = fruits.slice(1, 3); à citrus = [ 'Orange', 'Lemon' ]
+var citrus = fruits.slice(1, 3); <strong>--&gt;</strong> citrus = [ 'Orange', 'Lemon' ]
 
 &nbsp;
 
@@ -268,7 +268,7 @@ var citrus = fruits.slice(1, 3); à citrus = [ 'Orange', 'Lemon' ]
 
 var alpha = new Array ( 'a', 'b', 'c' );
 
-alpha.toSource(); à returns [ 'a', 'b', 'c' ]
+alpha.toSource();<strong>--&gt;</strong> returns [ 'a', 'b', 'c' ]
 
 &nbsp;
 
@@ -282,7 +282,7 @@ alpha.toSource(); à returns [ 'a', 'b', 'c' ]
 
 var monthNames = [ 'Jan', 'Feb', 'Mar', 'Apr'];
 
-var myVar = monthNames.toString(); à assigns 'Jan,Feb,Mar,Apr' to myVar
+var myVar = monthNames.toString();<strong>--&gt;</strong> assigns 'Jan,Feb,Mar,Apr' to myVar
 
 &nbsp;
 
@@ -312,13 +312,13 @@ with timezone Europe/Berlin
 
 var array = [2, 5, 9];
 
-var index = array.indexOf(2); à index is 0
+var index = array.indexOf(2); <strong>--&gt;</strong> index is 0
 
-index = array.indexOf(7); à index is -1
+index = array.indexOf(7); <strong>--&gt;</strong> index is -1
 
-index = array.indexOf(9,2); à index is 2
+index = array.indexOf(9,2); <strong>--&gt;</strong> index is 2
 
-index = array.indexOf(2, -1) à index is -1
+index = array.indexOf(2, -1) <strong>--&gt;</strong> index is -1
 
 &nbsp;
 
@@ -330,13 +330,13 @@ index = array.indexOf(2, -1) à index is -1
 
 var array = [2, 5, 9, 2];
 
-var index = arr.lastIndexOf(2); à 3
+var index = arr.lastIndexOf(2); <strong>--&gt;</strong> 3
 
-index = arr.lastIndexOf(7); à -1
+index = arr.lastIndexOf(7); <strong>--&gt;</strong> -1
 
-index = arr.lastIndexOf(2,3) à 3
+index = arr.lastIndexOf(2,3) <strong>--&gt;</strong> 3
 
-index = array.lastIndexOf(2,2) à 0
+index = array.lastIndexOf(2,2) <strong>--&gt;</strong> 0
 
 &nbsp;
 
@@ -378,11 +378,11 @@ var eArr = arr.entries();
 
 &nbsp;
 
-console.log(eArr.next().value; à [0, 'a']
+console.log(eArr.next().value; <strong>--&gt;</strong> [0, 'a']
 
-console.log(eArr.next().value; à [1, 'b']
+console.log(eArr.next().value; <strong>--&gt;</strong> [1, 'b']
 
-console.log(eArr.next().value; à[2, 'c']
+console.log(eArr.next().value; <strong>--&gt;</strong> [2, 'c']
 
 &nbsp;
 
@@ -400,9 +400,9 @@ return element &gt;= 10;
 
 }
 
-var passed = [12, 5, 8, 130, 44].every(isBigEnough); à false
+var passed = [12, 5, 8, 130, 44].every(isBigEnough); <strong>--&gt;</strong> false
 
-passed = [12, 54, 18, 130, 44].every(isBigEnough); à true
+passed = [12, 54, 18, 130, 44].every(isBigEnough); <strong>--&gt;</strong> true
 
 &nbsp;
 
@@ -420,9 +420,9 @@ return element &gt;= 10;
 
 }
 
-var passed = [2, 5, 8, 1, 4].some(isBigEnough); à false
+var passed = [2, 5, 8, 1, 4].some(isBigEnough); <strong>--&gt; </strong>false
 
-var passed = [12, 5, 8, 1, 4].some(isBigEnough); à true
+var passed = [12, 5, 8, 1, 4].some(isBigEnough); <strong>--&gt;</strong> true
 
 &nbsp;
 
@@ -440,7 +440,7 @@ return element &gt;= 10;
 
 }
 
-var filtered = [12, 5, 8, 130, 44].filter(isBigEnough); à filtered is [12, 130, 44]
+var filtered = [12, 5, 8, 130, 44].filter(isBigEnough); <strong>--&gt;</strong> filtered is [12, 130, 44]
 
 &nbsp;
 
@@ -472,9 +472,9 @@ return element &gt; 1;
 
 }
 
-console.log([4, 6, 8, 12].find(isPrime)); à undefined, not found
+console.log([4, 6, 8, 12].find(isPrime)); <strong>--&gt;</strong> undefined, not found
 
-console.log([4, 5, 8, 12].find(isPrime)); à 5
+console.log([4, 5, 8, 12].find(isPrime)); <strong>--&gt;</strong> 5
 
 &nbsp;
 
@@ -504,9 +504,9 @@ return element &gt; 1;
 
 }
 
-console.log([4, 6, 8, 12].findIndex(isPrime)); à -1, not found
+console.log([4, 6, 8, 12].findIndex(isPrime)); <strong>--&gt;</strong> -1, not found
 
-console.log([4, 6, 7, 12].findIndex(isPrime)); à 2
+console.log([4, 6, 7, 12].findIndex(isPrime)); <strong>--&gt;</strong> 2
 
 &nbsp;
 
@@ -522,11 +522,11 @@ var arr = [ 'a', 'b', 'c' ];
 
 var earr = arr.keys();
 
-console.log(eArr.next().value); à 0
+console.log(eArr.next().value); <strong>--&gt;</strong> 0
 
-console.log(eArr.next().value); à 1
+console.log(eArr.next().value); <strong>--&gt;</strong> 1
 
-console.log(eArr.next().value); à 2
+console.log(eArr.next().value); <strong>--&gt;</strong> 2
 
 &nbsp;
 
@@ -540,7 +540,7 @@ console.log(eArr.next().value); à 2
 
 var numbers = [1, 4, 9];
 
-var roots = numbers.map(Math.sqrt); à roots = [1, 2, 3], numbers stays the same
+var roots = numbers.map(Math.sqrt); <strong>--&gt;</strong> roots = [1, 2, 3], numbers stays the same
 
 &nbsp;
 
@@ -564,7 +564,7 @@ var total = [0, 1, 2, 3].reduce(function(a, b) {
 
 return a + b;
 
-}); à 6
+}); <strong>--&gt;</strong> 6
 
 &nbsp;
 
@@ -572,7 +572,7 @@ var flattened = [[0,1], [2,3], [4,5]].reduce(function(a,b) {
 
 return a.concat(b);
 
-}); à flattened is [0,1,2,3,4,5]
+}); <strong>--&gt;</strong> flattened is [0,1,2,3,4,5]
 
 &nbsp;
 
@@ -588,46 +588,4 @@ var total = [0,1,2,3].reduceRight(function(a,b) {
 
 return a + b;
 
-}); à 6
-
-&nbsp;
-
-var flattened = [[0,1], [2,3], [4,5]].reduceRight(function(a,b) {
-
-return a.concat(b);
-
-}, []); à flattened is [4,5,2,3,0,1]
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-<strong> </strong>
-
-&nbsp;
-
-<strong> </strong>
-
-<strong> </strong>
+}); <strong>--&gt;</strong>
