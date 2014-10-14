@@ -113,12 +113,19 @@ console.log("\"Old Faithful\" at Yellowstone National Park \nAverage eruption he
 </pre></code>
 
 ______________________________________________________________________________
+<pre><code>
+
+```javascript
 
 "console.log" = print contents to the console
 "\n" = new line
 
 
 *While Loop && decrease function*
+
+```
+</pre></code>
+_______________________________________________________________________________
 <pre><code>
 ```javascript
 
@@ -134,5 +141,20 @@ while(num > 0) {
 
 ______________________________________________________________________________
 
+<pre><code>
+```javascript
 
+var numSheep = 4;
+var monthNumber = 1;
+var monthsToPrint = 12;
 
+while(monthNumber <= monthsToPrint) {
+  numSheep *= 4;
+  console.log("There will be " + numSheep + " sheep after " + monthNumber + " month(s)!");
+  monthNumber++;
+}
+
+```
+</pre></code>
+
+______________________________________________________________________________
