@@ -144,3 +144,29 @@ while(monthNumber <= monthsToPrint) {
 
 ______________________________________________________________________________
 
+*Boolean, alert(), if/else*
+
+<pre><code>
+
+```javascript
+
+var parkIsOpen = false;
+if(parkIsOpen){
+  alert("Welcome to the Badlands National Park! Try to enjoy your stay.");
+} else {
+  alert("Sorry, the Badlands are particularly bad today. We're closed!");
+}
+```
+</pre></code>
+
+______________________________________________________________________________
+"varParkIsOpen = false" = booleen value or true/false
+"alert()" = pop up a box to alert the user
+"if/else" = dual conditions statement = if the first set of conditions are true in the if, it runs - if not, it runs the    conditions in "else"
+
+
+
+
+
+
+
