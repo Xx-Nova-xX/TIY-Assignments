@@ -120,12 +120,13 @@ ______________________________________________________________________________
 "console.log" = print contents to the console
 "\n" = new line
 
+```
+</pre></code>
+
+_______________________________________________________________________________
 
 *While Loop && decrease function*
 
-```
-</pre></code>
-_______________________________________________________________________________
 <pre><code>
 ```javascript
 
@@ -140,6 +141,8 @@ while(num > 0) {
 </pre></code>
 
 ______________________________________________________________________________
+
+*Variables, While, <=,*
 
 <pre><code>
 ```javascript
@@ -157,4 +160,10 @@ while(monthNumber <= monthsToPrint) {
 ```
 </pre></code>
 
+"variable numSheep = 4" = calling the variable numSheep and giving it the value of 4
+"<=" = less than or equal to
+"while loop" = while the conditions are true the loop will continue to run
+
+
 ______________________________________________________________________________
+
