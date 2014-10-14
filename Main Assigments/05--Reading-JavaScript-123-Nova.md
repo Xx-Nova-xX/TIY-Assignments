@@ -1,4 +1,5 @@
 ##JavaScript Code Breakdown Assignment Xx-Nova-Xx
+______________________________________________________________________________
 
 Part 1: 
 
@@ -17,7 +18,6 @@ Part 1:
                           
 ```
 </pre></code>
-_________________________________________________________________________
 
 *== (equals)
 *if (conditional command)
@@ -25,9 +25,7 @@ _________________________________________________________________________
 *; (block end)
 *!= (not equal)
 
-
-___
-
+______________________________________________________________________________
 *booleen statement*
 <pre><code>
 ```javascript
@@ -39,8 +37,6 @@ ___
 
 *this.canMove (variable)
 *=false (booleen output)
-
-
 __________________________________________________________________________
 
 
@@ -60,7 +56,6 @@ __________________________________________________________________________
 *"Keep it going!" (string)
 *&& ("and" logical operator)
 
-
 ____________________________________________________________________________
 
 *Variable Length*
@@ -72,18 +67,17 @@ ____________________________________________________________________________
 ```
 </pre></code>
 
-______________________________________________________________________________
-
-
 *var length (variable length command)
 *this.snake.length (value)
 
+______________________________________________________________________________
              
 <br>
 <br>
              
              
 PART 2: 
+______________________________________________________________________________
 
 *Assigned To*
 
@@ -94,17 +88,11 @@ var numPassengers = 0
 
 ```
 </pre></code>
-
-
 " = " means "assigned to"
-
 ______________________________________________________________________________
 
 *Console.Log && "\n"*
 <pre><code>
-
-
-
 ```javascript
 
 console.log("\"Old Faithful\" at Yellowstone National Park \nAverage eruption height today: " + avgHeight + "\nNumber of eruptions: " + numEruptions);
@@ -112,14 +100,9 @@ console.log("\"Old Faithful\" at Yellowstone National Park \nAverage eruption he
 ```
 </pre></code>
 
-______________________________________________________________________________
-
 "console.log" = print contents to the console
 "\n" = new line
-
-```
-</pre></code>
-____________________________________________________________________________
+______________________________________________________________________________
 
 *While Loop && decrease function*
 
@@ -132,6 +115,7 @@ while(num > 0) {
 }
 ```
 </pre></code>
+
 "while loop" - takes in a condition and while it is true it runs the parameters
 "num--" - decreases the variable's worth by 1 on each pass
 ______________________________________________________________________________
@@ -139,6 +123,7 @@ ______________________________________________________________________________
 *Variables &  <=,*
 
 <pre><code>
+
 ```javascript
 
 var numSheep = 4;
