@@ -24,7 +24,7 @@
 
 ### Chessboard Interface
 
-* `@constructor Chess`: Setup a `board` with `Pieces` representing an initial chessboard.
+* <strike> `@constructor Chess`: Setup a `board` with `Pieces` representing an initial chessboard. </strike>
     * `@method getPlayer()`
         * `@return String either "white" or "black" representing current player`
     * `@method display()`
