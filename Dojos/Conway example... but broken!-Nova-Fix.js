@@ -1,4 +1,3 @@
-var Mocha = require('mocha');
 /**
  * Conway's Game of Life (LITE)
  *
@@ -105,7 +104,7 @@ var Mocha = require('mocha');
  * You may test more starting position, if you like, of course.
  */
 
-var assert = require('assert');
+//var assert = require('assert');
 
 /**
  * Log `success` if `actual` is STRICTLY equal to `expected`
@@ -114,35 +113,36 @@ var assert = require('assert');
  * @param ANY expected
  * @param String success
  */
-function test(actual, expected){
-    assert.strictEqual(actual, expected);
-}
+//function test(actual, expected){
+   // assert.strictEqual(actual, expected);
+
 
 /**
  * Return a nested array representing an initially empty 3x3 board.
  *
  * @return Array of Array of Boolean
  */
-function board(){
+/*function board(){
     return [
         [ false, false, false ],
         [ false, false, false ],
         [ false, false, false ],
     ];
-}
+}*/
 
 /**
  * @param Boolean cell
  * @param Array neighbors
  * @return Boolean state of cell
- */
-function conway(cell, neighbors){
+ * 
+ * function conway(cell, neighbors){
     var alive = 0;
     neighbors.forEach(function(neighbor){
         if ( neighbor ){
             alive++;
         }
     });
+    
 
     if ( cell && alive === 2 ){
         return true;
@@ -152,7 +152,6 @@ function conway(cell, neighbors){
     }
     return false;
 }
-
 describe('generation rule', function(){
 
     it('should NOT generate a new cell if there are fewer than 3 neighbors', function(){
@@ -161,10 +160,12 @@ describe('generation rule', function(){
         test(conway(false, [ true, true ]), false);
         test(conway(false, [ false, false, false ]), false);
     });
-
+    
     it('should generate a new cell if there are exactly 3 neighbors', function(){
         test(conway(false, [ true, true, true ]), true);
     });
+    
+    
 
     it('should NOT generate a new cell if there are MORE than 3 neighbors', function(){
         test(conway(false, [ true, true, true, true ]), false);
@@ -176,6 +177,73 @@ describe('underpopulation rule', function(){
     it('should die if there are fewer than 2 or 3 neighbors', function(){
         test(conway(true, [ ]), false);
         test(conway(true, [ true ]), false);
+    
+    
+ */
+ 
+ 
+var Mocha = require('mocha');
+var assert = require("assert");
+
+    function test(actual,expected){
+        assert.strictEqual(actual,expected);
+    }
+
+    function board(){
+        return [
+        [false, false, false],
+        [false, false, false],
+        [false, false, false],
+        ];
+    }
+    
+    function(conway)(cell, neighbots){
+        var alive = 0;
+    neighbots.forEach(function(neighbot){
+        if (neighbots){
+            alive++;
+        }
+    });
+    
+        if(cell && alive == 2){
+            return true;
+        }
+        if (alive === 3){ 
+            return true;
+        }
+        return false;
+        }
+
+    describe('generation rule', function(){
+        
+        it('shouldNOt generate a new cell if their are less than 3 neighbots', function(){
+            test(conway(false, [ ]), false);
+            test(conway(false, [ true ]), false);
+            test(conway(false, [ true, true]), false);
+            test(conway(false, [ false, false, false]), false);
+        });
+        it ('should generate a new cell if there are exactly 3 neighbots', function(){
+            test(conway(false, [true, true, true]), true);
+        });
+        
+        it ('shouldNot generate a new cell if 3+ neighbots alive', function(){
+            test(conway(false, [true, true, true, true,]), false);
+            test(conway(false, [true, true, true, true, true,]), false);
+        });
+        
+        describe('underpopulation rule', function(){
+            it('should die if thier are fewer than 2 or 3 live neighbots'), function(){
+                test(conway(true, []), false);
+                test(conway(true, [ true ]), false);
+                
+            }
+        }
+        
+    }
+
+
+//below here is what i need to type
+
 
         test(conway(true, [ false, false ]), false);
         test(conway(true, [ false, false, false ]), false);

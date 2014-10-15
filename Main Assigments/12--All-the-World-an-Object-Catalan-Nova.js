@@ -72,3 +72,6 @@ var board = [
               
                 
               
+//Tests//
+
+var assert = require('chai')
