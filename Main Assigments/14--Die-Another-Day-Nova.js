@@ -23,6 +23,7 @@ var board = [
         ['7,0',                                         ] */
         
 var numTurns = 0;
+var white = 0
     
     function getPlayer(){
       
@@ -30,22 +31,20 @@ var numTurns = 0;
         black % 2 === 0;
         numTurns++;
         console.log("It's black's turn!");
-    
-      
-      for(var white = 0; numTurns < 5; white++){
-      numTurns++;
-      console.log("It's white's turn!");
       }
-      
+        if( white < 1000){
+          console.log("It's white's turn!");
+        }
+        
     }
-    }
+  
   
   
     var assert = require('assert');
 
 describe('getPlayer()', function(){
-    it('should cycle through black and white"', function(){
-        assert.equal(getPlayer(0), 'black');
+    it('should cycle through black and white', function(){
+        assert.equal(getPlayer(1), 'black');
         assert.equal(getPlayer(1), 'white');
         assert.equal(getPlayer(2), 'black');
         assert.equal(getPlayer(3), 'white');
