@@ -10,8 +10,27 @@
 
 function solution(){
     return {
-       solveFor: function(limit){ /* perform magic... */ },
-       fibonacci: function(limit){/* . . . */ },
+       solveFor: function(limit){
+           return this.sum(this.filterEvens(this.fibonacci(limit)));
+       },
+       fibonacci: function(limit){
+         var prev = 1, curr = 2, temp;
+         var sequence = [ 1, 2 ];
+         
+         if( limit < 3 ){
+             return [];
+         }
+        while( prev + curr < limit) {
+            temp = prev + curr;
+            prev = curr;
+            curr = temp;
+            
+            sequence.push(temp);
+        }
+        return sequence;
+       },
+           
+       
        filterEvens: function(list){
            
            return list.filter (function(item){
@@ -26,8 +45,7 @@ function solution(){
            return sumEvens;
         } //END sum
     }
-} 
-
+}
 
 
     assert = require('chai').assert;
@@ -52,6 +70,24 @@ function solution(){
         });
      });
 
-
+    describe('fibonacci', function() {
+        it('should be a function', function(){
+        assert.isFunction(solution().fibonacci, 'function');    
+        });
+        it('should return an array of fibonacci numbers', function(){
+           assert.deepEqual(solution().fibonacci(5), [1,2,3]); 
+        });
+    });
+    
+    describe('solveFor', function() {
+       it('should be a function', function() {
+           assert.isFunction(solution().solveFor, 'function');
+           });
+       it('should be able to solve a simple example', function(){
+          assert.equal(solution().solveFor(13), 10);
+       });
+       
+       
+    });
 
    
