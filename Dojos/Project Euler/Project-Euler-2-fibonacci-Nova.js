@@ -12,7 +12,13 @@ function solution(){
     return {
        solveFor: function(limit){ /* perform magic... */ },
        fibonacci: function(limit){/* . . . */ },
-       filterEvens: function(list){ /* . . . */ },
+       filterEvens: function(list){
+           
+           return list.filter (function(item){
+               if(item % 2 === 0) return item;
+           });
+           
+       },
        sum: function(list){
            var sumEvens = list.reduce(function(a,b) {
                return a + b;
@@ -29,18 +35,23 @@ function solution(){
     
     describe('sum', function(){
         it('should return a function', function() {
-        assert.isFunction(solution().sum, 'function');   
+            assert.isFunction(solution().sum, 'function');   
         });
         it('should sum an array of numbers', function(){
            assert.strictEqual(solution().sum([1,2,3]), 6);
         });
-        /*it( 'should return even numbers', function() {
-        assert.equal(filterEvens(2), 2);
+    });  
+       
+     describe('filterEvens', function(){
+        it('should be a function', function(){
+            assert.isFunction(solution().filterEvens, 'function');       
         });
-        it('should return an array of evens', function() {
-        assert.deepEqual(fibonacci.filter(filterEvens), [ 2, 8, 34 ]);
-        });*/
-        
-    });
+        it('should return an array of evens', function(){
+           assert.deepEqual(solution().filterEvens([1,2,4,5,6]),[2,4,6]);
+            
+        });
+     });
+
+
 
    
