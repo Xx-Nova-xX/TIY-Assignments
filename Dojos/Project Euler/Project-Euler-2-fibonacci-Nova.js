@@ -7,26 +7,33 @@
    * By considering the terms in the Fibonacci sequence whose values do not exceed four million, 
    * find the sum of the even-valued terms.*/
 
-
-
+var sumEvens;
+var arrEvens = [];
 var fibonacci = [ 1, 2, 3, 5, 8, 13, 21, 34, 55, 89];
 
-function filterEvens(arrElement){
-    if(arrElement % 2 === 0) return arrElement;
-}
+    function filterEvens(arrElement){
+        if(arrElement % 2 === 0) return arrElement;
+    }
+    
+    arrEvens = fibonacci.filter(filterEvens);
+    console.log(arrEvens);
 
-
-
-
+    sumEvens = arrEvens.reduce(function(previousValue, currentValue, index, array){
+        return previousValue + currentValue;
+    });
+    
+    console.log(sumEvens);
 
     assert = require('chai').assert;
     describe('filterEvens()', function(){
         it('should return an function', function() {
         assert.typeOf(filterEvens, 'function');   
-    
         });
         it( 'should return even numbers', function() {
         assert.equal(filterEvens(2), 2);
+        });
+        it('should return an array of evens', function() {
+        assert.deepEqual(fibonacci.filter(filterEvens), [ 2, 8, 34 ]);
         });
     });
 
