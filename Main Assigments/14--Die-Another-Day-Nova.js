@@ -26,21 +26,38 @@ var numTurns = 0;
     
     function getPlayer(){
       
-      for(var black = 2; numTurns < 8000; black++){
+      for(var black = 0; numTurns < 5; black++){
         black % 2 === 0;
         numTurns++;
-        console.log("It's black's turn");
-      }
+        console.log("It's black's turn!");
+    
       
-      for(var white = 3; numTurns < 8000; white++){
+      for(var white = 0; numTurns < 5; white++){
       numTurns++;
       console.log("It's white's turn!");
       }
       
     }
+    }
   
   
-   
+    var assert = require('assert');
+
+describe('getPlayer()', function(){
+    it('should cycle through black and white"', function(){
+        assert.equal(getPlayer(0), 'black');
+        assert.equal(getPlayer(1), 'white');
+        assert.equal(getPlayer(2), 'black');
+        assert.equal(getPlayer(3), 'white');
+        assert.equal(getPlayer(4), 'black');
+        assert.equal(getPlayer(5), 'white');
+    });
+
+});
+
+
+
+
 
 /*
 
@@ -57,9 +74,9 @@ function test(actual, expected, success){
 
 
 
- */
 
-    var assert = require('assert');
+
+
 
     describe('getPlayer', function(){
     var S;
@@ -84,6 +101,4 @@ function test(actual, expected, success){
  
   
 });
-
-
-
+*/
