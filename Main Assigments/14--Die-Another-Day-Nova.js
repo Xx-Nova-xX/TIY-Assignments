@@ -79,27 +79,27 @@ var white = 0
       
       
     
-      
-var numTurns = 0;
+
 var turn = 0;
       
       function getPlayer(turn){
         
-      if (turn % 2 === 0){
-        numTurns++;
+      if (turn % 2 === 0 && turn < 10){
+        turn++;
         console.log("It's black's turn!");
       }
         else{
-          numTurns++;
+          turn++;
           console.log("It's white's turn!");
         }
      
-  
+      }
+      
     var assert = require('assert');
 
 describe('getPlayer()', function(){
     it('should cycle through black and white', function(){
-        assert.equal(getPlayer(1), 'black');
+        assert.equal(getPlayer(0), 'black');
         assert.equal(getPlayer(1), 'white');
         assert.equal(getPlayer(2), 'black');
         assert.equal(getPlayer(3), 'white');
@@ -110,7 +110,7 @@ describe('getPlayer()', function(){
 });
 
 
- }
+
 
 
 /*
