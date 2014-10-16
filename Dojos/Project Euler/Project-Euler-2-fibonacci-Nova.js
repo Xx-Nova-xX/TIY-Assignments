@@ -11,6 +11,24 @@
 
 var fibonacci = [ 1, 2, 3, 5, 8, 13, 21, 34, 55, 89];
 
+function filterEvens(arrElement){
+    if(arrElement % 2 === 0) return arrElement;
+}
+
+
+
+
+
+    assert = require('chai').assert;
+    describe('filterEvens()', function(){
+        it('should return an function', function() {
+        assert.typeOf(filterEvens, 'function');   
+    
+        });
+        it( 'should return even numbers', function() {
+        assert.equal(filterEvens(2), 2);
+        });
+    });
 
 
 
@@ -18,6 +36,17 @@ var fibonacci = [ 1, 2, 3, 5, 8, 13, 21, 34, 55, 89];
 
 
 
+/*
+it('', fucntion() {
+});
+*/
+
+
+
+
+
+
+/*
 valuesUnder4mil = 4,000,000,000;
 
 function solution(){
@@ -26,14 +55,14 @@ function solution(){
    }
     return {
         // I wanna see this one...
-        solveFor: function(limit){ /* perform magic... */ },
+        solveFor: function(limit){ /* perform magic...  },
 
         // For Problem 2, for example... However you solve it.
-        fibonacci: function(limit){ /* . . . */ },
-        filterEvens: function(list){ /* . . . */ },
-        sum: function(list){ /* . . . */ }
-    }
-}
+       fibonacci: function(limit){ /* . . . */
+ //       filterEvens: function(list){ /* . . . */ },
+ //       sum: function(list){ /* . . . */ }
+//    }
+//}
 
 /* === TEST CODE === */
 // You should probably write some...

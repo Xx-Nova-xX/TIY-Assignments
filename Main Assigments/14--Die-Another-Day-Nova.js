@@ -14,8 +14,8 @@ var board = [
   
      function getPlayer(){
       
-     for(var turn = 0; turn < 10; turn++){
-        console.log(turn);
+     for(var turn = 0; turn <= 10; turn++){
+       console.log(turn);
         if(turn % 2 === 0){
             console.log("It's black's turn");
             return "It's black's turn";
@@ -25,7 +25,7 @@ var board = [
             return "It's white's turn";
          }
         }
-     }
+     
    
     var assert = require('assert');
 
@@ -34,11 +34,11 @@ var board = [
               
               assert.equal(getPlayer(0), "It's black's turn");
               assert.equal(getPlayer(1), "It's white's turn");
-              assert.equal(getPlayer(2), 'black');
-              assert.equal(getPlayer(3), 'white');
-              assert.equal(getPlayer(4), 'black');
-              assert.equal(getPlayer(5), 'white');
-              assert.equal(getPlayer(6), 'black');
+              assert.equal(getPlayer(2), "It's black's turn");
+              assert.equal(getPlayer(3), "It's white's turn");
+              assert.equal(getPlayer(4), "It's black's turn");
+              assert.equal(getPlayer(5), "It's white's turn");
+              assert.equal(getPlayer(6), "It's black's turn");
           });
       });
       
