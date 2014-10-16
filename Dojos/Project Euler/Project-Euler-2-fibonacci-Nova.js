@@ -8,8 +8,22 @@
    * find the sum of the even-valued terms.*/
 
 
+
+var fibonacci = [ 1, 2, 3, 5, 8, 13, 21, 34, 55, 89];
+
+
+
+
+
+
+
+
+valuesUnder4mil = 4,000,000,000;
+
 function solution(){
-    // change input to suit the solution, e.g. `limit`
+   for(limit = 0, limit < valuesUnder4mil; limit++){
+       
+   }
     return {
         // I wanna see this one...
         solveFor: function(limit){ /* perform magic... */ },
