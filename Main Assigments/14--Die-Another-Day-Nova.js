@@ -21,7 +21,7 @@ var board = [
         ['5,0',                                         ]
         ['6,0',                                         ]
         ['7,0',                                         ] */
-        
+ /*       
 var numTurns = 0;
 var white = 0
     
@@ -32,13 +32,55 @@ var white = 0
         numTurns++;
         console.log("It's black's turn!");
       }
-        if( white < 1000){
+        if(white < 1000){
           console.log("It's white's turn!");
         }
         
     }
+  */
   
+  var turn = 0;
   
+    function getPlayer(){
+      while (turn % 2 === 0){
+        turn++;
+        console.log("It's black's turn");
+      }
+
+          console.log("It's white's turn");
+          turn++;
+        
+    } 
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+  /*    
+      
+      var numTurns = 0;
+var white = 0
+var black = 0
+      
+      
+      if(black % 2 === 0 && numTurns < 5){
+        numTurns++;
+        console.log("It's black's turn!");
+      }
+        if(white < 1000){
+          numTurns++;
+          console.log("It's white's turn!");
+        }
+        
+    }
   
     var assert = require('assert');
 
@@ -55,7 +97,7 @@ describe('getPlayer()', function(){
 });
 
 
-
+*/
 
 
 /*
