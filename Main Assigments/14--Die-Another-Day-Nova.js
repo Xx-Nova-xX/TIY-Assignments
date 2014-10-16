@@ -39,48 +39,61 @@ var white = 0
     }
   */
   
-  var turn = 0;
+ /* var turn = 0;
   
-    function getPlayer(){
+    
       while (turn % 2 === 0){
         turn++;
         console.log("It's black's turn");
       }
-
-          console.log("It's white's turn");
           turn++;
-        
-    } 
+          console.log("It's white's turn");
+          
+          
+    }
+   
+    var assert = require('assert');
+
+      describe('getPlayer()', function(){
+          it('should cycle through black and white', function(){
+              
+              assert.equal(getPlayer(0), 'black');
+              assert.equal(getPlayer(1), 'white');
+              assert.equal(getPlayer(2), 'black');
+              assert.equal(getPlayer(3), 'white');
+              assert.equal(getPlayer(4), 'black');
+              assert.equal(getPlayer(5), 'white');
+              assert.equal(getPlayer(6), 'black');
+          });
+      });
+      
+  
+
+      */
+      
+      
+      
+      
+      
+      
+      
+      
     
       
+var numTurns = 0;
+var turn = 0;
       
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-  /*    
-      
-      var numTurns = 0;
-var white = 0
-var black = 0
-      
-      
-      if(black % 2 === 0 && numTurns < 5){
+      function getPlayer(turn){
+        
+      if (turn % 2 === 0){
         numTurns++;
         console.log("It's black's turn!");
       }
-        if(white < 1000){
+        else{
           numTurns++;
           console.log("It's white's turn!");
         }
-        
-    }
+     
   
     var assert = require('assert');
 
@@ -97,7 +110,7 @@ describe('getPlayer()', function(){
 });
 
 
-*/
+ }
 
 
 /*
