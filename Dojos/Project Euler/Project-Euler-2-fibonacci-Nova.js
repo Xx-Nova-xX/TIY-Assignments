@@ -7,70 +7,40 @@
    * By considering the terms in the Fibonacci sequence whose values do not exceed four million, 
    * find the sum of the even-valued terms.*/
 
-var sumEvens;
-var arrEvens = [];
-var fibonacci = [ 1, 2, 3, 5, 8, 13, 21, 34, 55, 89];
 
-    function filterEvens(arrElement){
-        if(arrElement % 2 === 0) return arrElement;
+function solution(){
+    return {
+       solveFor: function(limit){ /* perform magic... */ },
+       fibonacci: function(limit){/* . . . */ },
+       filterEvens: function(list){ /* . . . */ },
+       sum: function(list){
+           var sumEvens = list.reduce(function(a,b) {
+               return a + b;
+           });
+           return sumEvens;
+        } //END sum
     }
-    
-    arrEvens = fibonacci.filter(filterEvens);
-    console.log(arrEvens);
+} 
 
-    sumEvens = arrEvens.reduce(function(previousValue, currentValue, index, array){
-        return previousValue + currentValue;
-    });
-    
-    console.log(sumEvens);
+
 
     assert = require('chai').assert;
-    describe('filterEvens()', function(){
-        it('should return an function', function() {
-        assert.typeOf(filterEvens, 'function');   
+    
+    
+    describe('sum', function(){
+        it('should return a function', function() {
+        assert.isFunction(solution().sum, 'function');   
         });
-        it( 'should return even numbers', function() {
+        it('should sum an array of numbers', function(){
+           assert.strictEqual(solution().sum([1,2,3]), 6);
+        });
+        /*it( 'should return even numbers', function() {
         assert.equal(filterEvens(2), 2);
         });
         it('should return an array of evens', function() {
         assert.deepEqual(fibonacci.filter(filterEvens), [ 2, 8, 34 ]);
-        });
+        });*/
+        
     });
 
-
-
-
-
-
-
-/*
-it('', fucntion() {
-});
-*/
-
-
-
-
-
-
-/*
-valuesUnder4mil = 4,000,000,000;
-
-function solution(){
-   for(limit = 0, limit < valuesUnder4mil; limit++){
-       
-   }
-    return {
-        // I wanna see this one...
-        solveFor: function(limit){ /* perform magic...  },
-
-        // For Problem 2, for example... However you solve it.
-       fibonacci: function(limit){ /* . . . */
- //       filterEvens: function(list){ /* . . . */ },
- //       sum: function(list){ /* . . . */ }
-//    }
-//}
-
-/* === TEST CODE === */
-// You should probably write some...
-
+   
