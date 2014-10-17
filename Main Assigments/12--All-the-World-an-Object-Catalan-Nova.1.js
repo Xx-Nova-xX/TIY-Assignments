@@ -81,7 +81,7 @@ var expect = require('chai').expect
 
 describe('Testing the board state', function(){
   it('does the first move [4][3]', function(){
-    moves.step190;
+  assert.deepEqual(board.join())
     
     assert.deepEqual(board,
             [
