@@ -1,4 +1,24 @@
 
+
+  
+  var evenOdd = 0;
+  var isBlack = "Black's Turn!";
+  var isWhite = "White's Turn!";
+
+        
+   function getPlayer(evenOdd){
+       
+       if(evenOdd % 2 === 0){
+           console.log(evenOdd + " " + isBlack);
+           evenOdd++;
+           return(isBlack);
+       }
+           else{
+               console.log(evenOdd + " " + isWhite);
+               return(isWhite);
+           }
+   }   
+   
 var board = [
             ['R', 'N', 'B', 'Q', 'K', 'B', 'N', 'R'],    
             ['P', 'P', 'P', 'P', 'P', 'P', 'P', 'P'],
@@ -9,43 +29,37 @@ var board = [
             ['p', 'p', 'p', 'p', 'p', 'p', 'p', 'p'],
             ['r', 'n', 'b', 'q', 'k', 'b', 'n', 'r'],
             ];
+            
+    function display(){
+        var chessBoard = board.toString();
+        console.log(chessBoard);
+        return chessBoard;
 
-  
-  var evenOdd = 0;
-  var isBlack = "Black's Turn!";
-  var isWhite = "White's Turn!";
 
-        
-   function whichTurn(evenOdd){
-     while(evenOdd <= 10){
-       
-       if(evenOdd % 2 === 0){
-           console.log(evenOdd + " " + isBlack);
-           evenOdd++;
-           return(isBlack);
-       }
-           else{ evenOdd % 2 !== 0 
-               console.log(evenOdd + " " + isWhite);
-               return(isWhite);
-           }
-   }
-   }
-    whichTurn(0);
-    whichTurn(1);
-    whichTurn(2);
-    whichTurn(3);
-    whichTurn(4);
-    whichTurn(5);
-    whichTurn(6);
-    whichTurn(7);
-    whichTurn(8);
-    whichTurn(9);
-    whichTurn(10);
+
+
+   
+   }   
+    
+      var assert = require('assert');
+    
+    describe('getPlayer()', function(){
+        it('should cycle through black and white', function(){
+            assert.strictEqual(getPlayer(0), "Black's Turn!");
+            assert.strictEqual(getPlayer(1), "White's Turn!");
+        });
+    });
+    
+ /*   describe('display()', function(){
+        it('should display board as a string', function(){
+        assert.equal(display.board(['R', 'N', 'B']), "R, N, B");   
+        });
+    });
+*/
    
    
-   
-   
-     
+  //getPlayer(0);
+  //getPlayer(1);    
 
      
   

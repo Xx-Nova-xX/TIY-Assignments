@@ -25,8 +25,8 @@
 ### Chessboard Interface
 
 * <strike> `@constructor Chess`: Setup a `board` with `Pieces` representing an initial chessboard. </strike>
-    * `@method getPlayer()`
-        * `@return String either "white" or "black" representing current player`
+<strike>    * `@method getPlayer()`</strike>
+ <strike>   * `@return String either "white" or "black" representing current player`</strike>
     * `@method display()`
         * `@return String representation of board`
     * `@method move(piece, destination)`: Move `piece` to `destination` and...?
