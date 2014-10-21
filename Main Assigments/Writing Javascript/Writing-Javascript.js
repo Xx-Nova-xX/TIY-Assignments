@@ -1,8 +1,8 @@
-//var example = "var copy = Object.assign({}, obj);";
-var symbol = "Object.assign";
-var type = "method";
-var name = "object dot assign";
-var meaning = "copies properties from a source object to a target object";
+//var example = " Object.create = (function() {";
+var symbol = "function()";
+var type = "function";
+var name = "anonymous function";
+var meaning = "an object that always returns a value";
 //var operands = "({}, ";
 
 
