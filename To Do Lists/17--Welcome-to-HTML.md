@@ -10,8 +10,8 @@ Today you learned about the bare minimum needed to define a web page with HTML. 
 * [x] To find examples of those tags, open [The Iron Yard -- Orlando website](http://orlando.theironyard.com) and look at the source of the page (View > Developer > View Source in Chrome).
 * [x] Add at least 3 usage examples of each tag from the blog or elsewhere on the internet. Include the URL of the example.
 * [ ] Work through [Code School: Front End Foundations](https://www.codeschool.com/courses/front-end-foundations) this week. Treat the course as a practice drill: work your way through as many times as possible.
-* [ ] Use the [CSS Reference on MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) to identify ALL the styles that affect the _color_ of things (~10).
-* [ ] Start reading [Learn Layout](http://learnlayout.com); if necessary, [Learn to Code: HTML & CSS](http://learn.shayhowe.com/html-css/working-with-typography/)
+* [x] Use the [CSS Reference on MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) to identify ALL the styles that affect the _color_ of things (~10).
+* [x] Start reading [Learn Layout](http://learnlayout.com); if necessary, [Learn to Code: HTML & CSS](http://learn.shayhowe.com/html-css/working-with-typography/)
 
 ##### Bonus!
 
@@ -22,7 +22,7 @@ Today you learned about the bare minimum needed to define a web page with HTML. 
 
 #### Writing
 
-* [ ] Create a file called `17--Welcome-to-HTML.html` in your `TIY-Assignments` repo.
+* [x] Create a file called `17--Welcome-to-HTML.html` in your `TIY-Assignments` repo.
 * [ ] Create a MF'g Website of your own using Lipsum; make it colorful with your new CSS powers.
 * [ ] Try to duplicate it with Markdown under the filename `17--Welcome-to-HTML.md` compare the results.
 
