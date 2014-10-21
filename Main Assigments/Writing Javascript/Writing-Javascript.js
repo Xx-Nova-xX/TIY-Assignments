@@ -1,8 +1,8 @@
-var example = 'var arr = ["a", "b", "c"]; console.log(Object.keys(arr))';
-var symbol = "var arr = ['a', 'b', 'c']";
+var example = 'var a = []; a.constructor === Array; // true' //would return true;
+var symbol = "[]";
 var type = "array";
-var name = "it's an array with three string elements";
-var meaning = "array holds a list of strings or items and can be called by index, which begins at 0";
+var name = "empty array";
+var meaning = "this is an empty array, arrays hold items starting at 0 index";
 //var operands = "({}, ";
 
 

@@ -166,10 +166,53 @@ ______________________________________________________________________________
      - Type: array                                                                                                                                   
      - Type: it's an array with three string elements                                                                                                
      - Meaning: array holds a list of strings or items and can be called by index, which begins at 0                                                 
+
+*  Symbol: console.log()                                                                                                                             
+     - Type: return text to console - returns the value of whatever is in the brackets                                                               
+     - Type: console dot log                                                                                                                         
+     - Meaning: it lets you put a string into the parameter brackets to be returned at the end of a function or statement                                                                                                                                                    
+     
+*  Symbol: Object.keys(arr)                                                                                                                          
+     - Type: method                                                                                                                                  
+     - Type: object dot keys with the array arr in it's parameters                                                                                   
+     - Meaning: returns an array of objects taken from an objects enumerable properties, same order as a for...in loop   
+```                                                                                                                                                  
+</pre></code>                                                                                                                                        
+______________________________________________________________________________
+*47. var o = {}; o.constructor === Object;*                                                                                                              
+<pre><code>                                                                                                                                          
+```javascript                                                                                                                                        
+                                                                                                                                                     
+*  Symbol: {}                                                                                                                                        
+     - Type: empty dictionary                                                                                                                        
+     - Type: holds keys to call                                                                                                                      
+     - Meaning: a dictionary holds keys to use with OOP                                                                                              
+                                                                                                                                                     
+*  Symbol: o.constructor                                                                                                                             
+     - Type: method                                                                                                                                  
+     - Type: o dot constructor                                                                                                                       
+     - Meaning: returns a reference to an object's function that created the prototype, it's a reference to the function, not the name of the function                                                                                                                                                             
+
+*  Symbol: === Object                                                                                                                                
+     - Type: operator and an Object                                                                                                                  
+     - Type: triple equal/strict equal and Object is a representation                                                                                
+     - Meaning: this means that the o.constructor type is an Object                                                                                                                                                     
+```                                                                                                                                                  
+</pre></code>                                                                                                                                        
+______________________________________________________________________________  
+*48. var a = []; a.constructor === Array; // true*                                                                                                       
+<pre><code>                                                                                                                                          
+```javascript                                                                                                                                        
+                                                                                                                                                     
+*  Symbol: []                                                                                                                                        
+     - Type: array                                                                                                                                   
+     - Type: empty array                                                                                                                             
+     - Meaning: this is an empty array, arrays hold items starting at 0 index                                                                        
      - Operands: function operands(){                                                                                                                
     return operands;                                                                                                                                 
 }                                                                                                                                                    
                                                                                                                                                      
 ```                                                                                                                                                  
 </pre></code>                                                                                                                                        
-______________________________________________________________________________    
+______________________________________________________________________________       
+
