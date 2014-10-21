@@ -208,11 +208,44 @@ ______________________________________________________________________________
      - Type: array                                                                                                                                   
      - Type: empty array                                                                                                                             
      - Meaning: this is an empty array, arrays hold items starting at 0 index                                                                        
-     - Operands: function operands(){                                                                                                                
-    return operands;                                                                                                                                 
-}                                                                                                                                                    
-                                                                                                                                                     
+
+*  Symbol: a.constructor                                                                                                                             
+     - Type: method                                                                                                                                  
+     - Type: constructor method                                                                                                                      
+     - Meaning: this takes a type of variable and checks to see what type it is  
 ```                                                                                                                                                  
 </pre></code>                                                                                                                                        
-______________________________________________________________________________       
+______________________________________________________________________________
+*49. var n = new Number(3); n.constructor === Number; // true*                                                                                           
+<pre><code>                                                                                                                                          
+```javascript                                                                                                                                        
+                                                                                                                                                     
+*  Symbol: var n = new Number(3)                                                                                                                     
+     - Type: assignment from variable to value                                                                                                       
+     - Type: Number creation                                                                                                                         
+     - Meaning: called variable n and it is assigned to a new Number with the value of 3                                                             
 
+*  Symbol: n.constructor                                                                                                                             
+     - Type: method constructor                                                                                                                      
+     - Type: this checks to see what type of variable 'n' is                                                                                         
+     - Meaning: checks to see the type for the declared variable 
+```                                                                                                                                                  
+</pre></code>                                                                                                                                        
+______________________________________________________________________________ 
+*50. var obj = { a: 1 }; var copy = Object.assign({}, obj);*                                                                                             
+<pre><code>                                                                                                                                          
+```javascript                                                                                                                                        
+                                                                                                                                                     
+*  Symbol: var obj = {a:1}                                                                                                                           
+     - Type: variable calling a key from a dictionary                                                                                                
+     - Type: variable obj  & key a:1                                                                                                                 
+     - Meaning: gives obj the value of the a:1 key  
+
+*  Symbol: Object.assign                                                                                                                             
+     - Type: copies values from an object to another one                                                                                             
+     - Type: object dot assign                                                                                                                       
+     - Meaning: copies enumerable and own values from a source object to a target object 
+```                                                                                                                                                  
+</pre></code>                                                                                                                                        
+______________________________________________________________________________                                                                                                                      
+                                                                                                                                                    
