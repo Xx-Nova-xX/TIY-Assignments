@@ -6,7 +6,7 @@ Today you learned about the bare minimum needed to define a web page with HTML. 
 
 #### Reading
 
-* [x] Use the [HTML Reference on MDN](https://developer.mozilla.org/en-US/docs/Web/HTML) to identify at least 10 block-level tags like the ones we discussed today. Write down the "symbol" of the tag -- `<html>` -- and what its use means.
+* [ ] Use the [HTML Reference on MDN](https://developer.mozilla.org/en-US/docs/Web/HTML) to identify at least 10 block-level tags like the ones we discussed today. Write down the "symbol" of the tag -- `<html>` -- and what its use means.
 * [ ] To find examples of those tags, open [The Iron Yard -- Orlando website](http://orlando.theironyard.com) and look at the source of the page (View > Developer > View Source in Chrome).
 * [ ] Add at least 3 usage examples of each tag from the blog or elsewhere on the internet. Include the URL of the example.
 * [ ] Work through [Code School: Front End Foundations](https://www.codeschool.com/courses/front-end-foundations) this week. Treat the course as a practice drill: work your way through as many times as possible.
