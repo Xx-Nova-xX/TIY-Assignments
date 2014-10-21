@@ -6,9 +6,9 @@ Today you learned about the bare minimum needed to define a web page with HTML. 
 
 #### Reading
 
-* [ ] Use the [HTML Reference on MDN](https://developer.mozilla.org/en-US/docs/Web/HTML) to identify at least 10 block-level tags like the ones we discussed today. Write down the "symbol" of the tag -- `<html>` -- and what its use means.
-* [ ] To find examples of those tags, open [The Iron Yard -- Orlando website](http://orlando.theironyard.com) and look at the source of the page (View > Developer > View Source in Chrome).
-* [ ] Add at least 3 usage examples of each tag from the blog or elsewhere on the internet. Include the URL of the example.
+* [x] Use the [HTML Reference on MDN](https://developer.mozilla.org/en-US/docs/Web/HTML) to identify at least 10 block-level tags like the ones we discussed today. Write down the "symbol" of the tag -- `<html>` -- and what its use means.
+* [x] To find examples of those tags, open [The Iron Yard -- Orlando website](http://orlando.theironyard.com) and look at the source of the page (View > Developer > View Source in Chrome).
+* [x] Add at least 3 usage examples of each tag from the blog or elsewhere on the internet. Include the URL of the example.
 * [ ] Work through [Code School: Front End Foundations](https://www.codeschool.com/courses/front-end-foundations) this week. Treat the course as a practice drill: work your way through as many times as possible.
 * [ ] Use the [CSS Reference on MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) to identify ALL the styles that affect the _color_ of things (~10).
 * [ ] Start reading [Learn Layout](http://learnlayout.com); if necessary, [Learn to Code: HTML & CSS](http://learn.shayhowe.com/html-css/working-with-typography/)
