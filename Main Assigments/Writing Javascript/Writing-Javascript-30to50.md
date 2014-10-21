@@ -124,8 +124,52 @@ ______________________________________________________________________________
      - Type: empty dictionary                                                                                                                        
      - Type: dictionary                                                                                                                              
      - Meaning: it holds keys that are accessed by .     
-     
 
+*  Symbol: Object.create(proto)                                                                                                                      
+     - Type: method                                                                                                                                  
+     - Type: object dot create being passed the variable proto                                                                                       
+     - Meaning: creates a new object with the specified protype object and properties
+
+*  Symbol: Object.getPrototypeOf(obj)                                                                                                                
+     - Type: method                                                                                                                                  
+     - Type: object dot getPrototype being passed the obj variable                                                                                   
+     - Meaning: returns the prototype of the specified object      
+
+*  Symbol: ===                                                                                                                                       
+     - Type: assignment operator                                                                                                                     
+     - Type: triple equals or strict equals                                                                                                          
+     - Meaning: compares two sides for exact similarities and returns true if they are the same   
+
+*  Symbol: //                                                                                                                                        
+     - Type: comment                                                                                                                                 
+     - Type: single line comment                                                                                                                     
+     - Meaning: allows you to type comments on that line after the // 
 ```                                                                                                                                                  
 </pre></code>                                                                                                                                        
 ______________________________________________________________________________  
+*45. var o = Object.freeze(obj);*                                                                                                                        
+<pre><code>                                                                                                                                          
+```javascript                                                                                                                                        
+                                                                                                                                                     
+*  Symbol: Object.freeze(obj)                                                                                                                        
+     - Type: method                                                                                                                                  
+     - Type: object dot freeze                                                                                                                       
+     - Meaning: freezes the object - can't be changed, value or name - has to keep the same properties                                               
+```                                                                                                                                                  
+</pre></code>                                                                                                                                        
+______________________________________________________________________________                                                                       
+*46. var arr = ["a", "b", "c"]; console.log(Object.keys(arr))*                                                                                           
+<pre><code>                                                                                                                                          
+```javascript                                                                                                                                        
+                                                                                                                                                     
+*  Symbol: var arr = ['a', 'b', 'c']                                                                                                                 
+     - Type: array                                                                                                                                   
+     - Type: it's an array with three string elements                                                                                                
+     - Meaning: array holds a list of strings or items and can be called by index, which begins at 0                                                 
+     - Operands: function operands(){                                                                                                                
+    return operands;                                                                                                                                 
+}                                                                                                                                                    
+                                                                                                                                                     
+```                                                                                                                                                  
+</pre></code>                                                                                                                                        
+______________________________________________________________________________    

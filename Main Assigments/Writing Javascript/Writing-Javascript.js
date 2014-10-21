@@ -1,8 +1,8 @@
-var example = 'var proto = {}; var obj= Object.create(proto); Object.getPrototypeOf(obj) === proto; // true;';
-var symbol = "{ };";
-var type = "empty dictionary";
-var name = "dictionary";
-var meaning = "it holds keys that are accessed by . ";
+var example = 'var arr = ["a", "b", "c"]; console.log(Object.keys(arr))';
+var symbol = "var arr = ['a', 'b', 'c']";
+var type = "array";
+var name = "it's an array with three string elements";
+var meaning = "array holds a list of strings or items and can be called by index, which begins at 0";
 //var operands = "({}, ";
 
 
