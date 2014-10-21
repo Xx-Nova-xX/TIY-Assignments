@@ -1,5 +1,5 @@
 ______________________________________________________________________________                                         
-*var obj = { a: 1 }; var copy = Object.assign({}, obj);*                                                               
+*40. var obj = { a: 1 }; var copy = Object.assign({}, obj);*                                                               
 <pre><code>                                                                                                            
 ```javascript                                                                                                          
 *  Symbol: var                                                                                                         
@@ -34,8 +34,7 @@ ______________________________________________________________________________
 ```                                                                                                                    
 </pre></code>                                                                                                          
 ______________________________________________________________________________                                         
-
-*var copy = Object.assign({}, obj);*                                                                                   
+*41. var copy = Object.assign({}, obj);*                                                                                   
 <pre><code>                                                                                                            
 ```javascript                                                                                                          
                                                                                                                        
@@ -68,8 +67,7 @@ ______________________________________________________________________________
 ```                                                                                                                    
 </pre></code>                                                                                                          
 ______________________________________________________________________________                                         
-                                                                                    
-*Object.create = (function() {*                                                                                                                     
+*42. Object.create = (function() {*                                                                                                                     
 <pre><code>                                                                                                                                          
 ```javascript                                                                                                                                        
                                                                                                                                                      
@@ -91,4 +89,43 @@ ______________________________________________________________________________
 ```                                                                                                                                                  
 </pre></code>                                                                                                                                        
 ______________________________________________________________________________                                                                       
-                                                                                                                                     
+*43. var str = "Hello World!" var res = str.valueOf();*                                                                                                                          
+<pre><code>                                                                                                                                          
+```javascript                                                                                                                                        
+                                                                                                                                                     
+*  Symbol: var str                                                                                                                                   
+     - Type: variable & variable name                                                                                                                
+     - Type: value str                                                                                                                               
+     - Meaning: it declares a variable and can also be used to give it a value                                                                       
+
+*  Symbol: =                                                                                                                                         
+     - Type: assignment operator                                                                                                                     
+     - Type: is assigned to                                                                                                                          
+     - Meaning: it assigns a value to a variable 
+     
+*  Symbol: 'Hello World!'                                                                                                                            
+     - Type: string                                                                                                                                  
+     - Type: string                                                                                                                                  
+     - Meaning: a group of characters, numbers or symbols that is put together inside quotation marks  
+
+*  Symbol: str.valueOf()'                                                                                                                            
+     - Type: method                                                                                                                                  
+     - Type: dot value of                                                                                                                            
+     - Meaning: returns a non-string representation of the object
+                                                                                                                                                   
+```                                                                                                                                                  
+</pre></code>                                                                                                                                        
+______________________________________________________________________________
+*var proto = {}; var obj= Object.create(proto); Object.getPrototypeOf(obj) === proto; // true;*                                                      
+<pre><code>                                                                                                                                          
+```javascript                                                                                                                                        
+                                                                                                                                                     
+*  Symbol: { };                                                                                                                                      
+     - Type: empty dictionary                                                                                                                        
+     - Type: dictionary                                                                                                                              
+     - Meaning: it holds keys that are accessed by .     
+     
+
+```                                                                                                                                                  
+</pre></code>                                                                                                                                        
+______________________________________________________________________________  
