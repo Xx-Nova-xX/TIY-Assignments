@@ -1,4 +1,4 @@
-+### Review
++ ### Review
 +
 +Today we learned about some new CSS rules, The Cascade, basic selectors, and different kinds of units used in CSS. We reviewed a bunch of block-level tags, some basic attributes, and how to add CSS into your page. Tonight, you'll research inline tags (also called "elements"), more attributes, and more CSS rules.
 +
