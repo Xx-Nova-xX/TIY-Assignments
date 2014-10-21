@@ -1,9 +1,9 @@
-//var example = "var obj = { a: 1 }; var copy = Object.assign({}, obj);";
-var symbol = "obj";
-var type = "variable object";
-var name = "va";
-var meaning = "holds the information for the obj variable";
-//var operands = "o";
+//var example = "var copy = Object.assign({}, obj);";
+var symbol = "Object.assign";
+var type = "method";
+var name = "object dot assign";
+var meaning = "copies properties from a source object to a target object";
+//var operands = "({}, ";
 
 
 function symbol(){
@@ -25,8 +25,7 @@ function meaning(){
 function operands(){
     return operands;
 }
-
-//console.log("______________________________________________________________________________\n\n" + "*" + example + "*\n" + "<pre><code>\n" + "```javascript\n");
+//console.log("\n\n" + "*" + example + "*\n" + "<pre><code>\n" + "```javascript\n");
 console.log("*  Symbol: " + symbol + "\n     - Type: " + type + "\n     - Type: " + name + "\n     - Meaning: " + meaning + "\n     - Operands: " + operands + "\n");
 //console.log("```\n" + "</pre></code>\n" + "______________________________________________________________________________");
 
