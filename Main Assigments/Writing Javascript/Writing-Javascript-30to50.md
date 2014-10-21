@@ -116,7 +116,7 @@ ______________________________________________________________________________
 ```                                                                                                                                                  
 </pre></code>                                                                                                                                        
 ______________________________________________________________________________
-*var proto = {}; var obj= Object.create(proto); Object.getPrototypeOf(obj) === proto; // true;*                                                      
+*44. var proto = {}; var obj= Object.create(proto); Object.getPrototypeOf(obj) === proto; // true;*                                                      
 <pre><code>                                                                                                                                          
 ```javascript                                                                                                                                        
                                                                                                                                                      
