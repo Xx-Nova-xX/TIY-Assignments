@@ -1,26 +1,66 @@
 1.float - says that an element will be taken out of it's normal place and set on the left or right
-<b>Example(1)<b>: (http://css-tricks.com/all-about-floats/)
+Example(1): (http://css-tricks.com/all-about-floats/)
 #sidebar{
   float:right;
 }
                     
-Example(2):
-Example(3):
+Example(2):(http://www.tizag.com/cssT/float.php)
 
-2.
-Example(1): 
-Example(2):
-Example(3):
+img.floatLeft { 
+    float: left; 
+    margin: 4px; 
+}
+img.floatRight { 
+    float: right; 
+    margin: 4px; 
+}
 
-3.
-Example(1): 
-Example(2):
-Example(3):
+Example(3):(http://www.tizag.com/cssT/float.php)
+img.floatRightClear { 
+    float: right; 
+    clear: right; 
+    margin: 4px; 
+}
 
-4.
-Example(1): 
-Example(2):
-Example(3):
+2.clear - says if an item can be near the floating elements before it or if it has to be set below them
+Example(1): (https://developer.mozilla.org/en-US/docs/Web/CSS/clear)
+#container:after { 
+   content: "";
+   display: block; 
+   clear: both;
+}
+
+Example(2):(https://developer.mozilla.org/en-US/docs/Web/CSS/clear)
+h1 { clear: none }
+h2 { clear: right }
+
+Example(3): (http://stackoverflow.com/questions/12871710/why-clear-both-css)
+.clear { 
+    clear:both; 
+}
+
+3.position - changes alternative rules to alter positions of elements
+
+Example(1): (https://developer.mozilla.org/en-US/docs/Web/CSS/position)
+position: static
+
+Example(2):(https://developer.mozilla.org/en-US/docs/Web/CSS/position)
+position: relative
+
+Example(3):(https://developer.mozilla.org/en-US/docs/Web/CSS/position)
+#two { position: relative; top: 20px; left: 20px; }
+
+4.form - allow websites to capture info from users and process requests
+Example(1): (http://learn.shayhowe.com/html-css/building-forms/)
+<form action="/login" method="post">
+  ...
+</form>
+
+Example(2):(http://learn.shayhowe.com/html-css/building-forms/)
+<input type="email" name="email-address">
+
+Example(3):(http://learn.shayhowe.com/html-css/building-forms/)
+<input type="tel" name="phone-number">
 
 5.
 Example(1): 
