@@ -2,7 +2,7 @@
   <body>
   
   
-      <style>
+<style>
       
 html, body, div, span, applet, object, iframe, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -17,7 +17,7 @@ figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
-	padding: 0;
+	padding: -10;
 	border: 0;
 	font-size: 100%;
 	font: inherit;
@@ -29,24 +29,40 @@ font-face {
 	src: url('http://www.google.com/fonts/specimen/Open+Sans');
 }
 a{
-  text-decoration: none
+  text-decoration: none;
+  
 }
+
+
+      #header-image img {
+    display: none;
+}
+#header-image {
+    background: url(http://static.tumblr.com/3c7cd96cde56779343d2e9a22afec085/w5gxxfv/oCrn8vkw8/tumblr_static_9cxjqqnfamsccsg4ow84sg8kg.jpg) no-repeat;
+    width: 1391px;
+    height: 480px;
+}
+
+
 
 header {
     background-image: url(http://static.tumblr.com/3c7cd96cde56779343d2e9a22afec085/w5gxxfv/oCrn8vkw8/tumblr_static_9cxjqqnfamsccsg4ow84sg8kg.jpg);
     background-repeat: no-repeat;
-    height: 110%;
-    width: 110%;
-    background-position: top center;
-    font-family: 'Open Sans', sans-serif;
+    margin-left: 0%;
+    height: 500px;
+    width: 1391px;
 
     
 }
 h1{
     font-family: 'Open Sans', sans-serif;
     color: #39474e;
-    font-size: 30px;
+    font-size: 33px;
     text-decoration: none;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: .8px;
+    transform : scale(1,1);
 
 }
 
@@ -57,14 +73,15 @@ h2{
   
 }
 #logo {
-    margin-top: -75px;
-    margin-left: 20%;
-    border: 5pt solid red;
+    margin-top: -125px;
+    margin-left: 21%;
+    border: 7pt white;
     width: 150px;
+    float: border;
 }
 #logo img {
-    width: 150px;
-    height: 150px;
+    width: 75px;
+    height: 75px;
 }
 section {
     width: 50%;
@@ -76,21 +93,25 @@ section {
 }
 aside {
     float: left;
-    width: 165px;
+    width: 140px;
     margin-left: 20%;
-    outline: 1px solid red;
+   /* outline: 1px solid red;*/
 }
 article{
-  margin-top: -10%;
-  margin-left: 20%;
-  margin-right: 10%;
+  margin-top: 0%;
+  margin-left: 15%;
+  margin-right: 5%;
   font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1.5px;
+
   color: gray;
 } 
-body{
-     -webkit-transform: scale(0.85);
-    -moz-transform: scale(1.27);
-    transform: scale(0.95);
+
+h5{
+  font-family: 'Open Sans', sans-serif;
+  color: #666666;
+  font-size: 13;
+  letter-spacing: 1.2px;
 }
 
     </style>
@@ -99,7 +120,7 @@ body{
     </header>
     <nav id="logo"><a href="http://theironyard.com"><img src="http://static.tumblr.com/37ca133c1a84d5b7856c51a7682df3e9/w5gxxfv/6j4n8vkw8/tumblr_static_20mtuue2w17o0sksogs0c44cw.png"></a></nav>
     <aside>
-      <nav><a href="http://orlando.theironyard.com">The Iron Yard -- Orlando</a></nav>
+      <nav><h5><a href="http://orlando.theironyard.com" style="color:#39474e">THE IRON YARD | ORLANDO</a></h5></nav>
       <p>Happenings and updates from The Iron Yard in Orlando, FL.</p>
       <hr>
       <!-- OMG SEARCH IS HARD! -->
@@ -125,7 +146,7 @@ body{
       <article>
         <h1><a href="http://orlando.theironyard.com/post/100672003784/successful-orlando-tech-meetup-at-the-iron-yard">Successful Orlando Tech Meetup at The Iron Yard!</a></h1>
 
-        <p><???>By Susanna Miller, Campus Director</???></p>
+        <p>By Susanna Miller, Campus Director</???></p>
 
         <p>A great turnout on Friday at The Iron Yard Orlando to hear Matt Wallaert - kudos to the Orlando Tech Association for putting the event together! There were 65 attendees, and a fantastics Q&A afterwards. Looking forward to future events and collaboration with the Orlando Tech Association!</p>
 
