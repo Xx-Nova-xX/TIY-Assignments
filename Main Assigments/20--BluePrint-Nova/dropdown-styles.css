@@ -1,41 +1,46 @@
+
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   width: 100%;
   margin:0;
   padding:0;
 }
-header{
-  border-bottom: 5px solid #47cc58;
+header{ 
+  border-bottom: 5px solid #6C62E3;
   height: 143px;
 }
-header p{
+header p{ /*Top text "Drop Down Menus By Nova*/
+  font-family: arial;
   margin-top: 20px;
   margin-left: 8%;
   font-size: 25pt;
-  color: #47cc58;
+  color: #6C62E3;
 }
 nav ul {
   list-style-type: none;
   padding-top: 14px;
   margin-left: 5%;
+  text-decoration:none;
 }
 nav li {
   float: left;
   margin:0;
+  text-decoration: none;
 }
-nav li a {
+nav li a {  /*Top List Menu: Products,Downloads, Applications, Projects, Freeware*/
   display: block;
   height: 50px;
   line-height: 50px;
   float: left;
   width: 160px;
-  color: #666;
+  color:#000000;
   text-decoration: none;
+  text-decoration: bold;
   text-align: center;
 }
 #container {
-	    width: 900px;
-	    margin: 0 auto;
+	  width: 900px;
+	  margin: 0 auto;
       padding: 25px;
       height: 400px;
 }
@@ -56,22 +61,26 @@ nav li a {
 }
 
 section {
-  background-color: #47cc58;
+  background-color: #6C62E3;
 }
 .menuHeader {
   margin-top: 0;
-  color: #58ff6e;
-  font-size: 18pt;
+  color: #FFFFFF;
+  font-size: 17pt;
 }
 .menuList {
   color: #fff;
   list-style-type: none;
   padding: 0px;
   margin: 0px;
+  text-decoration: none;
 }
-.menuList li {
-  padding-top:10px;
+.menuList li { /*sub menu list items*/
+  padding-top:11px;
+  color:#EB3636;
+  text-decoration: none;
 }
 #headerLink{
     text-decoration: none;
+      color:#EB3636;
 }
