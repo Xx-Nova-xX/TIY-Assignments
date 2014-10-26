@@ -1,0 +1,200 @@
+1.float - says that an element will be taken out of it's normal place and set on the left or right
+
+Example(1): (http://css-tricks.com/all-about-floats/)
+#sidebar{
+  float:right;
+}
+                    
+Example(2):(http://www.tizag.com/cssT/float.php)
+
+img.floatLeft { 
+    float: left; 
+    margin: 4px; 
+}
+img.floatRight { 
+    float: right; 
+    margin: 4px; 
+}
+
+Example(3):(http://www.tizag.com/cssT/float.php)
+img.floatRightClear { 
+    float: right; 
+    clear: right; 
+    margin: 4px; 
+}
+
+2.clear - says if an item can be near the floating elements before it or if it has to be set below them
+
+Example(1): (https://developer.mozilla.org/en-US/docs/Web/CSS/clear)
+#container:after { 
+   content: "";
+   display: block; 
+   clear: both;
+}
+
+Example(2):(https://developer.mozilla.org/en-US/docs/Web/CSS/clear)
+h1 { clear: none }
+h2 { clear: right }
+
+Example(3): (http://stackoverflow.com/questions/12871710/why-clear-both-css)
+.clear { 
+    clear:both; 
+}
+
+3.position - changes alternative rules to alter positions of elements
+
+Example(1): (https://developer.mozilla.org/en-US/docs/Web/CSS/position)
+position: static
+
+Example(2):(https://developer.mozilla.org/en-US/docs/Web/CSS/position)
+position: relative
+
+Example(3):(https://developer.mozilla.org/en-US/docs/Web/CSS/position)
+#two { position: relative; top: 20px; left: 20px; }
+
+4.form - allow websites to capture info from users and process requests
+
+Example(1): (http://learn.shayhowe.com/html-css/building-forms/)
+<form action="/login" method="post">
+  ...
+</form>
+
+Example(2):(http://learn.shayhowe.com/html-css/building-forms/)
+<input type="email" name="email-address">
+
+Example(3):(http://learn.shayhowe.com/html-css/building-forms/)
+<input type="tel" name="phone-number">
+
+5.input - 
+
+Example(1): (http://stackoverflow.com/questions/7095895/style-input-elements-css)
+input[type=text]
+{
+    background-color: #BFBDBD;
+    border:solid 1px #BFBDBD;
+    color: #979797;
+    height: 28px;
+    padding-left:10px;
+    width: 191px;
+    box-shadow: 2px 2px 0 #828181 inset;
+
+Example(2):(http://stackoverflow.com/questions/7095895/style-input-elements-css)
+input[type=button], input[type=text]
+{
+    border-radius: 5px;
+    font-family: Sansation;
+}
+
+Example(3):(http://css-tricks.com/styling-texty-inputs-only/)
+input {
+    border: 5px solid white; 
+    -webkit-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    -moz-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    padding: 15px;
+    background: rgba(255,255,255,0.5);
+    margin: 0 0 10px 0;
+}
+
+6.box-sizing - used to change height and width of element boxes
+
+Example(1): (https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing)
+.example {
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+}
+
+Example(2):(http://quirksmode.org/css/user-interface/boxsizing.html)
+width: 250px;
+height: 100px;
+border: 5px solid #6374AB;
+padding: 10px;
+
+Example(3):(http://quirksmode.org/css/user-interface/boxsizing.html)
+box-sizing: border-box
+box-sizing: content-box
+
+7.font-weight - shows how bold the text is or isn't. 
+
+Example(1): font-weight: normal
+
+Example(2): font-weight: 300
+
+Example(3): font-weight: bold
+
+8.columns - allows you to change column width & count at the same time
+
+Example(1): (https://developer.mozilla.org/en-US/docs/Web/CSS/columns)
+.content-box {
+  border: 10px solid #000000;
+  columns:3;
+}
+
+Example(2):(http://www.456bereastreet.com/lab/developing_with_web_standards/csslayout/2-col/)
+
+    #main {
+    float:left;
+    width:500px;
+    background:#9c9;
+    }
+    #sidebar {
+    float:right;
+    width:250px;
+    background:#c9c;
+    }
+
+Example(3):(www.w3schools.com/css/css3_multiple_columns.asp)
+ div {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+}
+
+9.blur() - gives a gausian blur on an image
+Example(1): (https://developer.mozilla.org/en-US/docs/Web/CSS/filter#blur%28%29)
+<svg height="0" xmlns="http://www.w3.org/2000/svg">
+ <filter id="brightness">
+    <feComponentTransfer>
+        <feFuncR type="linear" slope="[amount]"/>
+        <feFuncG type="linear" slope="[amount]"/>
+        <feFuncB type="linear" slope="[amount]"/>
+    </feComponentTransfer>
+  </filter>
+</svg>
+
+Example(2):(http://jordanhollinger.com/2014/01/29/css-gaussian-blur-behind-a-translucent-box/)
+#search {
+  filter: blur(10px); /* Doesn't work anywhere yet */
+  -webkit-filter: blur(10px);
+  filter: url('blur.svg#blur');
+
+Example(3):(http://html5-demos.appspot.com/static/css/filters/index.html)
+img { transform: translateZ(0); } ).
+
+10.contrast() - adds contrast to an image
+Example(1): (https://developer.mozilla.org/en-US/docs/Web/CSS/filter#blur())
+<svg height="0" xmlns="http://www.w3.org/2000/svg">
+  <filter id="contrast">
+    <feComponentTransfer>
+      <feFuncR type="linear" slope="[amount]" intercept="-(0.5 * [amount]) + 0.5"/>
+      <feFuncG type="linear" slope="[amount]" intercept="-(0.5 * [amount]) + 0.5"/>
+      <feFuncB type="linear" slope="[amount]" intercept="-(0.5 * [amount]) + 0.5"/>
+    </feComponentTransfer>
+  </filter>
+</svg>
+
+Example(2):(http://www.hongkiat.com/blog/css-filter/)
+    img {  
+         -webkit-filter: grayscale(100%);  
+    }  
+
+Example(3):(http://css-tricks.com/almanac/properties/f/filter/)
+.blur-me {
+  filter: blur(20px);
+}
