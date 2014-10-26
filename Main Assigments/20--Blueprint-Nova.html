@@ -1,46 +1,64 @@
-<!DOCTYPE HTML>
-
 <html>
+    <head>
+        <title>Horizontal Drop-Down Menu</title>                                <!--Top Text on page-->
+		<link href="dropdown-styles.css" rel="stylesheet" media="screen">       <!--This calls the CSS page-->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'> <!--calls the font for links-->
 
-<head>
-<style>
-    nav1 li{
-        display:inline;
-    }
-</style>
-    
-   <header> 
+
+<script type="text/javascript">  //<!--Calls the type of language used in the script tag-->
+
+		    function showMenu(id) {
+					 var arrMenus = ['products','downloads','applications','projects','freeware'];
+		       var thisMenu = document.getElementById(id);
+					 arrMenus.forEach(function(value,index){
+							var thisTab = value + 'Tab';
+							if(value==id){
+									thisMenu.style.display = 'block';
+									document.getElementById(thisTab).style.backgroundColor = '#47cc58'
+							}else{
+									document.getElementById(value).style.display = 'none';
+									document.getElementById(thisTab).style.backgroundColor = '#fff'
+							};
+					 });
+		    }
+	    </script>
+	   </head>
+	   
+    <body>
+<header>
+        
+       <p>Drop Down Menus by Nova</p>
      <nav1>
           <ul>
-                <li><h1><a id="productsTab" href="#" onclick="showMenu('products')">Products</a></h1></li>  <!--Products Tab-->
-                <li><h1><a id="downloadsTab" href="#" onclick="showMenu('downloads')">Downloads</a></h1></li> <!--Downloads Tab-->
-                <li><a id="applicationsTab" href="#" onclick="showMenu('applications')">Applications</a></li> <!--Applications Tab-->
-                <li><h1><a id="projectsTab" href="#" onclick="showMenu('projects')">Projects</a></h1></li> <!--Projects Tab--> 
-                <li><h1><a id="freewareTab" href="#" onclick="showMenu('freeware')">Freeware</a></h1></li> <!--Freeware Tab--> 
+                <li><h1><a id="productsTab" href="#" onclick="showMenu('products')">Products</a></h1></li>      <!--Products Tab-->
+                <li><h1><a id="downloadsTab" href="#" onclick="showMenu('downloads')">Downloads</a></h1></li>   <!--Downloads Tab-->
+                <li><a id="applicationsTab" href="#" onclick="showMenu('applications')">Applications</a></li>   <!--Applications Tab-->
+                <li><h1><a id="projectsTab" href="#" onclick="showMenu('projects')">Projects</a></h1></li>      <!--Projects Tab--> 
+                <li><h1><a id="freewareTab" href="#" onclick="showMenu('freeware')">Freeware</a></h1></li>      <!--Freeware Tab--> 
           </ul>
-                    
+       </nav>                
    </header> 
-      </nav>
-             <body>                   
                     
-                    <section id="products" style="display:none;">
-				<div id="container"> <!--SubMenu2-DivContainer-->
-				    <div id="subMenu1">
-				        <h1 class="menuHeader">Learning & Games</h1>
-								<ul class="menuList">
-        
-                        <h2><li>Learning & Games</h2></li> <!--SubMenu-1.0-->
-                            <ul>
+            <section id="products" style="display:none;">
+				    
+				    <div id="container"> <!--SubMenu2-DivContainer-->
+				    <div id="column1">
+				        
+				        <h1 class="menuHeader">Learning & Games</h1><!--SubMenu-1.0-->
+						  
+						  <ul class="menuList">
                                 <li><a href="#">Catch The Bullet</a></li>
                                 <li><a href="#">Scooby Doo</a></li>
                                 <li><a href="#">Fallen Angel</a></li>
                                 <li><a href="#">Sui Maker</li></a>
                                 <li><a href="#">Wave Master</li></a>
                                 <li><a href="#">Golf Pro</li></a>
-                            </ul>    
-                </div>
+                            </ul><br>
+                    </div>
                            
-                        <h2><li>Utilities</li></h2> <!--SubMenu-1.1-->
+                    <div id="column2"></div>
+                        
+                        <h1 class=:"menuHeader">Utilities</h1><!--SubMenu-1.1-->
                             <ul>
                                 <li><a href="#">Gadget Finder</a></li>
                                 <li><a href="#">Green Tree Express</a></li>
@@ -48,7 +66,9 @@
                                 <li><a href="#">Wobbler 3.0</li></a>
                                 <li><a href="#">Coolkid</li></a>
                             </ul>  
-                  
+                        
+                        <div id="column3"></div>
+                        <h1
                   
                         <h2><li>Education</li></h2> <!--SubMenu-1.2-->
                             <ul>
@@ -63,7 +83,7 @@
                             <ul>
                                 <li><a href="#">Success 1.0</a></li>
                                 <li><a href="#">Money Maker</a></li>
-                            </ul>
+                            </ul><br>
                     
                 
                  <div id="subMenu2">   <!--SubMenu2-DivContainer-->
@@ -100,7 +120,7 @@
                                 <li><a href="#">Green Tree Pro</a></li>
                                 <li><a href="#">Wobbler 3.0</li></a>
                                 <li><a href="#">Coolkid</li></a>
-                            </ul> 
+                            </ul> <br>
                         
                         
                         <div id="subMenu3">
@@ -136,7 +156,7 @@
                             <ul>
                                 <li><a href="#">Success 1.0</a></li>
                                 <li><a href="#">Money Maker</a></li>
-                            </ul>
+                            </ul><br>
                 
             
 
@@ -167,7 +187,7 @@
                                 <li><a href="#">Green Tree Pro</a></li>
                                 <li><a href="#">Wobbler 3.0</li></a>
                                 <li><a href="#">Coolkid</li></a>
-                            </ul> 
+                            </ul> <br>
                             
             
                                
@@ -204,6 +224,7 @@
                                 <li><a href="#">Wave Master</li></a>
                                 <li><a href="#">Golf Pro</li></a>
                             </ul> 
+                            <br>
                     </nav1>
     </body>
     
