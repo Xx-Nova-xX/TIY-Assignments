@@ -1,0 +1,54 @@
+/*
+Error: Invalid CSS after "  position": expected ";", was ": relative;"
+        on line 47 of ./Main Assigments/Product Grid Group Project/23-ProductGrid.scss
+
+42: }
+43: 
+44: img {
+45:   height: 76%;
+46:   width: 80%
+47:   position: relative;
+48:   padding: 14% 10%;
+49: }
+50: 
+51: .back {
+52:   display: none;
+
+Backtrace:
+./Main Assigments/Product Grid Group Project/23-ProductGrid.scss:47
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/scss/parser.rb:1163:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/scss/parser.rb:1099:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/scss/parser.rb:1094:in `tok!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/scss/parser.rb:761:in `block in try_declaration'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/scss/parser.rb:1139:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/scss/parser.rb:1139:in `rethrow'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/scss/parser.rb:766:in `try_declaration'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/scss/parser.rb:696:in `declaration_or_ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/scss/parser.rb:661:in `block_child'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/scss/parser.rb:653:in `block_contents'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/scss/parser.rb:642:in `block'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/scss/parser.rb:635:in `ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/scss/parser.rb:660:in `block_child'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/scss/parser.rb:653:in `block_contents'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/scss/parser.rb:117:in `stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/scss/parser.rb:42:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/engine.rb:393:in `_to_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/plugin/compiler.rb:489:in `update_stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/plugin/compiler.rb:209:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/plugin/compiler.rb:469:in `on_file_changed'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/lib/sass/plugin/compiler.rb:328:in `block in watch'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/vendor/listen/lib/listen/listener.rb:252:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.7/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"  position\": expected \";\", was \": relative;\"\A         on line 47 of ./Main Assigments/Product Grid Group Project/23-ProductGrid.scss\A \A 42: }\A 43: \A 44: img {\A 45:   height: 76%;\A 46:   width: 80%\A 47:   position: relative;\A 48:   padding: 14% 10%;\A 49: }\A 50: \A 51: .back {\A 52:   display: none;"; }
