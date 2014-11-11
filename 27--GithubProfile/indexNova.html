@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/octicons/2.1.2/octicons.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="github.css">
   </head>
   <body>
     <div class="container">
@@ -41,7 +41,8 @@
           </div>
         </nav>
       </header>
-      <div class="row">
+      <div class="row"> 
+
         <aside class="sidebar col-xs-3 col-sm-3 col-md-3">
           <a href="#" class="thumbnail" id="avatar"><img></a>
           <h3 class="name">{{name}}</h3>
@@ -60,142 +61,186 @@
           <hr>
 
           <p>
-            <a href="" class="followers">4 Follower</a>
-            <a href="" class="starred">2 Starred</a>
-            <a href="" class="following">0 Following</a>
+            <a href="#" class="followers">4 Follower</a>
+            <a href="#" class="starred">2 Starred</a>
+            <a href="#" class="following">0 Following</a>
           </p>
 
           <hr>
 
           <h5>Organizations</h5>
-          <a href="/TheIronYard--Orlando"><img class="orgs img-rounded" src="https://avatars3.githubusercontent.com/u/8798300?v=2&s=84" alt=""></a>  
+          <a href="/TheIronYard--Orlando"><img class="orgs img-rounded" src="https://avatars3.githubusercontent.com/u/8798300?v=2&s=84" alt=""></a>
 
         </aside>
-        <section class="main col-xs-9 col-sm-9 col-md-9">
-          <ul class="nav nav-tabs">
-            <li class="active"> <a href="#" class="octicon octicon-diff-added "> Contributions </a>
-            <li> <a href="#"> Repositories </a>
-            <li> <a href="#"> Public activity </a>
-          </ul>
-          <br>
-          <section class="col-xs-12 col-sm-12 col-md-12" id="tab-contributions">
-            <div class="panel panel-default" id="popular-repos">
-              <header class="panel-heading">
-                <h3 class="panel-title"> Popular Repositories </h3>
-              </header>
-
-              <nav class="list-group">
-                <a href="#" class="list-group-item">
-                  <span class="badge octicon octicon-star">123</span>
-                  <h4 class="list-group-item-heading octicon octicon-repo">
-                    Repository Name</h4>
-                  <p>This is the description of the repository.</p>
-                </a>
-                <a href="#" class="list-group-item">
-                  <span class="badge octicon octicon-star">123</span>
-                  <h4 class="list-group-item-heading octicon octicon-repo">
-                    Repository Name</h4>
-                  <p>This is the description of the repository.</p>
-                </a>
-                <a href="#" class="list-group-item">
-                  <span class="badge octicon octicon-star">123</span>
-                  <h4 class="list-group-item-heading octicon octicon-repo">
-                    Repository Name</h4>
-                  <p>This is the description of the repository.</p>
-                </a>
-              </nav>
-            </div> <!-- #popular-repos -->
-            <div class="panel panel-default" id="public-contribs">
-              <header class="panel-heading">
-                <h4 class="panel-title"> Public contributions </h4>
-              </header>
-
-              <ul class="list-group">
-                <li class="list-group-item">
-                  <p> Contribution Graph ZOMG! </p>
-                </li>
-
-                <li class="list-group-item col-xs-4">
-                  <h6 class="list-group-item-heading"> Year of Contributions </h6>
-                </li>
-                <li class="list-group-item col-xs-4">
-                  <h6 class="list-group-item-heading"> Longest Streak </h6>
-                </li>
-                <li class="list-group-item col-xs-4">
-                  <h6 class="list-group-item-heading"> Current Streak </h6>
-                </li>
-                <li class="clearfix">
-              </ul>
-            </div> <!-- #public-contribs -->
-            <div>
-              <h4> Contribution activity </h4>
-
-              <div class="well">
-                <h5 class="big"> octocat has no activity during this period </h5>
-              </div>
-            </div>
-          </section> <!-- #tab-contributions -->
-          <section hidden class="col-xs-12 col-sm-12 col-md-12" id="tab-repositories">
-            <ul class="list-group" id="repo-list">
-              <li class="list-group-item">
-                <h3 class="list-group-item-heading">Repository Name</h3>
-                <p> This is the repository description. </p>
-                <p class="muted">Updated on Month DD</p>
-              </li>
-            </ul> <!-- #repo-list -->
-          </section> <!-- #tab-repositories -->
-          <section hidden class="col-xs-12 col-sm-12 col-md-12" id="tab-activity">
-            <ul class="list-unstyled">
-              <li> <span class="muted">on Sep 3</span>
-                <h5> <a href="#">octocat</a> pushed to
-                  <a href="#">change-the-title</a> at
-                  <a href="#">octocat/Spoon-Knife</a>
-                </h5>
-              </li>
-            </ul>
-          </section> <!-- #tab-activity -->
-        </section>
-      </div> <!-- .row -->
+        <section class="col-sm-9 col-md-9">
+            <nav  class="nav nav-tabs" id="repoMenu">
+                <li><a id="contribmenu" class="tabMenu octicon octicon-diff-added active" href="#" onclick="drop('contrib')">Contributions</a></li>
+                <li><a id="reposmenu" class="tabMenu octicon octicon-repo" href="#" onclick="drop('repos')">Repositories</a></li>
+                <li><a id="activitymenu" class="tabMenu octicon octicon-rss" href="#" onclick="drop('activity')">Public Activity</a></li>
+            </nav>
+            <section id="contrib">
+              <section class="popular col-sm-6 col-md-6">
+                <h5 class="blockHead">Popular repositories</h5>
+                <hr>
+                <ul class="popRepos list-unstyled">
+                  <li class="octicon octicon-repo-forked" style="text-indent: 0;"><a href="#">Xx-Nova-Xx.github.io</a></li><span class="octicon octicon-star"></span>
+                  <hr>
+                  <li class="octicon octicon-repo"><a href="#">etsydemo</a></li><span class="octicon octicon-star"></span>
+                  <hr>
+                  <li class="octicon octicon-repo-forked"><a href="#">FEE--2014--FALL</a></li><span class="octicon octicon-star"></span>
+                  <p class="caption">The Handbook for the Front End Engine...</p>
+                  <hr>
+                  <li class="octicon octicon-repo-forked"><a href="#">freelancer-theme</a></li><span class="octicon octicon-star"></span>
+                  <p class="caption">Jekyll theme based on Freelancer bootst...</p>
+                  <hr>
+                  <li class="octicon octicon-repo-forked"><a href="#">hGraph</a></li><span class="octicon octicon-star"></span>
+                  <p class="caption">An open source javascript-based web ap...</p>
+               </ul>
+              </section>
+              <section class="contrib2 col-sm-6 col-md-6">
+                <h5 class="blockHead">Repositories contributed to</h5>
+                <hr>
+                <ul class="reposCon2 list-unstyled">
+                  <li class="octicon octicon-repo" style="text-indent: 0;"><a href="#">asoper29/24--Weekend-Warriors</a></li><span class="octicon octicon-star"></span>
+                  <hr>
+                  <li class="octicon octicon-repo"><a href="#">mema82/Surf-and-Paddle</a></li><span class="octicon octicon-star"></span>
+                  <p class="caption">Nick, Logan, Melissa</p>
+                  <hr>
+                  <li class="octicon octicon-repo"><a href="#">TheIronYard--... /FEE--201400F...</a></li><span class="octicon octicon-star"></span>
+                  <p class="caption">The Handbook for the Front End Engine...</p>
+                </ul>
+              </section>
+              <section class="pubCon col-sm-12 col-md-12">
+                <h5 class="blockHead">Contributions</h5>
+                <!-- <img class="conImg" src="contributions.png" alt="Some Stuff Goes Here"> -->
+              </section>
+              <section class="conActivity col-sm-12 col-md-12">
+                <h5 class="activeHead">Contribution activity</h5>
+                <div class="lineBreaks">
+                  <h6><span class="octicon octicon-git-commit">10 Commits</span></h6>
+                  <hr>
+                  <h6><span class="octicon octicon-git-pull-request">3 Pull Requests</span></h6>
+                  <hr>
+                  <h6><span class="octicon octicon-issue-opened">1 Issue Reported</span></h6>
+                  <hr>
+                </div>
+                <!-- Commits, PR's, and Issues -->
+              </section>
+            </section>
+            <section id="repos">
+              <section class="listOfRepos col-sm-12 col-md-12">
+                <ul class="repoList list-unstyled">
+                  <a href="#"><li><h3>Xx-Nova-Xx.github.io</h3></li></a>
+                  <hr>
+                  <a href="#"><li><h3>TIY-Assignments</h3></li></a>
+                  <hr>
+                  <a href="#"><li><h3>xx-nova-xx.github.io</h3></li></a>
+                  <hr>
+                  <a href="#"><li><h3>Laverna</h3></li></a>
+                  <hr>
+                  <a href="#"><li><h3>FEE--2014--Fall</h3></li></a>
+                  <hr>
+                  <a href="#"><li><h3>patternlab-php</h3></li></a>
+                  <hr>
+                  <a href="#"><li><h3>etsydemo</h3></li></a>
+                  <hr>
+                  <a href="#"><li><h3>freelancer-theme</h3></li></a>
+                  <hr>
+                  <a href="#"><li><h3>hGraph</h3></li></a>
+                  <hr>
+                </ul>
+              </section>
+            </section>
+            <section id="activity">
+              <section class="listOfActive col-sm-12 col-md-12">
+                <ul class="activeList list-unstyled">
+                  <a href="#"><li><h3>PR #1</h3></li></a>
+                  <hr>
+                  <a href="#"><li><h3>Commit #7</h3></li></a>
+                  <hr>
+                  <a href="#"><li><h3>Issue #3</h3></li></a>
+                  <hr>
+                  <a href="#"><li><h3>Push #4</h3></li></a>
+                  <hr>
+                  <a href="#"><li><h3>PR #22</h3></li></a>
+                  <hr>
+                  <a href="#"><li><h3>Push to Master #17</h3></li></a>
+                  <hr>
+                  <a href="#"><li><h3>Issue #2</h3></li></a>
+                  <hr>
+                  <a href="#"><li><h3>Commit #18</h3></li></a>
+                  <hr>
+                </ul>
+              </section>
+            </section>
+          </section>
+        </div>
+      </div>
     </div>
+   
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script>
-;(function(){ // closure
-  jQuery.ajax('octocat.json', {
-    success: function(data){
-      console.log(data);
-      jQuery('#avatar')
-        .attr('href', data.avatar_url)
-        .children('img')
-          .attr('src', data.avatar_url)
-      ; // END #avatar
-      // TODO: Replace a bunch of stuff...
-      var sidebar = jQuery('.sidebar');
-      sidebar.children('h1')
-        .children('span').text(data.name)
-        .siblings('small').text(data.login)
-      sidebar.children('.bio')
-        .find('li').each(function(){
-          console.log(arguments);
-        });
-      sidebar.children('.stats')
-        .find('big').each(function(){
-          console.log(arguments);
-        });
-    } // END success
-  }); // END jQuery.ajax
-  // TODO: Make tabs change when clicked...
-  jQuery('.main').each(function(){
-    var main = jQuery(this),
-        tabs = main.find('.nav.nav-tabs a')
-    tabs.click(function(event){
-        console.log(this, event); // Now what?
-        // TODO: Add "active" class to parent <li>
-        // TODO: Remove "active" class from other <li>'s
-        // TODO: Reveal corresponding "tab" section
-        // TODO: Hide other "tab" sections
-    }); // END click
-  }); // each(.main)
-})(); // END closure
+      function drop(id) {
+          var navID = ['contrib','repos','activity'];
+          var dropDown = document.getElementById(id);
+          navID.forEach(function(value,index){
+            var dropMenu = value + 'menu';
+              if(value==id){
+                  dropDown.style.display = 'block';
+                  document.getElementById(dropMenu).style.borderColor = 'lightgray'
+                  document.getElementById(dropMenu).style.borderBottomColor = 'white'
+              }else{
+                  document.getElementById(value).style.display = 'none';
+                  document.getElementById(dropMenu).style.borderColor = 'transparent'
+              };
+          });
+        }
     </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+      ;(function(){ // closure
+        jQuery.ajax('package.json', {
+          success: function(data){
+            console.log(data);
+            jQuery('#avatar')
+              .attr('href', data.avatar_url)
+              .children('img')
+                .attr('src', data.avatar_url)
+            ; // END #avatar
+            // TODO: Replace a bunch of stuff...
+            var sidebar = jQuery('.sidebar');
+            sidebar.children('h1')
+              .children('span').text(data.name)
+              .siblings('small').text(data.login)
+            sidebar.children('.bio')
+              .find('li').each(function(){
+                console.log(arguments);
+              });
+            sidebar.children('.stats')
+              .find('big').each(function(){
+                console.log(arguments);
+              });
+          } // END success
+        }); // END jQuery.ajax
+        // TODO: Make tabs change when clicked...
+        jQuery('.main').each(function(){
+          var main = jQuery(this),
+              tabs = main.find('.nav.nav-tabs a')
+          tabs.click(function(event){
+              console.log(this, event); // Now what?
+              // TODO: Add "active" class to parent <li>
+              // TODO: Remove "active" class from other <li>'s
+              // TODO: Reveal corresponding "tab" section
+              // TODO: Hide other "tab" sections
+          }); // END click
+        }); // each(.main)
+      })(); // END closure
+    </script>
+
+
   </body>
 </html>
