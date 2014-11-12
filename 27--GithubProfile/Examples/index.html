@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/octicons/2.1.2/octicons.min.css">
+    <link href="styles.css" rel="stylesheet">
+    <style>
+    </style>
+  </head>
+  <body>
+      <div class="container">
+        <nav class="navbar navbar-default">
+          <div class="container center">
+          <a class="navbar-brand" href="#"><span class ="octicon octicon-logo-github"></span></a>
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+          <input type="text" class="form-control search" placeholder="Search Github">
+            </div>
+          </form>
+          <ul class="nav navbar-nav">
+            <li><a href="#">Dino</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Enterprise</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+          <button type="submit" class="btn btn-default sign-up">Sign Up</button>
+          <button type="submit" class="btn btn-default sign-in">Sign In</button>
+          </div>
+        </nav>
+      </div>
+      <div class="container content">
+        <div class="container">
+          <aside class="col-sm-3 col-md-3">
+            <a href="https://avatars1.githubusercontent.com/u/8821473?v=3&s=400"><img id="avatar" src="" alt=""></a>
+              <ul class="userInfo">
+                <li><h3 id="name"></h3>
+                <li><h4 id="user"></h4>
+                <hr>
+                <li><span id="company" class="octicon octicon-organization"></span>
+                <li><span id="location" class="octicon octicon-location"></span>
+                <li><span class="octicon octicon-mail"></span><a id="email" href=" "></a>
+                <li><span class="octicon octicon-link"></span><a id="link" href=""></a>
+                <li><span id="created" class="octicon octicon-clock"></span></li>
+                <hr>
+            <ul id="klout">
+              <li class="col-md-4"><a id="followers"href="#"></a><br><p>Followers</p></li>
+              <li class="col-md-4"><a id="starred" href=""></a><br><p>Starred</p></li>
+              <li class="col-md-4"><a id="following" href=""></a><br><p>Following</p></li`>
+            </ul>
+
+
+            <hr>
+            <h5>Organizations</h5>
+            <a href="https://avatars3.githubusercontent.com/u/8798300?v=2&s=84"><img class="orgs img-rounded" src="https://avatars3.githubusercontent.com/u/8798300?v=2&s=84" alt=""></a>
+          </aside>
+          
+
+
+
+//CONTINUE HERE
+
+
+          <section id="navBar" class="col-sm-9 col-md-9">
+            <nav>
+              <ul class="nav nav-tabs">
+                <li><a id="contribmenu" href="#" onclick="drop('contrib')">Contributions</a></li>
+                <li><a id="reposmenu" href="#" onclick="drop('repos')">Repositories</a></li>
+                <li><a id="activitymenu" href="#" onclick="drop('activity')">Public Activity</a></li>
+              </ul>
+            </nav>
+            </section>
+
+            <section id="contrib">
+              <section class="popular col-sm-6 col-md-6">
+                <h5 class="blockHead">Popular repositories</h5>
+                <hr>
+                <ul class="popRepos list-unstyled">
+                  <li id="r1" class="octicon octicon-repo-forked"><a class="repo1" href=""></a>
+                      <small> </li>
+                  <hr>
+
+                  <li class="octicon octicon-repo"><a class="repo2"href=""></a></li>
+                  <hr>
+                  <li class="octicon octicon-repo-forked"><a  class="repo3" href=""></a></li>
+                  <hr>
+                  <li class="octicon octicon-repo-forked"><a class="repo4" href=""></a></li>
+                  <hr>
+                  <li class="octicon octicon-repo-forked"><a class="repo5" href=""></a></li>
+                </ul>
+              </section>
+              <section class="popular contrib2 col-sm-6 col-md-6">
+                <h5 class="blockHead">Repositories contributed to</h5>
+                <hr>
+                <ul class="reposCon2 list-unstyled">
+                  <li class="octicon octicon-repo" style="text-indent: 0;"><a href="#">asoper29/24--Weekend-Warriors</a></li>
+                  <hr>
+                  <li class="octicon octicon-repo"><a href="#">rgcoders/Surf-and-Paddle</a></li>
+                  <hr>
+                  <li class="octicon octicon-repo"><a href="#">TheIronYard--... /FEE--201400F...</a></li>
+                </ul>
+              </section>
+
+            <section id="contrib-stat">
+              <section id="graph" class="pubCon col-sm-9 col-md-9">
+
+                <img class="conImg" src="http://i.imgur.com/hQfVa8N.png" alt="Some Stuff Goes Here">
+              </section>
+
+              <section id="conActivity" class="col-sm-9 col-md-">
+                <h5 class="activeHead">Contribution activity</h5>
+                <hr>
+                <h6><span class="octicon octicon-git-commit">10 Commits</span></h6>
+                <hr>
+                <h6><span class="octicon octicon-git-pull-request">3 Pull Requests</span></h6>
+                <hr>
+                <h6><span class="octicon octicon-issue-opened">1 Issue Reported</span></h6>
+              </section>
+            </section>
+          </section>
+
+            <section id="repos">
+              <section class="listOfRepos col-sm-12 col-md-12">
+                <ul class="repoList">
+                  <li><a class="repo1" href="#"></a>
+                  <hr>
+                  <li><a class="repo2"href="#"></a>
+                  <hr>
+                  <li><a class="repo3"href="#"></a>
+                  <hr>
+                  <li><a class="repo4" href="#"></a>
+                  <hr>
+                  <li><a class="repo5" href="#"></a>
+                  <hr>
+                  <li><a class="repo6" href="#"></a>
+                  <hr>
+                  <li><a class="repo7" href="#"></a>
+                  <hr>
+                  <li><a class="repo8" href="#"></a>
+                  <hr>
+                  <li><a class="repo9" href="#"></a>
+                  <hr>
+                </ul>
+              </section>
+            </section>
+            <section id="activity">
+              <section class="listOfActive col-sm-12 col-md-12">
+                <ul class="activeList">
+                  <a href="#"><li><h3>PR #1</h3></li></a>
+                  <hr>
+                  <a href="#"><li><h3>Commit #7</h3></li></a>
+                  <hr>
+                  <a href="#"><li><h3>Issue #3</h3></li></a>
+                  <hr>
+                  <a href="#"><li><h3>Push #4</h3></li></a>
+                  <hr>
+                  <a href="#"><li><h3>PR #22</h3></li></a>
+                  <hr>
+                  <a href="#"><li><h3>Push to Master #17</h3></li></a>
+                  <hr>
+                  <a href="#"><li><h3>Issue #2</h3></li></a>
+                  <hr>
+                  <a href="#"><li><h3>Commit #18</h3></li></a>
+                  <hr>
+                </ul>
+              </section>
+            </section>
+          </section>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="scripts.js"></script>
+
+  </body>
+</html>
