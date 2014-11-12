@@ -1,0 +1,418 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.1.2/octicons.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <style>
+      .container {
+        margin: 0 0 0 0;
+        padding: 0;
+        width: 100%;
+        position: relative;
+      }
+      .content {
+        width: 70%; /*1020px*/
+        margin: 0 auto 5% auto;
+      }
+      .center {
+        width: 70%; /*971px;*/
+        margin: 0 auto;
+        padding: 0;
+      }
+      .search {
+        width: 200px;
+      }
+      a.navbar-brand {
+        text-indent: .9em;
+      }
+      .nav>li>a {
+        padding: 14px 12%;
+      }
+      .navbar-brand {
+        color: black;
+        font-weight: bold;
+        font-size: 20pt;
+        margin-right: -1em;
+      }
+      .navbar-form .form-control {
+        display: inline-block;
+        width: 120%;
+        vertical-align: middle;
+        height: 30px;
+        margin: 1% 5%%;
+      }
+      .navbar-nav {
+        width: 41%;
+        margin-left: 4%;
+      }
+      .navbar-right {
+        width: 16%;
+      }
+      .btn {
+        margin: 5% 0;
+        font-weight: bold;
+        font-size: 8pt;
+      }
+      button {
+        width: 48%;
+        align-content: center;
+      }
+      .sign-up {
+        background-color: lawngreen;
+        color: white;
+      }
+      aside {
+        margin:0;
+        padding: 0;
+      }
+      .name {
+        margin: 0;
+      }
+      .user {
+        margin: 0;
+        color: gray;
+      }
+      .glyphicon, .octicon::before {
+        color: lightgray;
+        margin-right: .8em;
+      }
+      .location::before {
+        padding-left: .15em;
+        margin-right: .9em;
+      }
+      .orgs {
+        width: 40px;
+      }
+      .blockHead {
+        margin-bottom: -6px;
+      }
+      .popular {
+        height: 300px;
+        margin-right: 4%;
+      }
+      .popular, .contrib2  {
+        margin-top: 3ex;
+        width: 48%;
+        border: 1px solid lightgray;
+        padding: 0;
+        text-indent: 1em;
+      }
+      .popular hr, .contrib2 hr, .conActivity hr {
+        margin-bottom: 2ex;
+      }
+      .contrib2 {
+        height: 200px;
+      }
+      .pubCon {
+        height: 285px;
+        border: 1px solid lightgray;
+        margin-top: 30px;
+        position: relative;
+      }
+      .conActivity {
+        height: 450px;
+        border: 1px solid lightgray;
+        margin-top: 30px;
+        padding: 0;
+        text-indent: 1em;
+      }
+      #repos, #activity {
+        display: none;
+      }
+       .info > li {
+       display: list-item;
+       font-size: 94%;
+      }
+      .popRepos hr {
+        margin-top: 2.3ex;
+      }
+      .popRepos .octicon::before, .reposCon2 .octicon::before {
+        color: dimgray;
+      }
+      .reposCon2 hr {
+        margin-top: 2.5ex;
+      }
+      .conImg {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+      }
+      .octicon-logo-github {
+        padding: 1.3ex 0 0 0;
+      }
+      .octicon-logo-github::before {
+        color: black;
+      }
+      .octicon-logo-github:hover::before {
+        color: cornflowerblue;
+      }
+      .tabMenu.octicon::before {
+        color: dimgray;
+      }
+      #repoMenu a:hover {
+        background-color: transparent;
+        border-color: transparent;
+      }
+      button.navbar-toggle {
+        width: initial;
+      }
+      @media (max-width: 1200px){
+        .info > li {
+        font-size: 90%;
+       }
+       /*.center {
+         width: 65%;
+       }*/
+      }
+      @media (max-width: 992px){
+        body {
+          font-size: 10px;
+        }
+        .octicon-logo-github {
+          font-size: 20px;
+          padding-top: 1.7ex;
+        }
+      }
+      @media (max-width: 768px){
+        .center {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body ng-app="">
+    <div class="container">
+      <div class="container">
+        <nav class="navbar navbar-default" role="navigation">
+          <div class="container center">
+            <section class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse"
+                 data-target="#main-navbar-collapse">
+                 <span class="sr-only">Toggle navigation</span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand octicon octicon-logo-github" href="#"></a>
+            </section>
+            <section class="collapse navbar-collapse" id="main-navbar-collapse">
+             <form class="navbar-form navbar-left" role="search">
+              <div class="form-group">
+                <input type="text" class="form-control search" placeholder="Search Github">
+              </div>
+            </form>
+          <ul class="nav navbar-nav">
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Enterprise</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+          <section class="navbar-right">
+            <button type="submit" class="btn btn-default sign-up">Sign Up</button>
+            <button type="submit" class="btn btn-default sign-in">Sign In</button>
+          </section>
+        </section>
+      </nav>
+      </div>
+      <div class="container content">
+        <div class="container">
+          <aside class="sidebar col-sm-3 col-md-3">
+            <a href="" class="thumbnail" id="avatar"><img src="" alt=""></a>
+            <h3 class="name">{{name}}</h3>
+            <h4 class="login">{{login}}</h4>
+            <hr>
+            <ul class="info list-unstyled">
+              <li><span class="company octicon octicon-organization"></span>{{company}}</li>
+              <li><span class="location octicon octicon-location"></span>{{location}}</li>
+              <li><span class="octicon octicon-mail"></span><a href="" class="email">{{email}}</a></li>
+              <li><span class="octicon octicon-link"></span><a href="" class="blog">{{blog}}</a></li>
+              <li><span class="created octicon octicon-clock"></span>Joined on <span class="dateOf"></span></li>
+            </ul>
+            <hr>
+            <p><a href="" class="followers">1 Follower</a> <a href="" class="starred">1 Starred</a> <a href="" class="following">0 Following</a></p>
+            <!-- How to do these #'s -->
+            <hr>
+            <h5>Organizations</h5>
+            <a href="/TheIronYard--Orlando"><img class="orgs img-rounded" src="https://avatars3.githubusercontent.com/u/8798300?v=2&s=84" alt=""></a>
+          </aside>
+          <section class="col-sm-9 col-md-9">
+            <nav>
+              <ul class="nav nav-tabs" id="repoMenu">
+                <li><a id="contribmenu" class="tabMenu octicon octicon-diff-added" href="#" onclick="drop('contrib')">Contributions</a></li>
+                <li><a id="reposmenu" class="tabMenu octicon octicon-repo" href="#" onclick="drop('repos')">Repositories</a></li>
+                <li><a id="activitymenu" class="tabMenu octicon octicon-rss" href="#" onclick="drop('activity')">Public Activity</a></li>
+              </ul>
+            </nav>
+            <section id="contrib">
+              <section class="popular col-sm-6 col-md-6">
+                <h5 class="blockHead">Popular repositories</h5>
+                <hr>
+                <ul class="popRepos list-unstyled">
+                  <li class="octicon octicon-repo-forked" style="text-indent: 0;"><a href="#">asoper29.github.io</a></li>
+                  <hr>
+                  <li class="octicon octicon-repo"><a href="#">etsydemo</a></li>
+                  <hr>
+                  <li class="octicon octicon-repo-forked"><a href="#">FEE--2014--FALL</a></li>
+                  <hr>
+                  <li class="octicon octicon-repo-forked"><a href="#">freelancer-theme</a></li>
+                  <hr>
+                  <li class="octicon octicon-repo-forked"><a href="#">hGraph</a></li>
+                </ul>
+              </section>
+              <section class="contrib2 col-sm-6 col-md-6">
+                <h5 class="blockHead">Repositories contributed to</h5>
+                <hr>
+                <ul class="reposCon2 list-unstyled">
+                  <li class="octicon octicon-repo" style="text-indent: 0;"><a href="#">asoper29/24--Weekend-Warriors</a></li>
+                  <hr>
+                  <li class="octicon octicon-repo"><a href="#">mema82/Surf-and-Paddle</a></li>
+                  <hr>
+                  <li class="octicon octicon-repo"><a href="#">TheIronYard--... /FEE--201400F...</a></li>
+                </ul>
+              </section>
+              <section class="pubCon col-sm-12 col-md-12">
+                <h5 class="blockHead">Contributions</h5>
+                <img class="conImg" src="contributions.png" alt="Some Stuff Goes Here">
+              </section>
+              <section class="conActivity col-sm-12 col-md-12">
+                <h5 class="activeHead">Contribution activity</h5>
+                <h6><span class="octicon octicon-git-commit">10 Commits</span></h6>
+                <h6><span class="octicon octicon-git-pull-request">3 Pull Requests</span></h6>
+                <h6><span class="octicon octicon-issue-opened">1 Issue Reported</span></h6>
+
+                <!-- Commits, PR's, and Issues -->
+              </section>
+            </section>
+            <section id="repos">
+              <section class="listOfRepos col-sm-12 col-md-12">
+                <ul class="repoList list-unstyled">
+                  <a href="#"><li><h3>Repo #1</h3></li></a>
+                  <hr>
+                  <a href="#"><li><h3>Repo #2</h3></li></a>
+                  <hr>
+                  <a href="#"><li><h3>Repo #3</h3></li></a>
+                  <hr>
+                  <a href="#"><li><h3>Repo #4</h3></li></a>
+                  <hr>
+                  <a href="#"><li><h3>Repo #5</h3></li></a>
+                  <hr>
+                  <a href="#"><li><h3>Repo #6</h3></li></a>
+                  <hr>
+                  <a href="#"><li><h3>Repo #7</h3></li></a>
+                  <hr>
+                  <a href="#"><li><h3>Repo #8</h3></li></a>
+                  <hr>
+                </ul>
+              </section>
+            </section>
+            <section id="activity">
+              <section class="listOfActive col-sm-12 col-md-12">
+                <ul class="activeList list-unstyled">
+                  <a href="#"><li><h3>PR #1</h3></li></a>
+                  <hr>
+                  <a href="#"><li><h3>Commit #7</h3></li></a>
+                  <hr>
+                  <a href="#"><li><h3>Issue #3</h3></li></a>
+                  <hr>
+                  <a href="#"><li><h3>Push #4</h3></li></a>
+                  <hr>
+                  <a href="#"><li><h3>PR #22</h3></li></a>
+                  <hr>
+                  <a href="#"><li><h3>Push to Master #17</h3></li></a>
+                  <hr>
+                  <a href="#"><li><h3>Issue #2</h3></li></a>
+                  <hr>
+                  <a href="#"><li><h3>Commit #18</h3></li></a>
+                  <hr>
+                </ul>
+              </section>
+            </section>
+          </section>
+        </div>
+      </div>
+    </div>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+      function drop(id) {
+           var navID = ['contrib','repos','activity'];
+           var dropDown = document.getElementById(id);
+           navID.forEach(function(value,index){
+             var dropMenu = value + 'menu';
+              if(value==id){
+                  dropDown.style.display = 'block';
+                  document.getElementById(dropMenu).style.borderColor = 'lightgray'
+                  document.getElementById(dropMenu).style.borderBottomColor = 'white'
+              }else{
+                  document.getElementById(value).style.display = 'none';
+                  document.getElementById(dropMenu).style.borderColor = 'transparent'
+              };
+           });
+        }
+    </script>
+    <script>
+    ;(function(){
+      var profile;
+
+      jQuery.ajax('package.json', {
+      success: function(data){
+        profile = data;
+        console.log(data);
+        var avatar_url = data.avatar_url;
+
+        $('#avatar')
+            .attr('href', avatar_url)
+            .children('img')
+              .attr('src', avatar_url)
+
+        $('.name')
+           .text(data.name)
+
+        $('.login')
+          .text( data.login)
+
+        $('.company')
+          .after(data.company)
+
+        $('.location')
+          .after(data.location)
+
+        $('.email')
+            .attr('href', 'mailto:logan@loganarnett.com')
+             .text(data.email)
+
+        $('.dateOf')
+          .text("{{" + "'" + data.created_at + "'" + " | date: 'mediumDate'}}")
+          /*{{1288323623006 | date:'mediumDate'}}*/
+
+        $('.blog')
+            .attr('href', data.blog)
+              .text(data.blog)
+
+        $('.followers')
+            .attr('href', data.followers_url)
+              .text(data.followers + ' Follower')
+
+        $('.starred')
+            .attr('href', data.starred_url)
+              .text(data.starred)
+
+        $('.following')
+            .attr('href', data.following_url)
+              .text(data.following)
+
+
+
+      /*  $('.popular')
+        .text(data.repos_url) */
+
+      }
+    });
+  })();
+    </script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  </body>
+</html>

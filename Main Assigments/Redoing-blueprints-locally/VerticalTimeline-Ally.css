@@ -1,0 +1,209 @@
+/**
+* Colors:
+* - light-blue: rgb(107, 191, 238)
+* - dark-blue: rgb(52, 148, 203)
+#  time - grayish blue: #BDD0DC
+*   \25C0 
+*/
+
+body{
+    font-size: 16pt;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+h1{
+    font-size: 18px;
+    right-margin: 10em;
+    color: rgb(71,163,218);
+
+}
+
+h2{
+    font-size: 40px;
+    color: rgb(71,163,218);
+}
+
+#container {
+    width: 80%;
+    margin:auto;
+  /*  outline: 2pt solid red; <- would put a border around the container*/
+}
+
+.timeline{
+    border-left: 0.5em solid;
+    border-color: rgb(175,220,248);
+    
+    padding-left: 2em;
+    margin-left: 12em;
+    margin-right: 2em;
+
+    list-style: none;
+}
+
+.timeline > li{
+    position: relative;
+    margin-top: 10pt;
+    color: #FFFFFF;
+}
+
+.timeline > li:before{
+    content: "\25C0";
+    text-align: center;
+
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+
+    font-size: 110%;
+
+    border: 0.5em solid rgb(175,220,248);
+    border-radius: 50%;
+    background-color: rgb(70,164,218);
+
+    position: absolute;
+    right: 100%; 
+    margin-right: .6em;
+}
+.timeline > li.fire:before{
+    content: "\2691";
+
+}
+
+.timeline > li.cat:before{
+    content: "\2622";
+}
+
+.timeline > li.yinyang:before{
+    content: "\262F";
+}
+
+.timeline > li.apple:before{
+    content: "\2764";
+}
+
+.timeline > li time{
+    display: block;
+    text-align: right;
+
+    position: absolute;
+    right: 100%;
+    margin-right: 5em;
+}
+
+.timeline > li time{
+    display: block;
+}
+
+.timeline > li time small{
+    color: #BDD0DC;
+    font-size: 80%;
+}
+
+.timeline > li time big{
+    color: rgb(107, 191, 238);
+    font-size: 285%;
+}
+
+.timeline > li:nth-child(even) time big{
+    color: rgb(52, 148, 203);
+}
+
+.timeline > li article{
+    background-color: rgb(107, 191, 238);
+    
+    margin: 0;
+    padding: 5pt 2em;
+    border-radius: 5pt;
+}
+
+.timeline > li article:after; {
+    color: rgb(107, 191, 238);
+    position: absolute;
+    
+    top: 0.75em;
+    right: 100%;
+    letter-spacing: -0.2em;
+}
+
+.timeline > li:nth-child(even) article{
+    background-color: rgb(52, 148, 203);
+}
+
+.timeline > li:nth-child(even) article:after{
+    color: rgb(52, 148, 203);
+}
+
+.timeline > li article h3{
+    padding-bottom: 5pt;
+    border-bottom: 1pt solid;
+}
+
+@media (max-width: 1048px){
+    .timeline > li time big{
+        font-size: 200%;
+    }
+
+@media (max-width: 768px) {
+    .timeline{
+        border:none;
+    }
+
+.timeline > li time{
+    position: static;
+    float: left;
+}
+
+.timeline > li article{
+    clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

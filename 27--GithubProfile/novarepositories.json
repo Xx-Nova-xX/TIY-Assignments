@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    
+    
+    <title>Xx-Nova-xX (Ally Hinton) · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="Xx-Nova-xX (Ally Hinton)" name="twitter:title" /><meta content="Xx-Nova-xX has 5 repositories written in CSS and JavaScript. Follow their code on GitHub." name="twitter:description" /><meta content="https://avatars1.githubusercontent.com/u/8763355?v=3&amp;s=400" name="twitter:image:src" />
+<meta content="GitHub" property="og:site_name" /><meta content="profile" property="og:type" /><meta content="https://avatars1.githubusercontent.com/u/8763355?v=3&amp;s=400" property="og:image" /><meta content="Xx-Nova-xX (Ally Hinton)" property="og:title" /><meta content="https://github.com/Xx-Nova-xX" property="og:url" /><meta content="Xx-Nova-xX has 5 repositories written in CSS and JavaScript. Follow their code on GitHub." property="og:description" /><meta content="Xx-Nova-xX" property="profile:username" />
+
+      <meta name="browser-stats-url" content="/_stats">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    <link rel="conduit-xhr" href="https://ghconduit.com:25035">
+    
+    <meta name="pjax-timeout" content="1000">
+    
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="/Xx-Nova-xX" data-pjax-transient>
+      <meta name="google-analytics" content="UA-3769691-2">
+
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="C7E31E51:5F9B:F1AC79A:54623B2B" name="octolytics-dimension-request_id" />
+    
+    <meta content="Rails, view, users#show" name="analytics-event" />
+
+    
+    
+    <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="T/GrjmpdNwG8Unxa32yKieowVCHxTtMtrp2NoD1Xy3a6lJA7kLu2s8s4Wi5lZHcypE2EYapOOwK/lJZ/EgqDZw==" name="csrf-token" />
+
+    <link href="https://assets-cdn.github.com/assets/github-94520383be830bbbe79cdce9fb3f76d4037ec1ca67d72952e14a36b8c2362b55.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="https://assets-cdn.github.com/assets/github2-9464c22b2a91bc6a645005fea4347a43672ae879419c4d60808c39bcf2b68748.css" media="all" rel="stylesheet" type="text/css" />
+    
+    
+
+
+    <meta http-equiv="x-pjax-version" content="e955c7b0cd21a51d92e14c023ca0eb10">
+
+        <link href="/Xx-Nova-xX.atom" rel="alternate" title="atom" type="application/atom+xml">
+  <meta name="description" content="Xx-Nova-xX has 5 repositories written in CSS and JavaScript. Follow their code on GitHub.">
+  <meta content="8763355" name="octolytics-dimension-user_id" /><meta content="Xx-Nova-xX" name="octolytics-dimension-user_login" />
+
+  </head>
+
+
+  <body class="logged_out  env-production   page-profile">
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+    <div class="wrapper">
+      
+      
+      
+      
+
+
+      
+      <div class="header header-logged-out" role="banner">
+  <div class="container clearfix">
+
+    <a class="header-logo-wordmark" href="https://github.com/" ga-data-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+      <span class="mega-octicon octicon-logo-github"></span>
+    </a>
+
+    <div class="header-actions" role="navigation">
+        <a class="button primary" href="/join" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+      <a class="button signin" href="/login?return_to=%2FXx-Nova-xX%3Ftab%3Drepositories" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+    </div>
+
+    <div class="site-search  js-site-search" role="search">
+      <form accept-charset="UTF-8" action="/search" class="js-site-search-form" data-global-search-url="/search" data-repo-search-url="" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+  <input type="text"
+    class=""
+    data-hotkey="s"
+    name="q"
+    placeholder="Search GitHub"
+    data-global-scope-placeholder="Search GitHub"
+    data-repo-scope-placeholder="Search"
+    tabindex="1"
+    autocapitalize="off">
+  <div class="scope-badge">This repository</div>
+</form>
+    </div>
+
+      <ul class="header-nav left" role="navigation">
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/explore" data-ga-click="(Logged out) Header, go to explore, text:explore">Explore</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/features" data-ga-click="(Logged out) Header, go to features, text:features">Features</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="https://enterprise.github.com/" data-ga-click="(Logged out) Header, go to enterprise, text:enterprise">Enterprise</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/blog" data-ga-click="(Logged out) Header, go to blog, text:blog">Blog</a>
+          </li>
+      </ul>
+
+  </div>
+</div>
+
+
+
+      <div id="start-of-content" class="accessibility-aid"></div>
+        <div class="site clearfix" role="main">
+          <div id="site-container" class="context-loader-container" data-pjax-container>
+            
+            
+
+
+<div class="container">
+  <div class="columns profilecols js-username" data-name="Xx-Nova-xX">
+    <div class="column one-fourth vcard" itemscope itemtype="http://schema.org/Person">
+        <a href="https://avatars1.githubusercontent.com/u/8763355?v=3&amp;s=400" aria-hidden="true" class="vcard-avatar" itemprop="image"><img alt="" class="avatar" data-user="8763355" height="230" src="https://avatars3.githubusercontent.com/u/8763355?v=3&amp;s=460" width="230" /></a>
+
+      <h1 class="vcard-names">
+  <span class="vcard-fullname" itemprop="name">Ally Hinton</span>
+  <span class="vcard-username" itemprop="additionalName">Xx-Nova-xX</span>
+</h1>
+
+
+<ul class="vcard-details">
+      
+
+  
+    <li class="vcard-detail"><span class="octicon octicon-mail"></span><a class="email" href="mailto:&#x61;&#x6c;&#x6c;&#x79;&#x40;&#x73;&#x6f;&#x63;&#x69;&#x61;&#x6c;&#x65;&#x73;&#x74;&#x65;&#x65;&#x6d;&#x6d;&#x65;&#x64;&#x69;&#x61;&#x2e;&#x63;&#x6f;&#x6d;">&#x61;&#x6c;&#x6c;&#x79;&#x40;&#x73;&#x6f;&#x63;&#x69;&#x61;&#x6c;&#x65;&#x73;&#x74;&#x65;&#x65;&#x6d;&#x6d;&#x65;&#x64;&#x69;&#x61;&#x2e;&#x63;&#x6f;&#x6d;</a></li>
+  
+  <li class="vcard-detail"><span class="octicon octicon-clock"></span><span class="join-label">Joined on </span><time class="join-date" datetime="2014-09-13T21:37:19Z" day="numeric" is="local-time" month="short" year="numeric">Sep 13, 2014</time></li>
+</ul>
+
+
+      <div class="vcard-stats">
+        <a class="vcard-stat" href="/Xx-Nova-xX/followers">
+          <strong class="vcard-stat-count">2</strong>
+          <span class="text-muted">followers</span>
+        </a>
+          <a class="vcard-stat" href="/stars/Xx-Nova-xX">
+            <strong class="vcard-stat-count">2</strong>
+            <span class="text-muted">Starred</span>
+          </a>
+        <a class="vcard-stat" href="/Xx-Nova-xX/following">
+          <strong class="vcard-stat-count">14</strong>
+          <span class="text-muted">Following</span>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="column three-fourths">
+
+
+      <div class="tabnav">
+          <div class="tabnav-right">
+              <span class="user-following-container">
+    <span class="follow">
+      <a href="/login?return_to=%2FXx-Nova-xX%3Ftab%3Drepositories" class="minibutton primary">
+        <span class="octicon octicon-person"></span>
+        Follow
+      </a>
+    </span>
+  </span>
+
+          </div>
+
+        <ul class="tabnav-tabs" data-pjax role="navigation">
+          <li data-tab="contributions">
+            <a href="/Xx-Nova-xX" class="tabnav-tab ">
+              <span class="octicon octicon-diff-added"></span>
+              Contributions
+            </a>
+          </li>
+          <li data-tab="repo">
+            <a href="/Xx-Nova-xX?tab=repositories" class="tabnav-tab selected">
+              <span class="octicon octicon-repo"></span>
+              Repositories
+            </a>
+          </li>
+          <li data-tab="activity">
+            <a href="/Xx-Nova-xX?tab=activity" class="tabnav-tab ">
+              <span class="octicon octicon-rss"></span>
+              Public activity
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="tab-content js-repo-filter">
+          
+  <div class="repo-tab">
+    <div class="filter-bar">
+      <ul class="repo_filterer">
+          <li><a href="#" class="repo_filter js-repo-filter-tab" data-filter=".mirror">Mirrors</a></li>
+        <li><a href="#" class="repo_filter js-repo-filter-tab" data-filter=".fork">Forks</a></li>
+        <li><a href="#" class="repo_filter js-repo-filter-tab" data-filter=".source">Sources</a></li>
+        <li class="all_repos"><a href="#" class="repo_filter js-repo-filter-tab filter-selected" data-filter=".public, .private">All</a></li>
+      </ul>
+
+      <form action="/search" class="repo-search" role="search">
+        <input type="hidden" name="user" value="Xx-Nova-xX">
+        <input type="text" id="your-repos-filter" name="q" class="filter_input js-filterable-field" placeholder="Find a repository&hellip;" tabindex="2">
+        <input type="submit" value="Search" class="button">
+      </form>
+    </div>
+
+      <ul class="repo-list js-repo-list" data-filterable-for="your-repos-filter" data-filterable-type="substring">
+    <li class="repo-list-item public source">
+  <div class="repo-list-stats">
+      JavaScript
+    <a class="repo-list-stat-item tooltipped tooltipped-s" href="/Xx-Nova-xX/TIY-Assignments/stargazers" aria-label="Stargazers">
+      <span class="octicon octicon-star"></span>
+      0
+    </a>
+    <a class="repo-list-stat-item tooltipped tooltipped-s" href="/Xx-Nova-xX/TIY-Assignments/network"  aria-label="Forks">
+      <span class="octicon octicon-git-branch"></span>
+      0
+    </a>
+  </div>
+
+  <h3 class="repo-list-name">
+    <a href="/Xx-Nova-xX/TIY-Assignments">
+      TIY-Assignments</a>
+  </h3>
+
+
+
+  <p class="repo-list-meta">
+      Updated <time datetime="2014-11-10T20:41:01Z" is="relative-time">Nov 10, 2014</time>
+  </p>
+
+  <div class="participation-graph">
+    <canvas class="js-participation-graph bars" data-color-all="#F5F5F5" data-color-owner="#DFDFDF" data-source="/Xx-Nova-xX/TIY-Assignments/graphs/owner_participation" height="80" width="640"></canvas>
+  </div>
+</li>
+<li class="repo-list-item public source">
+  <div class="repo-list-stats">
+      JavaScript
+    <a class="repo-list-stat-item tooltipped tooltipped-s" href="/Xx-Nova-xX/JavascriptTutorials/stargazers" aria-label="Stargazers">
+      <span class="octicon octicon-star"></span>
+      0
+    </a>
+    <a class="repo-list-stat-item tooltipped tooltipped-s" href="/Xx-Nova-xX/JavascriptTutorials/network"  aria-label="Forks">
+      <span class="octicon octicon-git-branch"></span>
+      0
+    </a>
+  </div>
+
+  <h3 class="repo-list-name">
+    <a href="/Xx-Nova-xX/JavascriptTutorials">
+      JavascriptTutorials</a>
+  </h3>
+
+
+
+  <p class="repo-list-meta">
+      Updated <time datetime="2014-10-20T02:02:54Z" is="relative-time">Oct 20, 2014</time>
+  </p>
+
+  <div class="participation-graph">
+    <canvas class="js-participation-graph bars" data-color-all="#F5F5F5" data-color-owner="#DFDFDF" data-source="/Xx-Nova-xX/JavascriptTutorials/graphs/owner_participation" height="80" width="640"></canvas>
+  </div>
+</li>
+<li class="repo-list-item public fork">
+  <div class="repo-list-stats">
+      JavaScript
+    <a class="repo-list-stat-item tooltipped tooltipped-s" href="/Xx-Nova-xX/FEE--2014--FALL/stargazers" aria-label="Stargazers">
+      <span class="octicon octicon-star"></span>
+      0
+    </a>
+    <a class="repo-list-stat-item tooltipped tooltipped-s" href="/Xx-Nova-xX/FEE--2014--FALL/network"  aria-label="Forks">
+      <span class="octicon octicon-git-branch"></span>
+      14
+    </a>
+  </div>
+
+  <h3 class="repo-list-name">
+    <a href="/Xx-Nova-xX/FEE--2014--FALL">
+      FEE--2014--FALL</a>
+  </h3>
+
+    <p class="repo-list-info">
+      <span class="octicon octicon-repo-forked"></span>
+      forked from <a href="/TheIronYard--Orlando/FEE--2014--FALL">TheIronYard--Orlando/FEE--2014--FALL</a>
+    </p>
+
+    <p class="repo-list-description">
+      The Handbook for the Front End Engineering class of the Fall 2014 cohort at The Iron Yard, Orlando Campus
+    </p>
+
+  <p class="repo-list-meta">
+      Updated <time datetime="2014-10-15T19:56:30Z" is="relative-time">Oct 15, 2014</time>
+  </p>
+
+  <div class="participation-graph">
+    <canvas class="js-participation-graph bars" data-color-all="#F5F5F5" data-color-owner="#DFDFDF" data-source="/Xx-Nova-xX/FEE--2014--FALL/graphs/owner_participation" height="80" width="640"></canvas>
+  </div>
+</li>
+<li class="repo-list-item public source">
+  <div class="repo-list-stats">
+      CSS
+    <a class="repo-list-stat-item tooltipped tooltipped-s" href="/Xx-Nova-xX/Xx-Nova-xX.github.io/stargazers" aria-label="Stargazers">
+      <span class="octicon octicon-star"></span>
+      0
+    </a>
+    <a class="repo-list-stat-item tooltipped tooltipped-s" href="/Xx-Nova-xX/Xx-Nova-xX.github.io/network"  aria-label="Forks">
+      <span class="octicon octicon-git-branch"></span>
+      0
+    </a>
+  </div>
+
+  <h3 class="repo-list-name">
+    <a href="/Xx-Nova-xX/Xx-Nova-xX.github.io">
+      Xx-Nova-xX.github.io</a>
+  </h3>
+
+
+    <p class="repo-list-description">
+      Blog for Iron Yard
+    </p>
+
+  <p class="repo-list-meta">
+      Updated <time datetime="2014-09-29T04:30:38Z" is="relative-time">Sep 29, 2014</time>
+  </p>
+
+  <div class="participation-graph">
+    <canvas class="js-participation-graph bars" data-color-all="#F5F5F5" data-color-owner="#DFDFDF" data-source="/Xx-Nova-xX/Xx-Nova-xX.github.io/graphs/owner_participation" height="80" width="640"></canvas>
+  </div>
+</li>
+<li class="repo-list-item public fork">
+  <div class="repo-list-stats">
+      JavaScript
+    <a class="repo-list-stat-item tooltipped tooltipped-s" href="/Xx-Nova-xX/javascript_snake/stargazers" aria-label="Stargazers">
+      <span class="octicon octicon-star"></span>
+      0
+    </a>
+    <a class="repo-list-stat-item tooltipped tooltipped-s" href="/Xx-Nova-xX/javascript_snake/network"  aria-label="Forks">
+      <span class="octicon octicon-git-branch"></span>
+      4
+    </a>
+  </div>
+
+  <h3 class="repo-list-name">
+    <a href="/Xx-Nova-xX/javascript_snake">
+      javascript_snake</a>
+  </h3>
+
+    <p class="repo-list-info">
+      <span class="octicon octicon-repo-forked"></span>
+      forked from <a href="/gamedolphin/javascript_snake">gamedolphin/javascript_snake</a>
+    </p>
+
+    <p class="repo-list-description">
+      Open source javascript version of the snake game
+    </p>
+
+  <p class="repo-list-meta">
+      Updated <time datetime="2014-06-21T18:56:31Z" is="relative-time">Jun 21, 2014</time>
+  </p>
+
+  <div class="participation-graph">
+    <canvas class="js-participation-graph bars" data-color-all="#F5F5F5" data-color-owner="#DFDFDF" data-source="/Xx-Nova-xX/javascript_snake/graphs/owner_participation" height="80" width="640"></canvas>
+  </div>
+</li>
+
+    
+</ul>
+
+  </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+          </div>
+          <div class="modal-backdrop"></div>
+        </div>
+    </div><!-- /.wrapper -->
+
+      <div class="container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links right">
+      <li><a href="https://status.github.com/">Status</a></li>
+      <li><a href="https://developer.github.com">API</a></li>
+      <li><a href="http://training.github.com">Training</a></li>
+      <li><a href="http://shop.github.com">Shop</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/about">About</a></li>
+
+    </ul>
+
+    <a href="/" aria-label="Homepage">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+    </a>
+
+    <ul class="site-footer-links">
+      <li>&copy; 2014 <span title="0.05821s from github-fe124-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="/site/terms">Terms</a></li>
+        <li><a href="/site/privacy">Privacy</a></li>
+        <li><a href="/security">Security</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+  </div><!-- /.site-footer -->
+</div><!-- /.container -->
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-suggester-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="fullscreen-contents js-fullscreen-contents js-suggester-field" placeholder=""></textarea>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="#" class="exit-fullscreen js-exit-fullscreen tooltipped tooltipped-w" aria-label="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="#" class="theme-switcher js-theme-switcher tooltipped tooltipped-w"
+      aria-label="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <a href="#" class="octicon octicon-x flash-close js-ajax-error-dismiss" aria-label="Dismiss error"></a>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-fe1dc1d9b25d6a0cda010576a3c4be01906c9fd2ac07462042e5fceda326d50c.js" type="text/javascript"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github-aba45b8411f81a17de91f1837c70a8cb5d105fa6d6db2134e5b19f082a8049ce.js" type="text/javascript"></script>
+      
+      
+  </body>
+</html>
