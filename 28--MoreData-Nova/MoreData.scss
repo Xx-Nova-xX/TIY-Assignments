@@ -1,0 +1,49 @@
+ $ceruleanBlue: #0072ff;
+ $brightGreen: #19ff00;
+ $ltGreen: #a9e5af;
+ $btRed: #ff0033;
+ $pink: #e84ed3;
+
+ body{
+   background-color: $ceruleanBlue;
+   
+
+   	ul{
+   	list-style: none;
+   	text-align: center;
+
+   		.slide img{
+	   		height: 500px;
+	   		width: 520px;
+	   		border-radius: 5%;
+	   		margin: 10% 0;
+   		}
+
+   		.hidden{
+   			display: none;
+   		}
+
+   		.buttons{
+   			height: 20px;
+   			width: 20px;
+   			border-radius: 50%;
+   			display: inline-block;
+   			margin: 0.5em;
+   			background-color: $brightGreen;
+
+   				&:hover{
+   				background-color: $ltGreen;
+   				}
+   		}
+
+   		.current{
+   		background-color: #btRed;
+
+   			&:hover{
+   			background-color: #btRed;
+   			}
+   		}
+   	}
+
+
+ }

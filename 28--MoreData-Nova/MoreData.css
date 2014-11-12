@@ -1,3 +1,27 @@
-
+body {
+  background-color: #0072ff; }
+  body ul {
+    list-style: none;
+    text-align: center; }
+    body ul .slide img {
+      height: 500px;
+      width: 520px;
+      border-radius: 5%;
+      margin: 10% 0; }
+    body ul .hidden {
+      display: none; }
+    body ul .buttons {
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      display: inline-block;
+      margin: 0.5em;
+      background-color: #19ff00; }
+      body ul .buttons:hover {
+        background-color: #a9e5af; }
+    body ul .current {
+      background-color: #btRed; }
+      body ul .current:hover {
+        background-color: #btRed; }
 
 /*# sourceMappingURL=MoreData.css.map */
