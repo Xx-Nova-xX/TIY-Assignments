@@ -19,10 +19,6 @@
 	   		margin: 10% 0;
    		}
 
-   		.hidden{
-   			display: none;
-   		}
-
    		.buttons{
    			height: 20px;
    			width: 20px;
@@ -32,18 +28,51 @@
    			background-color: $brightGreen;
 
    				&:hover{
-   				background-color: $ltGreen;
+   					background-color: $ltGreen;
    				}
    		}
 
+   		.hidden{
+   			display: none;
+   		}
+
    		.current{
-   		background-color: #btRed;
+   			background-color: #btRed;
+   			box-shadow: 0 0 0 2px $btRed;
+   			transition: box-shadow 0.2s ease-in-out;
+
 
    			&:hover{
-   			background-color: #btRed;
+   				background-color: $pink;
    			}
+   		
+   		.left hidden{
+   			height: 15px;
+   			width: 15px;
+   			float: left;
+   			position: absolute;
+   			top: 30%;
+   			left: 5%;
+   			content: "\2190";
+
    		}
-   	}
+
+   		}
+
+   		.right{
+	   			float: right;
+	   			position: absolute;
+	   			top: 30%;
+	   			right: 5%;
+	   			
+   			}
+
+   		}
+
+   		
+   		}
+
+   	
 
 
- }
+ 

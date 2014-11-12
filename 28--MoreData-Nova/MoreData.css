@@ -8,8 +8,6 @@ body {
       width: 520px;
       border-radius: 5%;
       margin: 10% 0; }
-    body ul .hidden {
-      display: none; }
     body ul .buttons {
       height: 20px;
       width: 20px;
@@ -19,9 +17,26 @@ body {
       background-color: #19ff00; }
       body ul .buttons:hover {
         background-color: #a9e5af; }
+    body ul .hidden {
+      display: none; }
     body ul .current {
-      background-color: #btRed; }
+      background-color: #btRed;
+      box-shadow: 0 0 0 2px #ff0033;
+      transition: box-shadow 0.2s ease-in-out; }
       body ul .current:hover {
-        background-color: #btRed; }
+        background-color: #e84ed3; }
+      body ul .current .left hidden {
+        height: 15px;
+        width: 15px;
+        float: left;
+        position: absolute;
+        top: 30%;
+        left: 5%;
+        content: "\2190"; }
+    body ul .right {
+      float: right;
+      position: absolute;
+      top: 30%;
+      right: 5%; }
 
 /*# sourceMappingURL=MoreData.css.map */
