@@ -1,0 +1,283 @@
+<html>
+    <head>
+        <title>Horizontal Drop-Down Menu</title>                                <!--Top Text on page-->
+		<link href="dropdown-styles.css" rel="stylesheet" media="screen">       <!--This calls the CSS page-->
+        <link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'><!--calls the font for links-->
+        <script type="text/javascript">  //<!--Calls the type of language used in the script tag-->
+
+		    function showMenu(id) {
+					 var arrMenus = ['products','downloads','applications','projects','freeware'];
+		       var thisMenu = document.getElementById(id);
+					 arrMenus.forEach(function(value,index){
+							var thisTab = value + 'Tab';
+							if(value==id){
+									thisMenu.style.display = 'block';
+									document.getElementById(thisTab).style.backgroundColor = '#6C62E3'
+							}else{
+									document.getElementById(value).style.display = 'none';
+									document.getElementById(thisTab).style.backgroundColor = '#FFFFFF'
+							};
+					 });
+		    }
+	    </script>
+	   </head>
+    <body>
+       <header>
+        
+       <p>Drop Down Menus by Nova</p>
+     <nav>
+          <ul>
+                <li><a id="productsTab" href="#" onclick="showMenu('products')">Products</a></li>      <!--Products Tab-->
+                <li><a id="downloadsTab" href="#" onclick="showMenu('downloads')">Downloads</a></li>   <!--Downloads Tab-->
+                <li><a id="applicationsTab" href="#" onclick="showMenu('applications')">Applications</a></li>   <!--Applications Tab-->
+                <li><a id="projectsTab" href="#" onclick="showMenu('projects')">Projects</a></li>      <!--Projects Tab--> 
+                <li><a id="freewareTab" href="#" onclick="showMenu('freeware')">Freeware</a></li>      <!--Freeware Tab--> 
+          </ul>
+       </nav>                
+   </header> 
+                    
+            <section id="products" style="display:none">
+				    
+				    <div id="container"> <!--SubMenu2-DivContainer-->
+				    <div id="column1">
+				        
+				        <h1 class="menuHeader">Learning & Games</h1><!--SubMenu-1.0-->
+						  
+						  <ul class="menuList">
+                                <li><a href="#" style="text-decoration:none">Catch The Bullet</a></li>
+                                <li><a href="#"style="text-decoration:none">Scooby Doo</a></li>
+                                <li><a href="#"style="text-decoration:none">Fallen Angel</a></li>
+                                <li><a href="#"style="text-decoration:none">Sui Maker</li></a>
+                                <li><a href="#"style="text-decoration:none">Wave Master</li></a>
+                                <li><a href="#"style="text-decoration:none">Golf Pro</li></a>
+                            </ul><br>
+                    </div>
+                           
+                    <div id="column2">
+                        
+                        <h1 class="menuHeader">Utilities</h1> <!--SubMenu-1.1-->
+                            <ul class="menuList">
+                                <li><a href="#"style="text-decoration:none">Gadget Finder</a></li>
+                                <li><a href="#"style="text-decoration:none">Green Tree Express</a></li>
+                                <li><a href="#"style="text-decoration:none">Green Tree Pro</a></li>
+                                <li><a href="#"style="text-decoration:none">Wobbler 3.0</li></a>
+                                <li><a href="#"style="text-decoration:none">Coolkid</li></a>
+                            </ul><br> 
+                    </div>
+                        
+                    <div id="column3">
+                        
+                        <h1 class="menuHeader">Education</h1> <!--SubMenu-1.2-->
+                            <ul class="menuList">
+                                <li><a href="#" style="text-decoration:none">Learn Thai</a></li>
+                                <li><a href="#" style="text-decoration:none">Math Genius</a></li>
+                                <li><a href="#" style="text-decoration:none">Chemo Kid</a></li>
+                            </ul><br>
+                        
+                        <h1 class="menuHeader">Professionals</h1><!--SubMenu-1.3-->
+                            <ul class="menuList">
+                                <li><a href="#" style="text-decoration:none">Success 1.0</a></li>
+                                <li><a href="#" style="text-decoration:none">Money Maker</a></li>
+                            </ul><br>
+                        
+                    </div>
+                
+                 <div id="fix"></div>
+            </div> <!---->
+        </section>
+        
+        <section id="downloads" style = "display.none">
+            <div id="container">
+            <div id="column1">
+                 
+
+				        <h1 class="menuHeader">Education & Learning</h1><!--SubMenu-2.0-->
+							<ul class="menuList">
+                    
+                                <li><a href="#" style="text-decoration:none">Learn Thai</a></li>
+                                <li><a href="#" style="text-decoration:none">Math Genius</a></li>
+                                <li><a href="#" style="text-decoration:none">Chemo Kid</a></li>
+                            </ul><br>
+                  
+                        <h1 class="menuHeader">Professionals</h1> <!--SubMenu-2.1-->
+                            <ul class="menuList">
+                                <li><a href="#" style="text-decoration:none">Success 1.0</a></li>
+                                <li><a href="#" style="text-decoration:none">Money Maker</a></li>
+                            </ul><br>
+                </div>
+                
+                <div id="column2">
+                        <h1 class="menuHeader">Games</h1><!--SubMenu-2.2-->
+                            <ul class ="menuList">
+                                <li><a href="#" style="text-decoration:none">Catch The Bullet</a></li>
+                                <li><a href="#" style="text-decoration:none">Scooby Doo</a></li>
+                                <li><a href="#" style="text-decoration:none" >Fallen Angel</a></li>
+                                <li><a href="#" style="text-decoration:none">Sui Maker</li></a>
+                                <li><a href="#" style="text-decoration:none">Wave Master</li></a>
+                            </ul><br>
+                            
+                        <h1 class="menuHeader">Entertainment</h1> <!--SubMenu-2.3-->
+                            <ul class="menuList">
+                                <li><a href="#" style="text-decoration:none">Gadget Finder</a></li>
+                                <li><a href="#" style="text-decoration:none">Green Tree Express</a></li>
+                                <li><a href="#" style="text-decoration:none">Green Tree Pro</a></li>
+                                <li><a href="#" style="text-decoration:none">Wobbler 3.0</li></a>
+                                <li><a href="#" style="text-decoration:none">Coolkid</li></a>
+                            </ul><br>
+                    </div>    
+                        
+                    <div id="column3">
+                        <ul class="menuList">
+                        <h1 class="menuHeader">Games</h1>
+                            <ul class="menuList"></ul>
+                                <li><a href="#" style="text-decoration:none">Catch The Bullet</a></li>
+                                <li><a href="#" style="text-decoration:none">Scooby Doo</a></li>
+                            </ul><br>
+                    </div>
+                    
+                    <div id="fix"></div>
+                </section>
+                
+                <section id="applications" style="display:none">
+                    <div id="container">
+                    <div id="column1">
+                        
+                        <h1 class="menuHeader">Learning & Games</h1>
+						<ul class="menuList">
+								<li><a href="#" style="text-decoration:none">Catch the Bullet</a></li>
+								<li><a href="#" style="text-decoration:none">Snoopydoo</a></li>
+						</ul><br>
+						
+						<h1 class="menuHeader">Utilies</h1> <!--SubMenu-3.1-->
+                            <ul class="menuList">
+                                 <li><a href="#" style="text-decoration:none">Gadget Finder</a></li>
+                                 <li><a href="#" style="text-decoration:none">Green Tree Express</a></li>
+                                 <li><a href="#" style="text-decoration:none">Green Tree Pro</a></li>
+                                 <li><a href="#" style="text-decoration:none">Wobbler 3.0</li></a>
+                                 <li><a href="#" style="text-decoration:none">Coolkid</li></a>
+                            </ul><br>
+            </div>
+                
+            <div id="column2">
+                        <h1 class="menuHeader">Games</h1><!--SubMenu-2.2-->
+                            <ul class ="menuList">
+                                <li><a href="#" style="text-decoration:none">Catch The Bullet</a></li>
+                                <li><a href="#" style="text-decoration:none">Scooby Doo</a></li>
+                                <li><a href="#" style="text-decoration:none">Fallen Angel</a></li>
+                                <li><a href="#" style="text-decoration:none">Sui Maker</li></a>
+                                <li><a href="#" style="text-decoration:none">Wave Master</li></a>
+                            </ul><br>
+                            
+                        <h1 class="menuHeader">Entertainment</h1> <!--SubMenu-2.3-->
+                            <ul class="menuList">
+                                <li><a href="#" style="text-decoration:none">Gadget Finder</a></li>
+                                <li><a href="#" style="text-decoration:none">Green Tree Express</a></li>
+                                <li><a href="#" style="text-decoration:none">Green Tree Pro</a></li>
+                                <li><a href="#" style="text-decoration:none">Wobbler 3.0</li></a>
+                                <li><a href="#" style="text-decoration:none">Coolkid</li></a>
+                            </ul><br>
+                    </div>    
+
+            <div id="column3">
+                        <ul class="menuList">
+                        <h1 class="menuHeader">Games</h1>
+                            <ul class="menuList"></ul>
+                                <li><a href="#" style="text-decoration:none">Catch The Bullet</a></li>
+                                <li><a href="#" style="text-decoration:none">Scooby Doo</a></li>
+                            </ul><br>
+                    </div>
+	  </section>
+	   
+	   <section id="projects" style="display:none">
+			        <div id="container">
+		            <div id="column1">
+                        <h1 class="menuHeader">Learning & Games</h1> <!--SubMenu-4.0-->
+                            <ul class="menuList">
+                                 <li><a href="#" style="text-decoration:none">Catch The Bullet</a></li>
+                                 <li><a href="#" style="text-decoration:none">Scooby Doo</a></li>
+                                 <li><a href="#" style="text-decoration:none">Fallen Angel</a></li>
+                                 <li><a href="#" style="text-decoration:none">Sui Maker</li></a>
+                                 <li><a href="#" style="text-decoration:none">Wave Master</li></a>
+                                 <li><a href="#" style="text-decoration:none">Golf Pro</li></a>
+                            </ul><br> 
+                                
+                        <h1 class="menuHeader">Utilies</h1> <!--SubMenu-4.1-->
+                            <ul class="menuList">
+                                <li><a href="#" style="text-decoration:none">Gadget Finder</a></li>
+                                <li><a href="#" style="text-decoration:none">Green Tree Express</a></li>
+                            </ul><br>
+                    </div>
+                    
+                    <div id="column2">
+                        <h1 class="menuHeader">Games</h1><!--SubMenu-2.2-->
+                            <ul class ="menuList">
+                                <li><a href="#" style="text-decoration:none">Catch The Bullet</a></li>
+                                <li><a href="#" style="text-decoration:none">Scooby Doo</a></li>
+                                <li><a href="#" style="text-decoration:none">Fallen Angel</a></li>
+                                <li><a href="#" style="text-decoration:none">Sui Maker</li></a>
+                                <li><a href="#" style="text-decoration:none">Wave Master</li></a>
+                            </ul><br>
+                            
+                        <h1 class="menuHeader">Entertainment</h1> <!--SubMenu-2.3-->
+                            <ul class="menuList">
+                                <li><a href="#" style="text-decoration:none">Gadget Finder</a></li>
+                                <li><a href="#" style="text-decoration:none">Green Tree Express</a></li>
+                                <li><a href="#" style="text-decoration:none">Green Tree Pro</a></li>
+                                <li><a href="#" style="text-decoration:none">Wobbler 3.0</li></a>
+                                <li><a href="#" style="text-decoration:none">Coolkid</li></a>
+                            </ul><br>
+                    </div>    
+                    
+                    <div id="column3">
+                        &nbsp;
+                    </div>
+                    <div id="fix"></div>
+                    </div>
+            </section>
+            
+            <section id="freeware" style="display:none">
+		    	<div id="container">
+		        <div id="column1">
+                
+                        <h1 class="menuHeader">Entertainment</h1> <!--SubMenu-4.2-->
+                             
+                            <ul class="menuList">
+                                <li><a href="#" style="text-decoration:none">Gadget Finder</a></li>
+                                <li><a href="#" style="text-decoration:none">Green Tree Express</a></li>
+                                <li><a href="#" style="text-decoration:none">Green Tree Pro</a></li>
+                                <li><a href="#" style="text-decoration:none">Wobbler 3.0</li></a>
+                                <li><a href="#" style="text-decoration:none">Coolkid</li></a>
+                            </ul><br><br>
+                        
+                               
+                        <h1 class="menuHeader">Utilies</h1> <!--SubMenu-5.0-->
+                            
+                            <ul class="menuList">
+                                <li><a href="#" style="text-decoration:none">Gadget Finder</a></li>
+                                <li><a href="#" style="text-decoration:none">Wobbler 3.0</li></a>
+                                <li><a href="#" style="text-decoration:none">Coolkid</li></a>
+                            </ul><br> 
+                            </div>
+                         
+                <div id="column2">       
+                        <h1 class="menuHeader">Education</h1> <!--SubMenu-5.1-->
+                                
+                            <ul class="menuList">
+                                <li><a href="#" style="text-decoration:none">Learn Thai</a></li>
+                                <li><a href="#" style="text-decoration:none">Math Genius</a></li>
+                                <li><a href="#" style="text-decoration:none">Chemo Kid</a></li>
+                            </ul><br>
+                </div>
+                
+                <div id="column3">
+                
+                        <h1 class="menuHeader">Professionals</h1> <!--SubMenu-5.2-->
+                           
+                            <ul class="menuList">
+                                <li><a href="#" style="text-decoration:none">Success 1.0</a></li>
+                                <li><a href="#" style="text-decoration:none">Money Maker</a></li>
+                            </ul><br>
+                        </div>
+		</section>
+    </body>
+</html>
