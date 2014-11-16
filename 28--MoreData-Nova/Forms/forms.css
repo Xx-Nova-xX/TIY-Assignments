@@ -1,0 +1,43 @@
+body {
+  background-color: blue; }
+  body label {
+    font-family: 'Abel', sans-serif;
+    font-weight: 900; }
+  body input {
+    font-family: 'Abel', sans-serif; }
+  body #bio {
+    font-family: 'Abel', sans-serif; }
+  body select {
+    font-family: 'Abel', sans-serif; }
+  body option {
+    font-family: 'Abel', sans-serif; }
+  body h1 {
+    font-size: 20px;
+    padding-left: 31px;
+    width: 140px;
+    margin-top: 25px; }
+  body h2 {
+    padding-bottom: 2em;
+    padding-left: 1em;
+    margin-top: 0px;
+    padding-bottom: 37px; }
+  body h1, body h2 {
+    font-family: 'Abel', sans-serif; }
+  body.signup input, body input, body select {
+    display: block;
+    width: 100%;
+    height: 6ex;
+    margin-bottom: 6ex;
+    background-color: green; }
+  body textarea {
+    display: block;
+    width: 100%;
+    background-color: red; }
+  body.col1, body.col2, body.col3 {
+    padding: 5%; }
+  body span {
+    color: purple; }
+  body ::-webkit-input-placeholder {
+    color: grey; }
+
+/*# sourceMappingURL=forms.css.map */

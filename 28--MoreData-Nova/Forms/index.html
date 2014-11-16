@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+
+	<head> 
+	  <meta charset="UTF-8"> <!-- the character set -->
+      <link href="forms.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+      <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	</head>
+	
+	<body>  	  
+  	  <header>
+	  	  <h1>NOVAPRINT©</h1>
+	  	  <h2>Responsive Multi-Column Form</h2>
+	  </header>
+	    
+	    <section class="container-fluid">
+	      <div class="col1 col-xs-12 col-md-6 col-lg-4">
+	        
+	        <form class="signup" action="alert:success">
+	          <label for="first">First Name</label>
+	            <input type="text" id="first" placeholder="First Name" name="first_name">
+	          <label for="last">Last Name</label>
+	            <input type="tel" id"phone" placeholder-"Phone Number" name="user_phone_number" minlength="10" required>
+	          <label for="phone" required>Phone<span>*</span></label>
+	            <input type="tel" id="phone" placeholder="Enter Phone Number" name="user_phone_number" minlength="10" required>
+
+	          <label for="drink">Favorite Beverage</label>
+		  	    <select name="drinks" id="drink">
+		  	        <option value="Soda"></option>
+		  	        <option value="Water"></option>
+		  	        <option value="Juice"></option>
+		  	        <option value="Tea"></option>
+		  	        <option value="Beer"></option>
+		  	        <option value="Wine"></option>
+		  	        <option value="Liquor"></option>
+		  	      </select>
+
+	      </div>
+		  
+		  <div class="col2 col-xs-12 col-md-6 col-lg-4">
+		  	  <label for="username">Username</label>
+		  	    <input type="text" id="username" placeholder="Your Username" required>
+		  	  <label for="password">Password</label>
+		  	    <input type="password" id="password" placeholder="Your Password" required>
+		  	  <label for="favMovie">Favorite Type Of Movie</label>
+		  	  <select name="favorite_movie" id="favMovie">
+		  	    <option value="Comedy">Comedy</option>
+		  	    <option value="Drama">Drama</option>
+		  	    <option value="Horror">Horror</option>
+		  	    <option value="Romantic">Romantic</option>
+		  	    <option value="Sci-Fi">Sci-Fi</option>
+		  	  </select>
+		  </div>
+
+		  <div class="col3 col-xs-12 col-md-6 col-lg-4">
+		  	  <label for="first">2nd First Name</label>
+		  	    <input type="text" id="first" placeholder="2nd First Name">
+		  	  
+		  	  <label for="cereals">Favorite Cereal Types</label>
+		  	    <select name="cereals" id="cereal">
+		  	  	    <option value="Cinnamon Squares"></option>
+		  	  	    <option value="Honey O's"></option>
+		  	  	    <option value="Fruit Flakes"></option>
+		  	  	    <option value="Raisan Bran"></option>
+		  	  	    <option value="Cocoa Flakes"></option>
+		  	  	    <option value="Oatmeal"></option>
+		  	  	  </select>		  	  
+
+		  	  <label for="last">2nd Last Name</label>
+		  	    <input type="text" id="last" placeholder="2nd Last Name">
+		  	    <input id="sub" type="submit" name="submit" placeholder="Submit">
+
+		  	  <label for="bio">Questions/Comments</label>
+	            <textarea name="about_user" id="bio" placeholder="Please Enter Questions or Comments" rows="9"></textarea>
+			</form>
+		</div>
+	   </section>
+
+	   <script>
+	     $('.signup').submit(function(event){
+	     	alert('Your Form Was Submitted Successfully')
+	     	event.preventDefault();
+	     })
+	   </script>
+	 </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

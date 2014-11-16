@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Forms</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #abe1fd;
+    }
+    .signup input, input, select {
+      display: block;
+      width: 100%;
+      height: 6ex;
+      margin-bottom: 6ex;
+      background-color: #bfe2ca;
+    }
+    textarea {
+      display: block;
+      width: 100%;
+      background-color: #bfe2ca;
+    }
+    .col1, .col2, .col3 {
+      padding: 5%;
+    }
+    span {
+      color: #f4858e;
+    }
+    ::-webkit-input-placeholder {
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <center><h1>Forms for ALL THE THINGS!!!</h1></center>
+  </header>
+  <section class="container-fluid">
+    <div class="col1 col-xs-12 col-md-6 col-lg-4">
+      <form class="signup" action="alert:success">
+        <label for="first" >First Name Por Favor</label>
+        <input type="text" id="first" placeholder="First Name" name="first_name">
+        <label for="last">Last Name Too</label>
+        <input type="text" id="last" placeholder="Last Name" name="last_name">
+        <label for="email" required>We WILL Spam You!<span>*</span></label>
+        <input type="email" id="email" placeholder="Email" name="user_email" required>
+        <label for="phone" required>Moving Fast<span>*</span></label>
+        <input type="tel" id="phone" placeholder="Give Me Them Digits" name="user_phone_number" minlength="10" required>
+        <label for="bio">Who Are You?</label>
+        <textarea name="about_user" id="bio" placeholder="Don't You Hate These Bio Thingys" rows="8"></textarea>
+    </div>
+    <div class="col2 col-xs-12 col-md-6 col-lg-4">
+        <label for="username" >Cool UserName Here</label>
+        <input type="text" id="username" placeholder="CoolGuy123" required>
+        <label for="password">Password...</label>
+        <input type="password" id="password" placeholder="Secret Code" required >
+        <label for="favMovie">Best Movie Ever?</label>
+        <select name="favorite_movie" id="favMovie">
+          <option value="Rocky 4">Rocky 4</option>
+          <option value="Rocky Four">Rocky Four</option>
+          <option value="Rocky IV" selected>Rocky IV</option>
+          <option value="Rocky 2+2">Rocky 2+2</option>
+          <option value="Rocky 5-1">Rocky 5-1</option>
+        </select>
+        <label for="drink">Thirsty for?</label>
+        <input list="drinks" id="drink" placeholder="Sweet Tea">
+          <datalist id="drinks">
+            <option value="Water">
+            <option value="Coca Cola">
+            <option value="Fat Tire">
+            <option value="Lemonade">
+            <option value="Arnold Palmer">
+          </datalist>
+    </div>
+    <div class="col3 col-xs-12 col-md-6 col-lg-4">
+        <label for="first" >First Name Por Favor</label>
+        <input type="text" id="first" placeholder="First Name">
+        <label for="cereal" >Favorite Cereal?</label>
+        <input list="cereals" id="cereal" placeholder="Raisin Bran">
+          <datalist id="cereals">
+            <option value="Lucky Charms">
+            <option value="Frosted Flakes">
+            <option value="Cocoa Pebbles">
+            <option value="Fruit Loops">
+            <option value="Captain Crunch">
+          </datalist>
+        <label for="last">Last Name Too</label>
+        <input type="text" id="last" placeholder="Last Name">
+        <input id="sub" type="submit" name="submit" placeholder="Submit">
+      </form>
+    </div>
+  </section>
+  <script>
+    $('.signup').submit(function(event){
+      alert('success!!!')
+      event.preventDefault();
+    })
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
