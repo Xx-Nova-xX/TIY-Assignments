@@ -6,6 +6,11 @@
   width: 100%;
   position: relative;
 }
+
+.bio {
+  display: inline-block;
+}
+
 .content {
   margin: 0 5% 5% 5%;
 }
