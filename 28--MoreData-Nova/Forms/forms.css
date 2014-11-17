@@ -1,10 +1,13 @@
 body {
-  background-color: blue; }
+  color: middleBlue; }
   body label {
     font-family: 'Abel', sans-serif;
     font-weight: 900; }
   body input {
     font-family: 'Abel', sans-serif; }
+  body #sub {
+    width: 179px;
+    text-align: center; }
   body #bio {
     font-family: 'Abel', sans-serif; }
   body select {
@@ -28,16 +31,19 @@ body {
     width: 100%;
     height: 6ex;
     margin-bottom: 6ex;
-    background-color: green; }
+    background-color: lightBlue;
+    border: solid;
+    border-radius: 5px;
+    border-color: #b3cfe0; }
   body textarea {
     display: block;
     width: 100%;
-    background-color: red; }
+    background-color: lightBlue; }
   body.col1, body.col2, body.col3 {
     padding: 5%; }
   body span {
     color: purple; }
   body ::-webkit-input-placeholder {
-    color: grey; }
+    color: black; }
 
 /*# sourceMappingURL=forms.css.map */

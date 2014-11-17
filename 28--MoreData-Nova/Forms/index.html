@@ -17,13 +17,15 @@
 	  </header>
 	    
 	    <section class="container-fluid">
-	      <div class="col1 col-xs-12 col-md-6 col-lg-4">
-	        
+	      <div class="col1 col-xs-12 col-md-6 col-lg-4">   
 	        <form class="signup" action="alert:success">
+	          
 	          <label for="first">First Name</label>
-	            <input type="text" id="first" placeholder="First Name" name="first_name">
+	            <input type="text" id="first" placeholder="First Name" name="first_name" required>
+	          
 	          <label for="last">Last Name</label>
-	            <input type="tel" id"phone" placeholder-"Phone Number" name="user_phone_number" minlength="10" required>
+	            <input type="text" id="last" placeholder-"Last Name" name="last_name" required>
+	          
 	          <label for="phone" required>Phone<span>*</span></label>
 	            <input type="tel" id="phone" placeholder="Enter Phone Number" name="user_phone_number" minlength="10" required>
 
@@ -45,6 +47,7 @@
 		  	    <input type="text" id="username" placeholder="Your Username" required>
 		  	  <label for="password">Password</label>
 		  	    <input type="password" id="password" placeholder="Your Password" required>
+
 		  	  <label for="favMovie">Favorite Type Of Movie</label>
 		  	  <select name="favorite_movie" id="favMovie">
 		  	    <option value="Comedy">Comedy</option>
@@ -53,32 +56,35 @@
 		  	    <option value="Romantic">Romantic</option>
 		  	    <option value="Sci-Fi">Sci-Fi</option>
 		  	  </select>
+
+		  	  <label for="bio">About You</label>
+	            <textarea name="about_user" id="bio" placeholder="About You" rows="3"></textarea>
 		  </div>
 
 		  <div class="col3 col-xs-12 col-md-6 col-lg-4">
 		  	  <label for="first">2nd First Name</label>
 		  	    <input type="text" id="first" placeholder="2nd First Name">
 		  	  
-		  	  <label for="cereals">Favorite Cereal Types</label>
-		  	    <select name="cereals" id="cereal">
-		  	  	    <option value="Cinnamon Squares"></option>
-		  	  	    <option value="Honey O's"></option>
-		  	  	    <option value="Fruit Flakes"></option>
-		  	  	    <option value="Raisan Bran"></option>
-		  	  	    <option value="Cocoa Flakes"></option>
-		  	  	    <option value="Oatmeal"></option>
-		  	  	  </select>		  	  
+		  	  <label for="cereal">Cereals</label>
+        <select id="cereal" name="cereal">
+            <option>Choose A Cereal</option>
+            <option>France</option>
+            <option>Italy</option>
+            <option>Portugal</option>
+        </select>  	  
 
 		  	  <label for="last">2nd Last Name</label>
 		  	    <input type="text" id="last" placeholder="2nd Last Name">
-		  	    <input id="sub" type="submit" name="submit" placeholder="Submit">
+		  
 
 		  	  <label for="bio">Questions/Comments</label>
 	            <textarea name="about_user" id="bio" placeholder="Please Enter Questions or Comments" rows="9"></textarea>
+			  <br>
+	         
 			</form>
-		</div>
+		  </div>
 	   </section>
-
+ <input id="sub" type="submit" name="submit" placeholder="Submit">
 	   <script>
 	     $('.signup').submit(function(event){
 	     	alert('Your Form Was Submitted Successfully')
