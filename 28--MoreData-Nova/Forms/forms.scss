@@ -1,11 +1,15 @@
+$powderBlue: #d2e0ef;
 $lightBlue: #b0c9e8;
 $middleBlue: #b3cfe0;
 $black: #000000;
+$centerBlue: #3472ba;
 
 
 
 body  {
-  color: middleBlue;
+ 
+  background: #47a3da;
+  
 
   		
   		label {
@@ -15,19 +19,26 @@ body  {
 
   		input {
   		font-family: 'Abel', sans-serif;
+
   		}
 
   		#sub {
   		 width: 179px;
-  		 text-align: center 
+  		 text-align: center;
+  		 position: fixed;
+    	 right: 30px;
+    	 background-color: $powderBlue;
   		}
 
   		#bio {
   		font-family: 'Abel', sans-serif;
+  		height: 152px;
   		}
 
   		select {
   		font-family: 'Abel', sans-serif;
+  		font-style: italic;
+
   		}
 
   		option {
@@ -59,13 +70,15 @@ body  {
 		  height: 6ex;
 		  margin-bottom: 6ex;
 		  background-color: lightBlue;
-		  border: solid;
+		  border: solid 1px;
 		  border-radius: 5px;
-		  border-color: $middleBlue;
+		  border-color: $black;
+		  font-weight: bold;
 		}
 
 		textarea {
 		  display: block;
+		  border-radius: 5px;
 		  width: 100%;
 		  background-color: lightBlue;
 		}
@@ -74,11 +87,9 @@ body  {
 		  padding: 5%;
 		}
 
-		span {
-		  color: purple;
-		}
 		::-webkit-input-placeholder {
-		  color: black;
+		  font-style: italic;
+		  color: $black;
 		}
 }
 

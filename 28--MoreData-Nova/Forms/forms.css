@@ -1,5 +1,5 @@
 body {
-  color: middleBlue; }
+  background: #47a3da; }
   body label {
     font-family: 'Abel', sans-serif;
     font-weight: 900; }
@@ -7,11 +7,16 @@ body {
     font-family: 'Abel', sans-serif; }
   body #sub {
     width: 179px;
-    text-align: center; }
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    background-color: #d2e0ef; }
   body #bio {
-    font-family: 'Abel', sans-serif; }
+    font-family: 'Abel', sans-serif;
+    height: 152px; }
   body select {
-    font-family: 'Abel', sans-serif; }
+    font-family: 'Abel', sans-serif;
+    font-style: italic; }
   body option {
     font-family: 'Abel', sans-serif; }
   body h1 {
@@ -32,18 +37,19 @@ body {
     height: 6ex;
     margin-bottom: 6ex;
     background-color: lightBlue;
-    border: solid;
+    border: solid 1px;
     border-radius: 5px;
-    border-color: #b3cfe0; }
+    border-color: #000000;
+    font-weight: bold; }
   body textarea {
     display: block;
+    border-radius: 5px;
     width: 100%;
     background-color: lightBlue; }
   body.col1, body.col2, body.col3 {
     padding: 5%; }
-  body span {
-    color: purple; }
   body ::-webkit-input-placeholder {
-    color: black; }
+    font-style: italic;
+    color: #000000; }
 
 /*# sourceMappingURL=forms.css.map */
