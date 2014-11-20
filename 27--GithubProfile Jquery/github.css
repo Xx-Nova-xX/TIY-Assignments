@@ -1,0 +1,207 @@
+.container {
+  margin: 0 0 0 0;
+  padding: 0;
+  width: 100%;
+  position: relative;
+}
+
+.bio {
+  display: inline-block;
+}
+
+.content {
+  margin: 0 5% 5% 5%;
+}
+.center {
+  width: 70%; /*971px;*/
+  margin: 0 auto;
+  padding: 0;
+}
+.search {
+  width: 200px;
+}
+a.navbar-brand {
+  text-indent: .9em;
+}
+ #repoMenu>li>a {
+  padding: 14px 3px;
+}
+/*.nav>li>a {
+  padding: 14px 12%;
+} */
+.navbar-brand {
+  color: black;
+  font-weight: bold;
+  font-size: 20pt;
+  margin-right: -1em;
+}
+.navbar-form .form-control {
+  display: inline-block;
+  width: 120%;
+  vertical-align: middle;
+  height: 30px;
+  margin: 1% 5%%;
+}
+.navbar-nav {
+  width: 41%;
+  margin-left: 4%;
+}
+.navbar-right {
+  width: 16%;
+}
+.btn {
+  margin: 5% 0;
+  font-weight: bold;
+  font-size: 8pt;
+}
+button {
+  width: 48%;
+  align-content: center;
+}
+.sign-up {
+  background-color: lawngreen;
+  color: white;
+}
+aside {
+  margin:0;
+  padding: 0;
+}
+.name {
+  margin: 0;
+}
+.user {
+  margin: 0;
+  color: gray;
+}
+.glyphicon, .octicon::before {
+  color: lightgray;
+  margin-right: .8em;
+}
+.location::before {
+  padding-left: .15em;
+  margin-right: .9em;
+}
+.orgs {
+  width: 40px;
+}
+.blockHead {
+  background-color: silver;
+  padding: 3%;
+  margin: 0;
+  margin-bottom: -6%;
+}
+.pubCon .blockHead {
+  margin-top: -1%;
+}
+.popular {
+  height: 300px;
+  margin-right: 4%;
+}
+.popular, .contrib2  {
+  margin-top: 3ex;
+  width: 48%;
+  border: 1px solid lightgray;
+  padding: 0;
+  text-indent: 1em;
+}
+.popular hr, .contrib2 hr, .conActivity hr {
+  margin-bottom: 2ex;
+}
+.contrib2 {
+  height: 200px;
+}
+.pubCon {
+  height: 285px;
+  border: 1px solid lightgray;
+  margin-top: 30px;
+  position: relative;
+  padding: 0;
+}
+.conActivity {
+  height: 450px;
+  border: 1px solid lightgray;
+  margin-top: 30px;
+  padding: 0;
+  text-indent: 1em;
+}
+#repos, #activity {
+  display: none;
+}
+ .info > li {
+ display: list-item;
+ font-size: 94%;
+}
+ul.popRepos hr, ul.reposCon2 hr {
+  margin-top: 2ex;
+  margin-bottom: 0.6ex;
+}
+.popRepos .octicon::before, .reposCon2 .octicon::before {
+  color: dimgray;
+}
+.reposCon2 hr {
+  margin-top: 2.5ex;
+}
+/* .conImg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+} */
+
+.octicon-logo-github {
+  padding: 1.3ex 0 0 0;
+}
+.octicon-logo-github::before {
+  color: black;
+}
+.octicon-logo-github:hover::before {
+  color: cornflowerblue;
+}
+.tabMenu.octicon::before {
+  color: dimgray;
+}
+#repoMenu a:hover {
+  background-color: transparent;
+  border-color: transparent;
+}
+button.navbar-toggle {
+  width: initial;
+}
+.octicon-star {
+  float: right;
+}
+.caption {
+  margin: 0;
+  font-size: 12px;
+}
+.lineBreaks {
+  text-align: center;
+}
+.lineBreaks h6 {
+  background-color: white;
+}
+.lineBreaks hr {
+  margin-top: -2.5%;
+}
+ @media (max-width: 1199px){
+  .info > li {
+  font-size: 90%;
+ }
+ .center {
+   width: 65%;
+ }
+}
+@media (max-width: 992px){
+  body {
+    font-size: 10px;
+  }
+  .octicon-logo-github {
+    font-size: 20px;
+    padding-top: 1.7ex;
+  }
+}
+@media (max-width: 768px){
+  .center {
+    width: 100%;
+  }
+}

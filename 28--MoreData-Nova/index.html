@@ -4,58 +4,186 @@
 <head>
 
   <meta charset="UTF-8"> <!-- the character set -->
-  <h1>BLUEPRINT©</h1>
-  <h2>Super Image Slider</h2>
-
   <link href="MoreData.css" rel="stylesheet"> <!-- the call to the css sheet -->
+
+    <script src="http://www.code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://www.MoreData.js"></script>
+<!-- bower:css -->
+    <link rel="stylesheet" href="http://bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="http://bower_components/normalize.css/normalize.css" />
+    <!-- endbower -->
+<style>
+
+/* == GENERAL == */
+.slider {
+  position: relative;
+}
+.slider > .buttons {
+  position: absolute; z-index: 1;
+  width: 100%; top: 25%;
+}
+.slider > .buttons > a:first-child {
+  float: left;
+}
+.slider > .buttons > a:last-child {
+  float: right;
+}
+.slider .slides {
+  overflow: hidden;
+  white-space: nowrap;
+}
+.slider .slides > li {
+  display: inline-block;
+  transition: margin-left 2s ease;
+  width: 100%;
+}
+.slider .bullets {
+  position: absolute;
+  bottom: 10%; top: auto;
+  width: 100%;
+  font-size: 300%; height: 25%;
+  text-align: center;
+  background-color: rgba(66,66,66,0.5);
+}
+
+.slider .slides > li.exit {
+  margin-left: -100%;
+}
+
+.slider .bullets {
+  line-height: 150%;
+}
+.slider .bullets .active {
+  font-size: 150%;
+}
+
+    </style>
 
 </head>
 
 <body>
 
-  <div class="container">
-    <section class="main">
-    <br>
+  <header>
+    <h1>BLUEPRINT©</h1>
+    <h2>Super Image Slider</h2>
+  </header>
 
-   	  <ul id="slider"> <!-- These are the photos in the slide show -->
-   	    
-        <li id="slide1" class="active slide"><img src="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xaf1/v/t1.0-9/263059_10150245150118794_248406_n.jpg?oh=181834b2b83f02c3154fb529eb6ff75e&oe=54D482D4&__gda__=1424646067_b0078a7de1612e1bb5fac83a0e38beab"></li>
-   	    
-        <li id="slide2" class="active slide"><img src="https://scontent-a-atl.xx.fbcdn.net/hphotos-xpa1/t31.0-8/10644549_10152646783243794_2327978940168961195_o.jpg"></li>
-   	    
-        <li id="slide3" class="active slide"><img src="https://scontent-a-atl.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/542172_10150778619578794_1486484057_n.jpg?oh=5ddba8ff653cf59035a4167afab3e5a6&oe=54E03AE9"></li>
-   	    
-        <li id="slide4" class="active slide"><img src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xfa1/v/t1.0-9/391698_10151221872118794_1300998128_n.jpg?oh=c8b0709c6ffcc9520b00a2332393e21e&oe=54D91034&__gda__=1425043003_3eb88477a7ae16314849371d4641f9e0"></li>
-   	    
-        <li id="slide5" class="active slide"><img src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/10647070_10152769040088794_4335702446631626358_n.jpg?oh=9fcaa90e52432070a9ddb47b17eae3d6&oe=54D6D23C&__gda__=1424396905_49a9658f3b40af48fc5f23676881efbe"></li>
-   	  </ul>
+    <div class="container-fluid">
+    <div class="slider">
+      <nav class="buttons">
+        <a href="#" class="prev btn btn-default">Previous</a>
+        <a href="#" class="next btn btn-default">Next</a>
+      </nav>
 
-    <nav>
-      <ul> <!-- These are the buttons below the photos -->
-        <li class="buttons current" id="button1"></li> 
-        <li class="buttons" id="button2"></li> 
-        <li class="buttons" id="button3"></li>
-        <li class="buttons" id="button4"></li>
-        <li class="buttons" id="button5"></li>
-      </ul>
+    <ol class="list-inline row slides">
+      <template>
+        <li><a href="{{image.src}}" class="thumbnail"><img src="{{image.src}}"></a></li>
+      </template>
+    </ol>
+
+    <nav class="bullets">
+      <template>
+        <a href="#image-{{index}}" > &bull;</a>
+      </template>
     </nav>
-
-    <nav>
-      <span><img class="left hidden" src="http://static.squarespace.com/static/5168702ce4b0e454d76f1835/t/52eb36cbe4b0cdec90a4534b/1391146700540/rightArrow(SMALLER).png" width="65" height="35" style="filter:FlipH()"></span> <!-- INSERT POINTER IMAGE SRC FOR LEFT SIDE HERE -->
-    </nav>
-
-    <nav>
-      <span><img class="right" src="http://static.squarespace.com/static/5168702ce4b0e454d76f1835/t/52eb36cbe4b0cdec90a4534b/1391146700540/rightArrow(SMALLER).png" height="35" width="65"></span> <!-- INSERT POINTER IMAGE SRC FOR RIGHT SIDE HERE -->
-	</nav>
-   
-   </section>
   </div>
+</div>
+    
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/lodash/dist/lodash.compat.js"></script>
+    <!-- endbower -->
+    
+    <script>
+  ;(function() {
+    var images = [
+      { src: 'https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xaf1/v/t1.0-9/263059_10150245150118794_248406_n.jpg?oh=181834b2b83f02c3154fb529eb6ff75e&oe=54D482D4&__gda__=1424646067_b0078a7de1612e1bb5fac83a0e38beab' },
 
-  	  <script src="http://www.code.jquery.com/jquery-1.11.0.min.js"></script>
-  	  <script src="http://www.MoreData.js"></script>
+      { src: 'https://scontent-a-atl.xx.fbcdn.net/hphotos-xpa1/t31.0-8/10644549_10152646783243794_2327978940168961195_o.jpg' },
+
+      { src: 'https://scontent-a-atl.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/542172_10150778619578794_1486484057_n.jpg?oh=5ddba8ff653cf59035a4167afab3e5a6&oe=54E03AE9' },
+
+      { src: 'https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xfa1/v/t1.0-9/391698_10151221872118794_1300998128_n.jpg?oh=c8b0709c6ffcc9520b00a2332393e21e&oe=54D91034&__gda__=1425043003_3eb88477a7ae16314849371d4641f9e0' },
+
+      { src: 'https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/10647070_10152769040088794_4335702446631626358_n.jpg?oh=9fcaa90e52432070a9ddb47b17eae3d6&oe=54D6D23C&__gda__=1424396905_49a9658f3b40af48fc5f23676881efbe' }
+      ];
   
-   </body>
- </html>
+    _.templateSettings.interpolate = /{{([\s\S])}}/g;
+
+    var $slides = $('.slides'),
+        $slide = $($slides.find('template').prop('content').children),
+        slideTpl = _.template($slide.html()),
+        $buttons = $('.buttons'),
+        $bullets = $('.bullets'),
+        $bullet = $($('template', $bullets).prop('content').children);
+
+    _.each(images, function(image, index) {
+      $slide.clone()
+        .html(slideTpl({ image: image }))
+        .data('slideIndex', index)
+      .appendTo($slides);
+
+     $bullet.clone()
+        .attr('href', '#image-' + index)
+        .data('slideIndex', index)
+      .appendTo($bullets);
+    }); //END each images
+
+    $('slider').on('next', function(event) {
+      var $li = $('li:not(.exit):first', $slides).trigger('exit');
+
+      $bullets.trigger('activate', $li.data('slideIndex') + 1);
+    });
+
+    $('.slider').on('prev', function(event) {
+      var $li = $('li.exit:last', $slides).trigger('enter');
+
+      $bullets.trigger('activate', $li.data('slideIndex'));
+    });
+
+    $('.slider').on('exit', '.slides > li', function(event){
+      $(this).addClass('exit');
+        return: false;
+    });
+
+    $('.slider').on('enter', '.slides > li', function(event) {
+        return: false;
+    });
+
+    $('.slider').on('enter', '.slides > li', function(event) {
+        return: false;
+    });
+
+    $bullets.on('activate', function(event, index) {
+      $($(this).children()
+        .removeClass('active')
+        .get(index)
+      ).addClass('active');
+    });
+
+    $buttons.find('a.next').click(function(event) {
+      $(this).trigger('next');
+        return: false;
+    }
+
+    $buttons.find('a.prev').click(function(event) {
+      $(this).trigger('prev');
+        return: false;
+    });
+  })();
+  </script>
+</body>
+</html>
+
+
+  
+
+
+
+
+
+
 
 
 
